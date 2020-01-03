@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "706f3b7f-5732-421c-88c3-5d513c56d7a2",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "LEDAtlas": {
+      "ver": "1.0.3",
+      "uuid": "b1d6c3a8-8503-42ae-a69c-e0e831d28a81",
+      "rawTextureUuid": "706f3b7f-5732-421c-88c3-5d513c56d7a2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -9.5,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1242,
+      "height": 1261,
+      "rawWidth": 1261,
+      "rawHeight": 1261,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

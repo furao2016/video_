@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lottery_pc28",
+    "texture": "e2745b76-567d-4b02-b0a0-179140622e54",
+    "atlas": "28c559cf-d19d-4844-9869-d589e2d553a4",
+    "rect": [
+      1677,
+      83,
+      80,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      80,
+      80
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "script",
+  "version": "0.0.1",
+  "description": "代码自动创建工具",
+  "author": "Cocos Creator",
+  "scene-script": "scene-walker.js",
+  "main": "main.js",
+  "main-menu": {
+    "Script/创建模块文件夹": {
+      "message": "script:CreateDir"
+    },
+    "Script/创建界面脚本": {
+      "message": "script:CreateViewJS"
+    },
+    "Script/创建界面控制脚本": {
+      "message": "script:CreateControllerJS"
+    }
+  }
+}

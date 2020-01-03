@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "usera",
+    "texture": "e2745b76-567d-4b02-b0a0-179140622e54",
+    "atlas": "28c559cf-d19d-4844-9869-d589e2d553a4",
+    "rect": [
+      1311,
+      481,
+      22,
+      20
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      24,
+      24
+    ],
+    "rotated": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "LEDAtlas",
+    "texture": "706f3b7f-5732-421c-88c3-5d513c56d7a2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1242,
+      1261
+    ],
+    "offset": [
+      -9.5,
+      0
+    ],
+    "originalSize": [
+      1261,
+      1261
+    ]
+  }
+}

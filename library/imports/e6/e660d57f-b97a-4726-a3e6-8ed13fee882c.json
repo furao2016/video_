@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "kaiqiu01_00019",
+    "texture": "39cae894-1ca0-4b46-bbed-96a117147d15",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      460,
+      1080
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      460,
+      1080
+    ]
+  }
+}

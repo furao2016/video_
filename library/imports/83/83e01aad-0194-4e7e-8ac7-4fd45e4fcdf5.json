@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ebetxl_00070",
+    "texture": "50148dfb-25f0-4b0d-b9cf-e1a894988557",
+    "atlas": "",
+    "rect": [
+      394,
+      322,
+      1006,
+      350
+    ],
+    "offset": [
+      -63,
+      43
+    ],
+    "originalSize": [
+      1920,
+      1080
+    ]
+  }
+}

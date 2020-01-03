@@ -1,0 +1,128 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "texture1.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "affirm": {
+      "__uuid__": "da6aaf78-e102-4a31-8289-dcc0c7705b1c"
+    },
+    "affirmb": {
+      "__uuid__": "96b41a21-21fb-4f31-9802-3d17a98ac46d"
+    },
+    "bofang": {
+      "__uuid__": "714288ed-319c-4c6a-beda-106daef7a0e3"
+    },
+    "eBET_logo_RBG": {
+      "__uuid__": "c434e8dd-56d0-490c-9bd5-7b614ae59132"
+    },
+    "fanhui": {
+      "__uuid__": "59ecee68-004b-4fe7-9acf-2f050a491135"
+    },
+    "fanhuibox": {
+      "__uuid__": "cd3c9ebb-eb7a-4420-a6f8-8ee5dde69379"
+    },
+    "figure_box": {
+      "__uuid__": "0e5acfee-988e-4da6-9892-0daa16103cc3"
+    },
+    "figure_delete": {
+      "__uuid__": "a0f90fc1-66cb-4b5e-b0fe-fcd881d8ab0e"
+    },
+    "figure_select": {
+      "__uuid__": "34b7438c-3f8d-4649-a71e-d31db15ca495"
+    },
+    "figure_selectb": {
+      "__uuid__": "757ad4ca-8dd6-4462-ba5d-3a8ffb612a66"
+    },
+    "input_box": {
+      "__uuid__": "da87fb58-0c74-4d45-8c76-4be6baca0ac5"
+    },
+    "input_boxb": {
+      "__uuid__": "6aebad52-2bf9-4da2-bf3c-b5d7ac35a428"
+    },
+    "jiazaiicon": {
+      "__uuid__": "9c8afc7b-29da-40f0-a243-fcaa7e18f739"
+    },
+    "load": {
+      "__uuid__": "25717767-6742-4e0d-9ed7-2054200202f6"
+    },
+    "loadback": {
+      "__uuid__": "3a52edc5-cfdf-4c4f-a61b-42c47aa018c9"
+    },
+    "loadgua": {
+      "__uuid__": "030deeb5-0eb9-4123-b156-95ff455198ca"
+    },
+    "lottery_11x5": {
+      "__uuid__": "8d453615-08a4-45a4-b682-b744f98351fa"
+    },
+    "lottery_3d": {
+      "__uuid__": "0cadd6d0-e16d-472f-8180-b81c4deb7a29"
+    },
+    "lottery_k3": {
+      "__uuid__": "f07df619-1d29-4287-b8db-497962e088f5"
+    },
+    "lottery_pc28": {
+      "__uuid__": "d12b421e-5f26-42e2-be06-4891c0463099"
+    },
+    "lottery_pk10": {
+      "__uuid__": "fda22663-edf6-4d86-99e3-3920cbcffdf1"
+    },
+    "passworda": {
+      "__uuid__": "b587bdaa-d196-4bc9-b738-15853fbd40de"
+    },
+    "passwordb": {
+      "__uuid__": "f002594b-3213-4e94-8993-01850e4a87c9"
+    },
+    "popup_background": {
+      "__uuid__": "dd5a349f-83f1-4c15-8805-e212e188d65d"
+    },
+    "popup_close": {
+      "__uuid__": "74b8ebc1-6703-4420-a84a-42b4f54b7e40"
+    },
+    "popup_default": {
+      "__uuid__": "b5c95a13-5b8f-483e-a26a-aed8932fc514"
+    },
+    "popup_selection": {
+      "__uuid__": "687d0cad-4363-4311-94ae-cb9d85e515be"
+    },
+    "refresh": {
+      "__uuid__": "d39a6bb1-1e78-44d3-a2f8-50edf839af54"
+    },
+    "register_delete": {
+      "__uuid__": "ab2f11c1-c600-4727-8295-d35c5dea7920"
+    },
+    "register_deleteb": {
+      "__uuid__": "13415121-92a0-4725-af8d-75a3c3a5ee73"
+    },
+    "screen": {
+      "__uuid__": "a956e883-0901-49cd-9b4c-f64ab592b9b0"
+    },
+    "seat_frame": {
+      "__uuid__": "1c8e337f-9a4d-4b90-879e-0dc87567200b"
+    },
+    "seat_location": {
+      "__uuid__": "b249d9d9-e4af-4272-aed3-c710a95d26c9"
+    },
+    "sign_background": {
+      "__uuid__": "6d8e4ac0-9ada-4573-88d2-8c32ed6b350e"
+    },
+    "sign_out": {
+      "__uuid__": "4075ddbc-22b2-4b48-929a-3fee98986ea4"
+    },
+    "startiocn": {
+      "__uuid__": "9a6e375a-83e5-401d-b0e9-02ee510c1635"
+    },
+    "tips_box": {
+      "__uuid__": "a1a6743b-00dc-46c1-9ab4-02eb061ce989"
+    },
+    "usera": {
+      "__uuid__": "94eec23b-c479-4b15-b270-286ac4c51af4"
+    },
+    "userb": {
+      "__uuid__": "6a2331ad-9424-40aa-8901-11adf421c642"
+    },
+    "video": {
+      "__uuid__": "2c4b1088-2c79-40d9-89f2-e805f3e9b3f7"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ebet3dxq_00036",
+    "texture": "b980df72-d56d-433f-b6d0-95be739b64e9",
+    "atlas": "",
+    "rect": [
+      59,
+      55,
+      383,
+      401
+    ],
+    "offset": [
+      -5.5,
+      0.5
+    ],
+    "originalSize": [
+      512,
+      512
+    ]
+  }
+}

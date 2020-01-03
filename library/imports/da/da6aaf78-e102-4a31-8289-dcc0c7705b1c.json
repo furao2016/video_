@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "affirm",
+    "texture": "e2745b76-567d-4b02-b0a0-179140622e54",
+    "atlas": "28c559cf-d19d-4844-9869-d589e2d553a4",
+    "rect": [
+      1267,
+      345,
+      120,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      120,
+      70
+    ],
+    "rotated": 1,
+    "capInsets": [
+      50,
+      0,
+      50,
+      0
+    ]
+  }
+}
