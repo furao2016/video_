@@ -148,6 +148,7 @@ export default class lottery_MsgStation extends SingletonBase {
         } else {
             videosMsgFatory.ins().changePeriod(1);
         }
+        cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
     //收到奖期之后 马上跳播
     setJianQi(data) {
@@ -163,7 +164,7 @@ export default class lottery_MsgStation extends SingletonBase {
         videosMsgFatory.ins().changePeriod(0);
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
-    
+
     //接收到当前期播放倒计时
     lotteryReadyAward(data) {
         videosMsgFatory.ins().countDownTime = data;
