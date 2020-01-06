@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class lottery_videoFlow extends cc.Component {
     //定义的收到消息后的方法
-    msgFuncDefine = ['firstStage', 'secondStage', 'thirdStage', 'fourStage', 'fiveStage', 'sixStage', 'waitStage'];
+    msgFuncDefine = ['firstStage', 'secondStage', 'thirdStage', 'fourStage', 'fiveStage', 'sixStage', 'waitStage','fengPan'];
     @property([cc.VideoPlayer])
     videoArr = []; //视频合集
     @property([cc.Node])
@@ -38,8 +38,6 @@ export default class lottery_videoFlow extends cc.Component {
     nowMsgPos = 0;
     //是否播放倒计时
     isPlayCountDown = false;
-    //获取当前期数
-    lotteryId;
     /**上一阶段的结束后执行的操作*/
     stageFinsh;
 
@@ -94,10 +92,11 @@ export default class lottery_videoFlow extends cc.Component {
     //片头
     firstStage(time) {
         //设置期数
-        this.lotteryId = lottery_lotteryData.getInstance().lotteryId++;
-        this.setQiShu(this.lotteryId, this.qiShuArr[0], true);
-        this.setQiShu(this.lotteryId, this.qiShuArr[1], false)
-        this.setQiShu(this.lotteryId + 1, this.qiShuArr[2], true);
+        let expect = lottery_lotteryData.getInstance().expect;
+        let nestExpect = lottery_lotteryData.getInstance().nestExpect;
+        this.setQiShu(expect, this.qiShuArr[0], true);
+        this.setQiShu(expect, this.qiShuArr[1], false)
+        this.setQiShu(nestExpect, this.qiShuArr[2], true);
         //
         this.videoArr[0].node.active = true;
         this.videoArr[0].play();
@@ -233,6 +232,15 @@ export default class lottery_videoFlow extends cc.Component {
             this.videoArr[5].node.active = false;
         }
     }
+    /**封盘**/
+    fengPan() {
+        this.videoArr[6].node.active = true;
+        this.videoArr[6].play();
+        this.stageFinsh = () => {
+            this.videoArr[6].node.active = false;
+            this.videoArr[6].stop();
+        }
+    }
     /*----------------------------------------------相关设置----------------------------------------------*/
     /**
      * 设置当前播放期数
@@ -277,7 +285,7 @@ export default class lottery_videoFlow extends cc.Component {
     //球的坐标
     setOneBallFly(event) {
         let index = event.detail.index;
-        let ballNum = event.detail.ballNum;
+        let ballNum = event.detail.openCode;
         Utils.getInstance().setSprite(this.balls[index].getComponent(cc.Sprite), 'cq_' + ballNum, 'LEDAtlas');
         this.balls[index].node.active = true;
         this.balls[index].play();

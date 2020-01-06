@@ -13,7 +13,8 @@ export default class videosMsgFatory {
     //数组队列
     _msgList = [];
     //当前期类型
-    period = -1; // -1第一期 0 常规期 1 最后一期
+    period = 2; // -1第一期 0 常规期 1 最后一期 ,2封盘
+
     /**第一期开盘特殊处理 */
     firstToDay() {
         this._msgList = this.anlyArr([[1, 10000]]);
@@ -26,6 +27,10 @@ export default class videosMsgFatory {
     commonToDay() {
         this._msgList = this.anlyArr(this.stanardFlow);
     }
+    /**封盘*/
+    closePanToDay() {
+        this._msgList = this.anlyArr([[8, 3000]]);
+    }
     /**获取消息队列*/
     get msgList() {
         switch (this.period) {
@@ -37,6 +42,9 @@ export default class videosMsgFatory {
                 break;
             case 1:
                 this.endToDay();
+                break;
+            case 2:
+                this.closePanToDay();
                 break;
             default:
                 this._msgList = [];

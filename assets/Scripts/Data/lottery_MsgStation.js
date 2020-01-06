@@ -34,7 +34,7 @@ export default class lottery_MsgStation extends SingletonBase {
         socket.On(MsgDefine.DOWN.SC_VideoMsg, this.videoMsg, this);
         socket.On(MsgDefine.DOWN.SC_KaiPan, this.lotteryOpeningOrClosed, this);
         socket.On(MsgDefine.DOWN.SC_JianQi, this.setJianQi, this);
-        socket.On(MsgDefine.DOWN.SC_JIANQIU,this.lotteryResults,this);
+        socket.On(MsgDefine.DOWN.SC_JIANQIU, this.lotteryResults, this);
     }
     /**
      * 系统消息初始化
@@ -148,12 +148,15 @@ export default class lottery_MsgStation extends SingletonBase {
         } else {
             videosMsgFatory.ins().changePeriod(1);
         }
+        cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
-    //设置奖期
+    //收到奖期之后 马上跳播
     setJianQi(data) {
-        let expect = data.expect; //当前期号
-        let next = data.nestExpect;
-        console.log(data);
+        lottery_lotteryData.getInstance().expect = data.expect;
+        lottery_lotteryData.getInstance().nestExpect = data.nestExpect;
+        videosMsgFatory.ins().changePeriod(0);
+        cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
+        videosMsgFatory.ins().changePeriod(-1);
     }
 
     //接收到当前期售彩结束准备开奖,?第一期 马上跳播
@@ -161,6 +164,7 @@ export default class lottery_MsgStation extends SingletonBase {
         videosMsgFatory.ins().changePeriod(0);
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
+
     //接收到当前期播放倒计时
     lotteryReadyAward(data) {
         videosMsgFatory.ins().countDownTime = data;

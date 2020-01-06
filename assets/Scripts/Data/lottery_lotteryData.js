@@ -10,7 +10,9 @@ export default class lottery_lotteryData extends SingletonBase {
     //所选择的彩种code
     lotteryCode = null;
     //当前彩票期数
-    lotteryId = 1115;
+    expect = 1115;
+    //下一期
+    nestExpect = 1116;
     //指定的开奖时间
     awardTime = 0;
     //开奖结果
