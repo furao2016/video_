@@ -37,7 +37,7 @@ var lottery_lotteryData = function (_SingletonBase) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_lotteryData.__proto__ || Object.getPrototypeOf(lottery_lotteryData)).call.apply(_ref, [this].concat(args))), _this), _this.userId = null, _this.userName = null, _this.roleList = null, _this.lotteryCode = null, _this.lotteryId = 1115, _this.awardTime = 0, _this.awardResult = [1, 2, 3], _temp), _possibleConstructorReturn(_this, _ret);
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_lotteryData.__proto__ || Object.getPrototypeOf(lottery_lotteryData)).call.apply(_ref, [this].concat(args))), _this), _this.userId = null, _this.userName = null, _this.roleList = null, _this.lotteryCode = null, _this.expect = 1115, _this.nestExpect = 1116, _this.awardTime = 0, _this.awardResult = [1, 2, 3], _temp), _possibleConstructorReturn(_this, _ret);
     }
     //用户ID
 
@@ -48,6 +48,8 @@ var lottery_lotteryData = function (_SingletonBase) {
     //所选择的彩种code
 
     //当前彩票期数
+
+    //下一期
 
     //指定的开奖时间
 

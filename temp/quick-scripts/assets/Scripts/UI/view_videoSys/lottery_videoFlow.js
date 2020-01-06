@@ -126,8 +126,6 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
 
     //是否播放倒计时
 
-    //获取当前期数
-
     /**上一阶段的结束后执行的操作*/
 
 
@@ -243,10 +241,11 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             var _this2 = this;
 
             //设置期数
-            this.lotteryId = _lottery_lotteryData2.default.getInstance().lotteryId++;
-            this.setQiShu(this.lotteryId, this.qiShuArr[0], true);
-            this.setQiShu(this.lotteryId, this.qiShuArr[1], false);
-            this.setQiShu(this.lotteryId + 1, this.qiShuArr[2], true);
+            var expect = _lottery_lotteryData2.default.getInstance().expect;
+            var nestExpect = _lottery_lotteryData2.default.getInstance().nestExpect;
+            this.setQiShu(expect, this.qiShuArr[0], true);
+            this.setQiShu(expect, this.qiShuArr[1], false);
+            this.setQiShu(nestExpect, this.qiShuArr[2], true);
             //
             this.videoArr[0].node.active = true;
             this.videoArr[0].play();
@@ -541,7 +540,7 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             var _this10 = this;
 
             var index = event.detail.index;
-            var ballNum = event.detail.ballNum;
+            var ballNum = event.detail.openCode;
             _lottery_Utils2.default.getInstance().setSprite(this.balls[index].getComponent(cc.Sprite), 'cq_' + ballNum, 'LEDAtlas');
             this.balls[index].node.active = true;
             this.balls[index].play();

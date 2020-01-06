@@ -1,76 +1,64 @@
-2020-01-03T08:14:04.354Z - normal: Load ~/.CocosCreator/settings.json
-2020-01-03T08:14:04.356Z - normal: checking language setting...
-2020-01-03T08:14:04.357Z - normal: Language: zh
-2020-01-03T08:14:06.132Z - success: protocol editor-framework registered
-2020-01-03T08:14:06.132Z - success: protocol app registered
-2020-01-03T08:14:06.132Z - success: protocol theme registered
-2020-01-03T08:14:06.132Z - success: protocol packages registered
-2020-01-03T08:14:06.132Z - success: protocol unpack registerred
-2020-01-03T08:14:06.132Z - success: protocol disable-commonjs registerred
-2020-01-03T08:14:06.375Z - normal: connected!
-2020-01-03T08:14:06.377Z - normal: Check project F:\ztf\project\LotteryVideo
-2020-01-03T08:14:06.383Z - normal: Initializing Cocos2d
-2020-01-03T08:14:06.610Z - normal: Initializing Asset Database
-2020-01-03T08:14:06.662Z - success: protocol uuid registerred
-2020-01-03T08:14:06.662Z - success: protocol db registerred
-2020-01-03T08:14:06.662Z - success: protocol thumbnail registerred
-2020-01-03T08:14:06.662Z - normal: Loading editor/builtin packages
-2020-01-03T08:14:06.680Z - success: anysdk loaded
-2020-01-03T08:14:06.792Z - success: assets loaded
-2020-01-03T08:14:06.794Z - success: builder loaded
-2020-01-03T08:14:06.796Z - success: cocos-analytics loaded
-2020-01-03T08:14:06.800Z - success: console loaded
-2020-01-03T08:14:06.831Z - success: fb-instant-games loaded
-2020-01-03T08:14:06.833Z - success: hierarchy loaded
-2020-01-03T08:14:06.836Z - success: inspector loaded
-2020-01-03T08:14:06.837Z - success: keystore loaded
-2020-01-03T08:14:06.840Z - success: node-library loaded
-2020-01-03T08:14:06.842Z - success: package-asset loaded
-2020-01-03T08:14:06.844Z - success: preferences loaded
-2020-01-03T08:14:06.846Z - success: project-exporter loaded
-2020-01-03T08:14:06.860Z - success: project-importer loaded
-2020-01-03T08:14:06.863Z - success: project-settings loaded
-2020-01-03T08:14:06.866Z - success: ui-kit loaded
-2020-01-03T08:14:06.868Z - success: ui-grid loaded
-2020-01-03T08:14:06.870Z - success: scene loaded
-2020-01-03T08:14:06.871Z - success: sprite-editor loaded
-2020-01-03T08:14:06.874Z - success: store loaded
-2020-01-03T08:14:06.878Z - success: timeline loaded
-2020-01-03T08:14:06.879Z - normal: Loading builtin packages
-2020-01-03T08:14:06.882Z - success: asset-db-debugger loaded
-2020-01-03T08:14:06.884Z - success: code-editor loaded
-2020-01-03T08:14:06.885Z - success: color-picker loaded
-2020-01-03T08:14:06.888Z - success: package-manager loaded
-2020-01-03T08:14:06.890Z - success: qqplay-adapter loaded
-2020-01-03T08:14:06.894Z - success: sdkbox loaded
-2020-01-03T08:14:06.897Z - success: tester loaded
-2020-01-03T08:14:06.899Z - success: ui-kit-preview-extra loaded
-2020-01-03T08:14:06.902Z - success: ui-kit-preview loaded
-2020-01-03T08:14:06.904Z - success: ui-tree loaded
-2020-01-03T08:14:06.904Z - success: weapp-adapter loaded
-2020-01-03T08:14:07.937Z - normal: Initializing project F:\ztf\project\LotteryVideo
-2020-01-03T08:14:07.939Z - normal: Loading packages
-2020-01-03T08:14:07.955Z - success: script loaded
-2020-01-03T08:14:07.955Z - normal: Watching packages
-2020-01-03T08:14:08.400Z - normal: Run Application
-2020-01-03T08:14:14.604Z - success: preview server running at http://localhost:7458
-2020-01-03T08:14:21.077Z - normal: 1.9.3
-2020-01-03T08:14:28.585Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:28.585Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:28.586Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:28.587Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:28.587Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:28.588Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:29.432Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:29.432Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:29.433Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:29.434Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:29.434Z - normal: On the web is always keep the aspect ratio
-2020-01-03T08:14:29.435Z - normal: On the web is always keep the aspect ratio
-2020-01-03T09:52:42.600Z - warn: Error: [AssetLibrary] loading JSON or dependencies failed: undefined
-2020-01-03T09:57:53.945Z - normal: On the web is always keep the aspect ratio
-2020-01-03T09:57:53.946Z - normal: On the web is always keep the aspect ratio
-2020-01-03T09:57:53.947Z - normal: On the web is always keep the aspect ratio
-2020-01-03T09:57:53.947Z - normal: On the web is always keep the aspect ratio
-2020-01-03T09:57:53.950Z - normal: On the web is always keep the aspect ratio
-2020-01-03T09:57:53.950Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:17:56.333Z - normal: Load ~/.CocosCreator/settings.json
+2020-01-06T03:17:56.336Z - normal: checking language setting...
+2020-01-06T03:17:56.336Z - normal: Language: zh
+2020-01-06T03:17:58.058Z - success: protocol editor-framework registered
+2020-01-06T03:17:58.058Z - success: protocol app registered
+2020-01-06T03:17:58.058Z - success: protocol theme registered
+2020-01-06T03:17:58.058Z - success: protocol packages registered
+2020-01-06T03:17:58.058Z - success: protocol unpack registerred
+2020-01-06T03:17:58.058Z - success: protocol disable-commonjs registerred
+2020-01-06T03:17:58.311Z - normal: connected!
+2020-01-06T03:17:58.312Z - normal: Check project F:\ztf\project\LotteryVideo
+2020-01-06T03:17:58.314Z - normal: Initializing Cocos2d
+2020-01-06T03:17:58.520Z - normal: Initializing Asset Database
+2020-01-06T03:17:58.561Z - success: protocol uuid registerred
+2020-01-06T03:17:58.561Z - success: protocol db registerred
+2020-01-06T03:17:58.561Z - success: protocol thumbnail registerred
+2020-01-06T03:17:58.561Z - normal: Loading editor/builtin packages
+2020-01-06T03:17:58.579Z - success: anysdk loaded
+2020-01-06T03:17:58.704Z - success: assets loaded
+2020-01-06T03:17:58.706Z - success: builder loaded
+2020-01-06T03:17:58.709Z - success: cocos-analytics loaded
+2020-01-06T03:17:58.712Z - success: console loaded
+2020-01-06T03:17:58.743Z - success: fb-instant-games loaded
+2020-01-06T03:17:58.745Z - success: hierarchy loaded
+2020-01-06T03:17:58.747Z - success: inspector loaded
+2020-01-06T03:17:58.748Z - success: keystore loaded
+2020-01-06T03:17:58.750Z - success: node-library loaded
+2020-01-06T03:17:58.751Z - success: package-asset loaded
+2020-01-06T03:17:58.753Z - success: preferences loaded
+2020-01-06T03:17:58.754Z - success: project-exporter loaded
+2020-01-06T03:17:58.768Z - success: project-importer loaded
+2020-01-06T03:17:58.770Z - success: project-settings loaded
+2020-01-06T03:17:58.773Z - success: ui-kit loaded
+2020-01-06T03:17:58.775Z - success: ui-grid loaded
+2020-01-06T03:17:58.778Z - success: scene loaded
+2020-01-06T03:17:58.779Z - success: sprite-editor loaded
+2020-01-06T03:17:58.782Z - success: store loaded
+2020-01-06T03:17:58.785Z - success: timeline loaded
+2020-01-06T03:17:58.785Z - normal: Loading builtin packages
+2020-01-06T03:17:58.789Z - success: asset-db-debugger loaded
+2020-01-06T03:17:58.791Z - success: code-editor loaded
+2020-01-06T03:17:58.792Z - success: color-picker loaded
+2020-01-06T03:17:58.794Z - success: package-manager loaded
+2020-01-06T03:17:58.796Z - success: qqplay-adapter loaded
+2020-01-06T03:17:58.800Z - success: sdkbox loaded
+2020-01-06T03:17:58.803Z - success: tester loaded
+2020-01-06T03:17:58.804Z - success: ui-kit-preview-extra loaded
+2020-01-06T03:17:58.806Z - success: ui-kit-preview loaded
+2020-01-06T03:17:58.807Z - success: ui-tree loaded
+2020-01-06T03:17:58.808Z - success: weapp-adapter loaded
+2020-01-06T03:17:59.802Z - normal: Initializing project F:\ztf\project\LotteryVideo
+2020-01-06T03:17:59.810Z - normal: Loading packages
+2020-01-06T03:17:59.824Z - success: script loaded
+2020-01-06T03:17:59.824Z - normal: Watching packages
+2020-01-06T03:18:00.261Z - normal: Run Application
+2020-01-06T03:18:05.919Z - success: preview server running at http://localhost:7457
+2020-01-06T03:18:12.645Z - normal: 1.9.3
+2020-01-06T03:29:55.206Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:29:55.207Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:29:55.207Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:29:55.207Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:29:55.208Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:29:55.209Z - normal: On the web is always keep the aspect ratio
+2020-01-06T03:35:55.901Z - info: shutdown preview server

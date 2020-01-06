@@ -243,14 +243,16 @@ var lottery_MsgStation = function (_SingletonBase) {
                 _videoMsgFactory2.default.ins().changePeriod(1);
             }
         }
-        //设置奖期
+        //收到奖期之后 马上跳播
 
     }, {
         key: "setJianQi",
         value: function setJianQi(data) {
-            var expect = data.expect; //当前期号
-            var next = data.nestExpect;
-            console.log(data);
+            _lottery_lotteryData2.default.getInstance().expect = data.expect;
+            _lottery_lotteryData2.default.getInstance().nestExpect = data.nestExpect;
+            _videoMsgFactory2.default.ins().changePeriod(0);
+            cc.systemEvent.emit(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART);
+            _videoMsgFactory2.default.ins().changePeriod(-1);
         }
 
         //接收到当前期售彩结束准备开奖,?第一期 马上跳播
@@ -261,6 +263,7 @@ var lottery_MsgStation = function (_SingletonBase) {
             _videoMsgFactory2.default.ins().changePeriod(0);
             cc.systemEvent.emit(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART);
         }
+
         //接收到当前期播放倒计时
 
     }, {
