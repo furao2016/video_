@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '94994Cu96BF+qWuQUi7D+Rg', 'lottery_tipsLayer');
-// Scripts/UI/lottery_tipsLayer.js
+// Scripts/UI/tools/lottery_tipsLayer.js
 
 "use strict";
 

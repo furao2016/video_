@@ -1,2782 +1,2782 @@
 {
   "f8e6b000-5643-4b86-9080-aa680ce1f599": {
-    "asset": 1569743603734,
-    "meta": 1530695500000,
+    "asset": 1577350974436,
+    "meta": 1530753100000,
     "relativePath": "image"
   },
   "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
-    "asset": 1569743521388,
-    "meta": 1530695500000,
+    "asset": 1577350952773,
+    "meta": 1530753100000,
     "relativePath": "misc"
   },
   "2be36297-9abb-4fee-8049-9ed5e271da8a": {
-    "asset": 1530695500000,
-    "meta": 1530695500000,
+    "asset": 1530753100000,
+    "meta": 1530753100000,
     "relativePath": "misc\\default_video.mp4"
   },
   "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
-    "asset": 1569743536110,
-    "meta": 1530695500000,
+    "asset": 1577350957105,
+    "meta": 1530753100000,
     "relativePath": "obsolete"
   },
   "b8223619-7e38-47c4-841f-9160c232495a": {
-    "asset": 1530695500000,
-    "meta": 1530695500000,
+    "asset": 1530753100000,
+    "meta": 1530753100000,
     "relativePath": "obsolete\\atom.plist"
   },
   "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
-    "asset": 1569743521451,
-    "meta": 1530695500000,
+    "asset": 1577350952786,
+    "meta": 1530753100000,
     "relativePath": "particle"
   },
   "b2687ac4-099e-403c-a192-ff477686f4f5": {
-    "asset": 1530695500000,
-    "meta": 1530695500000,
+    "asset": 1530753100000,
+    "meta": 1530753100000,
     "relativePath": "particle\\atom.plist"
   },
   "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
-    "asset": 1569743741060,
-    "meta": 1530695500000,
+    "asset": 1577351008715,
+    "meta": 1530753100000,
     "relativePath": "prefab"
   },
   "a81b5183-3d5f-451d-ba5d-8c10a402ee72": {
-    "asset": 1573628647112,
-    "meta": 1573030757000,
+    "asset": 1578275261173,
+    "meta": 1578275261149,
     "relativePath": "Scripts"
   },
   "67863cb0-e582-4d25-9990-0a1648093d97": {
-    "asset": 1573030756947,
-    "meta": 1573030756958,
+    "asset": 1578275261159,
+    "meta": 1578275261149,
     "relativePath": "Scripts\\Core"
   },
   "e54dddc0-de7d-4f98-b3ab-6e39163e6447": {
-    "asset": 1573030756846,
-    "meta": 1573030756867,
+    "asset": 1578275261151,
+    "meta": 1578275261150,
     "relativePath": "Scripts\\Core\\Config"
   },
   "14fba3ff-b563-4ebc-9fc2-5519c0a998ef": {
-    "asset": 1573030756840,
-    "meta": 1573030756846,
+    "asset": 1578275261152,
+    "meta": 1578275261151,
     "relativePath": "Scripts\\Core\\Config\\Csv"
   },
   "a57a7793-8dff-4fa6-91de-513002275446": {
-    "asset": 1573030756838,
-    "meta": 1573030785432,
+    "asset": 1578275261150,
+    "meta": 1578280459392,
     "relativePath": "Scripts\\Core\\Config\\ConfigReader.js"
   },
   "fd04a879-5efa-403b-88ee-5d87984598ef": {
-    "asset": 1573030756838,
-    "meta": 1573030785480,
+    "asset": 1578275261151,
+    "meta": 1578280459470,
     "relativePath": "Scripts\\Core\\Config\\Csv\\CsvTableData.js"
   },
   "80d801b5-806f-4afd-9a9f-750379acd4a4": {
-    "asset": 1573030756839,
-    "meta": 1573030785481,
+    "asset": 1578275261152,
+    "meta": 1578280459473,
     "relativePath": "Scripts\\Core\\Config\\Csv\\CsvTableLine.js"
   },
   "ea3eed93-b101-415f-8f42-4a6fb41a0652": {
-    "asset": 1573030756868,
-    "meta": 1573030756906,
+    "asset": 1578275261153,
+    "meta": 1578275261152,
     "relativePath": "Scripts\\Core\\Event"
   },
   "034c1351-d56a-4a16-a284-90785ff4316b": {
-    "asset": 1573030756867,
-    "meta": 1573030785558,
+    "asset": 1578275261153,
+    "meta": 1578280459560,
     "relativePath": "Scripts\\Core\\Event\\lottery_GlobalMsg.js"
   },
   "cbad690a-36fd-49a6-839e-861a18b6e50c": {
-    "asset": 1573030756947,
-    "meta": 1573030785559,
+    "asset": 1578275261159,
+    "meta": 1578280459563,
     "relativePath": "Scripts\\Core\\lottery_CoreMgr.js"
   },
   "88658a6b-0468-4ef7-9f7b-807399a8df01": {
-    "asset": 1573030756908,
-    "meta": 1573030756929,
+    "asset": 1578275261155,
+    "meta": 1578275261153,
     "relativePath": "Scripts\\Core\\Net"
   },
   "da030f2d-807e-47ec-b5e2-6b6828e9837f": {
-    "asset": 1573030756907,
-    "meta": 1573030785704,
+    "asset": 1578275261154,
+    "meta": 1578280459748,
     "relativePath": "Scripts\\Core\\Net\\lottery_HttpUtils.js"
   },
   "7c1fb4ad-f813-4b8a-9d52-9c3220c62217": {
-    "asset": 1574920044003,
-    "meta": 1573030756936,
+    "asset": 1578275261157,
+    "meta": 1578275261155,
     "relativePath": "Scripts\\Core\\ResHandle"
   },
   "dd67221d-a878-45f3-a34c-1574ba772f24": {
-    "asset": 1573030756907,
-    "meta": 1573030785758,
+    "asset": 1578275261155,
+    "meta": 1578280459811,
     "relativePath": "Scripts\\Core\\Net\\lottery_SocketEnum.js"
   },
   "92a07290-4f00-4f6c-8f68-f3ceaddd1d31": {
-    "asset": 1573030756931,
-    "meta": 1573030785788,
+    "asset": 1578275261156,
+    "meta": 1578280459874,
     "relativePath": "Scripts\\Core\\ResHandle\\lottery_BaseUrlLoad.js"
   },
   "977983e9-68b9-4065-87cf-8badb0c0159a": {
-    "asset": 1573030756937,
-    "meta": 1573030756942,
+    "asset": 1578275261157,
+    "meta": 1578275261157,
     "relativePath": "Scripts\\Core\\Timer"
   },
   "4b870471-198d-4c2c-801f-b5142917580e": {
-    "asset": 1573030756944,
-    "meta": 1573030756947,
+    "asset": 1578275261159,
+    "meta": 1578275261158,
     "relativePath": "Scripts\\Core\\Tools"
   },
   "d970bde5-0f87-414e-8a62-83dc8367a1de": {
-    "asset": 1573030756936,
-    "meta": 1573030785918,
+    "asset": 1578275261157,
+    "meta": 1578280460032,
     "relativePath": "Scripts\\Core\\Timer\\lottery_TimeMgr.js"
   },
   "5bfe6ef0-6df5-46b5-bc24-6bf01b4d87a8": {
-    "asset": 1573030756942,
-    "meta": 1573030785936,
+    "asset": 1578275261158,
+    "meta": 1578280460076,
     "relativePath": "Scripts\\Core\\Tools\\TouchManager.js"
   },
   "6f08bcf7-52e6-4bd3-aacd-ea401212ac3f": {
-    "asset": 1573030756963,
-    "meta": 1573030756979,
+    "asset": 1578275261165,
+    "meta": 1578275261163,
     "relativePath": "Scripts\\LanguageTool"
   },
   "e9a7cbf9-22ad-41fa-a072-1c57e2684b3a": {
-    "asset": 1573030756960,
-    "meta": 1573030785971,
+    "asset": 1578275261163,
+    "meta": 1578280460355,
     "relativePath": "Scripts\\LanguageTool\\lottery_LanguageLabel.js"
   },
   "6d6ce8c2-fe12-4103-b527-a73494eb17a6": {
-    "asset": 1573030756961,
-    "meta": 1573030785982,
+    "asset": 1578275261164,
+    "meta": 1578280460377,
     "relativePath": "Scripts\\LanguageTool\\lottery_LanguageRichText.js"
   },
   "610caa57-d214-41b4-9939-448a6530aa7b": {
-    "asset": 1573030756962,
-    "meta": 1573030786000,
+    "asset": 1578275261164,
+    "meta": 1578280460413,
     "relativePath": "Scripts\\LanguageTool\\lottery_LanguageRichTextKey.js"
   },
   "f8e28dfc-5b23-4c78-a4d2-26626a2af149": {
-    "asset": 1573030756962,
-    "meta": 1573030786001,
+    "asset": 1578275261165,
+    "meta": 1578280460416,
     "relativePath": "Scripts\\LanguageTool\\lottery_LanguageTool.js"
   },
   "656aba96-43c9-4199-b888-bbccc7f8e16a": {
-    "asset": 1575345125323,
-    "meta": 1573030756990,
+    "asset": 1578275261168,
+    "meta": 1578275261165,
     "relativePath": "Scripts\\Manager"
   },
   "ce9a24de-439c-4f9d-9ea6-f78f4e49738d": {
-    "asset": 1573030756979,
-    "meta": 1573030786093,
+    "asset": 1578275261166,
+    "meta": 1578280460529,
     "relativePath": "Scripts\\Manager\\lottery_LanguageManager.js"
   },
   "8c74ccfe-c966-4e5e-a191-a88d86370a65": {
-    "asset": 1573030756981,
-    "meta": 1573030786171,
+    "asset": 1578275261166,
+    "meta": 1578280460629,
     "relativePath": "Scripts\\Manager\\lottery_RunInBackground.js"
   },
   "93602013-b1ee-4dde-b37f-81b17270520d": {
-    "asset": 1573030756983,
-    "meta": 1573030786266,
+    "asset": 1578275261168,
+    "meta": 1578280460743,
     "relativePath": "Scripts\\Manager\\lottery_viewComponentManager.js"
   },
   "9f92bd8a-6999-4b81-9b82-56b6387c0010": {
-    "asset": 1573030756984,
-    "meta": 1573030786269,
+    "asset": 1578275261168,
+    "meta": 1578280460770,
     "relativePath": "Scripts\\Manager\\lottery_viewCtrManager.js"
   },
   "2c93d4e9-6c63-45c6-b9bd-fb20c95f3ae7": {
-    "asset": 1573030756992,
-    "meta": 1573030756995,
+    "asset": 1578275261170,
+    "meta": 1578275261169,
     "relativePath": "Scripts\\Singleton"
   },
   "186236cf-9a07-49ef-9b50-98729d514f33": {
-    "asset": 1575512011440,
-    "meta": 1573030756998,
+    "asset": 1578275261171,
+    "meta": 1578275261170,
     "relativePath": "Scripts\\Tools"
   },
   "a21f1adc-3bb0-45ce-8d47-f84147984e6f": {
-    "asset": 1573030756991,
-    "meta": 1573030786372,
+    "asset": 1578275261170,
+    "meta": 1578280460872,
     "relativePath": "Scripts\\Singleton\\SingletonBase.js"
   },
   "b73feeaf-c4ee-4389-a3d0-3fda5f7e2f9a": {
-    "asset": 1573030756996,
-    "meta": 1573030786373,
+    "asset": 1578275261171,
+    "meta": 1578280460993,
     "relativePath": "Scripts\\Tools\\lottery_ScrollViewNormalExtend.js"
   },
   "2e673934-8145-4afe-9a8e-015dcdaa43f3": {
-    "asset": 1575524812544,
-    "meta": 1573092746981,
+    "asset": 1578275261843,
+    "meta": 1578275261199,
     "relativePath": "resources\\Altas"
   },
   "a91ce35c-7a0b-402c-a949-93a9a011e71e": {
-    "asset": 1577344284232,
-    "meta": 1573092802453,
+    "asset": 1578275261847,
+    "meta": 1578275261844,
     "relativePath": "resources\\Prefab"
   },
   "92ba7146-e665-483c-a584-db0e950d935a": {
-    "asset": 1574924815859,
-    "meta": 1573093965886,
+    "asset": 1578275261184,
+    "meta": 1578275261173,
     "relativePath": "Scripts\\UI"
   },
   "5e205ad4-095b-40a7-990c-eb2de6750d1f": {
-    "asset": 1573542787934,
-    "meta": 1573093977897,
+    "asset": 1578275261182,
+    "meta": 1578275261180,
     "relativePath": "Scripts\\UI\\view_login"
   },
   "0b2fac75-39b7-47de-a0a7-31f5a172e2ff": {
-    "asset": 1574755946031,
-    "meta": 1573116254229,
+    "asset": 1578275261178,
+    "meta": 1578275261175,
     "relativePath": "Scripts\\UI\\tools"
   },
   "e1ed0a6f-94b0-4525-849f-16ac3f40df46": {
-    "asset": 1564644311751,
-    "meta": 1573120369244,
+    "asset": 1578275261175,
+    "meta": 1578280461256,
     "relativePath": "Scripts\\UI\\lottery_viewCtrBase.js"
   },
   "fa845aae-7813-4ec3-8762-6c3a5a296341": {
-    "asset": 1575269509820,
-    "meta": 1573180616432,
+    "asset": 1578275261162,
+    "meta": 1578275261160,
     "relativePath": "Scripts\\Data"
   },
   "b445bef6-6e6c-4299-91ca-1911ac7e27a2": {
-    "asset": 1575277361308,
-    "meta": 1575277361347,
+    "asset": 1578275261845,
+    "meta": 1578280459002,
     "relativePath": "resources\\Prefab\\loginPre.prefab"
   },
   "82fc68e2-aaa4-4433-8eb6-773444501ca9": {
-    "asset": 1577330355242,
-    "meta": 1577330355255,
+    "asset": 1578275261846,
+    "meta": 1578280459018,
     "relativePath": "resources\\Prefab\\videoPlayPre.prefab"
   },
   "d7b0bba6-a759-4d05-a9e9-67ad13cb4e46": {
-    "asset": 1577346393186,
-    "meta": 1573201287712,
+    "asset": 1578275261853,
+    "meta": 1578275261198,
     "relativePath": "resources"
   },
   "4614cfaa-5354-46e1-b72f-4483ee955fe7": {
-    "asset": 1573202981817,
-    "meta": 1573202983263,
+    "asset": 1578275261182,
+    "meta": 1578280461794,
     "relativePath": "Scripts\\UI\\view_login\\lottery_loginViewCtr.js"
   },
   "52e780e8-7f03-44c1-84eb-20997c24ea0a": {
-    "asset": 1573458364054,
-    "meta": 1573458364058,
+    "asset": 1578275261846,
+    "meta": 1578280459009,
     "relativePath": "resources\\Prefab\\tipsLayer.prefab"
   },
   "408031d6-fa0b-4738-ba97-aae73470540e": {
-    "asset": 1573462394836,
-    "meta": 1573462645050,
+    "asset": 1578275261166,
+    "meta": 1578280460547,
     "relativePath": "Scripts\\Manager\\lottery_NetManager.js"
   },
   "949940ae-f7a0-45fa-a5ae-4148bb0fe460": {
-    "asset": 1573462747687,
-    "meta": 1573462749105,
+    "asset": 1578275261178,
+    "meta": 1578280461516,
     "relativePath": "Scripts\\UI\\tools\\lottery_tipsLayer.js"
   },
   "67b5dbe0-75d7-4dcc-ba11-b71aba3da99c": {
-    "asset": 1574231609251,
-    "meta": 1573530113790,
+    "asset": 1578275261184,
+    "meta": 1578275261182,
     "relativePath": "Scripts\\UI\\view_videoPlay"
   },
   "0abdcb48-7f33-4b13-b6d3-0820e9bd1248": {
-    "asset": 1577330171060,
-    "meta": 1573538342431,
+    "asset": 1578275261198,
+    "meta": 1578275261187,
     "relativePath": "VideoSimple"
   },
   "b20fce38-db50-4094-925e-404c5dc9ce64": {
-    "asset": 1573544788765,
-    "meta": 1573544799701,
+    "asset": 1578275261174,
+    "meta": 1578280461214,
     "relativePath": "Scripts\\UI\\lottery_viewBaseComponent.js"
   },
   "7900115a-c4e0-4553-b4fc-2f6f889595ae": {
-    "asset": 1573616583087,
-    "meta": 1573616583055,
+    "asset": 1578275261188,
+    "meta": 1578275261188,
     "relativePath": "VideoSimple\\img"
   },
   "88f768d7-12d4-4094-8191-d6afde4f5871": {
-    "asset": 1573616583087,
-    "meta": 1573616586024,
+    "asset": 1578275261188,
+    "meta": 1578280462229,
     "relativePath": "VideoSimple\\img\\white_shade.png"
   },
   "e23f8ee3-255c-4fd6-b1fe-bccc0368f3bb": {
-    "asset": 1573616583207,
-    "meta": 1573616583063,
+    "asset": 1578275261198,
+    "meta": 1578275261197,
     "relativePath": "VideoSimple\\scene"
   },
   "f0c1a3fd-ac23-48e6-b88c-f314c152d449": {
-    "asset": 1573616583206,
-    "meta": 1573616588619,
+    "asset": 1578275261198,
+    "meta": 1578280463342,
     "relativePath": "VideoSimple\\scene\\main.fire"
   },
   "2a84aeb7-0728-48e4-a5aa-384d4a3caab5": {
-    "asset": 1573617250751,
-    "meta": 1573617250756,
+    "asset": 1578275261197,
+    "meta": 1578275261189,
     "relativePath": "VideoSimple\\js"
   },
   "3c058d86-1fad-4cae-a912-00511f5a06ed": {
-    "asset": 1573617250666,
-    "meta": 1573617250671,
+    "asset": 1578275261191,
+    "meta": 1578275261190,
     "relativePath": "VideoSimple\\js\\A"
   },
   "85570802-e960-4ed9-a2ec-542a37c2ff1e": {
-    "asset": 1573617250705,
-    "meta": 1573617250745,
+    "asset": 1578275261195,
+    "meta": 1578275261191,
     "relativePath": "VideoSimple\\js\\lib"
   },
   "6445446e-31de-4174-9327-c3cd6b05bb57": {
-    "asset": 1573617250662,
-    "meta": 1573617253190,
+    "asset": 1578275261190,
+    "meta": 1578280462234,
     "relativePath": "VideoSimple\\js\\A\\eBET.js"
   },
   "5aed202a-7eba-4c98-aa38-68ed89abc6e9": {
-    "asset": 1573617250691,
-    "meta": 1573617253198,
+    "asset": 1578275261194,
+    "meta": 1578280463170,
     "relativePath": "VideoSimple\\js\\lib\\H264Decoder.js"
   },
   "4da8378f-0987-43f5-a034-f4b71dd1fcac": {
-    "asset": 1573617250705,
-    "meta": 1573617253255,
+    "asset": 1578275261192,
+    "meta": 1578280463231,
     "relativePath": "VideoSimple\\js\\lib\\AAC.js"
   },
   "81e1d15e-784a-484e-a05b-d5cd77e43465": {
-    "asset": 1573630789171,
-    "meta": 1573617250751,
+    "asset": 1578275261197,
+    "meta": 1578275261195,
     "relativePath": "VideoSimple\\js\\video"
   },
   "eb440f0a-c6aa-4c2c-94d5-b5c518d5dd24": {
-    "asset": 1573617250720,
-    "meta": 1573617253330,
+    "asset": 1578275261196,
+    "meta": 1578280463323,
     "relativePath": "VideoSimple\\js\\video\\VideoShader.js"
   },
   "90a1675c-a229-4745-8a49-77cf1cac2fe2": {
-    "asset": 1573625398045,
-    "meta": 1573625400382,
+    "asset": 1578275261176,
+    "meta": 1578280461411,
     "relativePath": "Scripts\\UI\\tools\\lottery_Keyboard.js"
   },
   "8dde5a68-90fc-4a0b-84f3-3dd802a61855": {
-    "asset": 1574159158012,
-    "meta": 1573628258546,
+    "asset": 1578275261180,
+    "meta": 1578275261178,
     "relativePath": "Scripts\\UI\\videoCom"
   },
   "666d3c56-3c43-426f-b47d-7b5580bce4fb": {
-    "asset": 1573630789171,
-    "meta": 1573630827794,
+    "asset": 1578275261196,
+    "meta": 1578280463312,
     "relativePath": "VideoSimple\\js\\video\\h264Sprite.js"
   },
   "7efc3796-9ec3-4da8-be16-6cf8ec7e6cb8": {
-    "asset": 1577178001300,
-    "meta": 1573631636316,
+    "asset": 1578275261187,
+    "meta": 1578275261184,
     "relativePath": "Scripts\\UI\\view_videoSys"
   },
   "1d149b8f-6376-44d8-814f-6c6a5bb72d9e": {
-    "asset": 1577351184283,
-    "meta": 1577351184291,
+    "asset": 1578275261854,
+    "meta": 1578280459330,
     "relativePath": "scene.fire"
   },
   "7e1db347-f425-4bf2-b1de-62364fa95d5c": {
-    "asset": 1573635039679,
-    "meta": 1573635103973,
+    "asset": 1578275261169,
+    "meta": 1578280460773,
     "relativePath": "Scripts\\ProjectEnum.js"
   },
   "d3225daf-03d9-4f81-b527-1bd7dba1dca6": {
-    "asset": 1574128471487,
-    "meta": 1574128481322,
+    "asset": 1578275261838,
+    "meta": 1578280458892,
     "relativePath": "resources\\Altas\\pb_1.png"
   },
   "cb35c122-0430-4cd7-90c0-217b625818ef": {
-    "asset": 1574128471487,
-    "meta": 1574128481740,
+    "asset": 1578275261840,
+    "meta": 1578280458873,
     "relativePath": "resources\\Altas\\pb_2.png"
   },
   "a7823eb3-6a05-4670-be20-b80acac8c2fe": {
-    "asset": 1572592337412,
-    "meta": 1574128609701,
+    "asset": 1578275261205,
+    "meta": 1578280445276,
     "relativePath": "resources\\Altas\\background.png"
   },
   "66716080-8687-46e9-b1f6-f4e8bd1c35d4": {
-    "asset": 1574232016933,
-    "meta": 1574232026399,
+    "asset": 1578275261183,
+    "meta": 1578280461861,
     "relativePath": "Scripts\\UI\\view_videoPlay\\lottery_VideoPlayCtr.js"
   },
   "e9a72bbc-5acf-48ea-8dfa-0c67a6095dca": {
-    "asset": 1574734710207,
-    "meta": 1574734801413,
+    "asset": 1578275261176,
+    "meta": 1578280461319,
     "relativePath": "Scripts\\UI\\tools\\commonBtn.js"
   },
   "00ddc2ce-352b-4785-8223-925545ef4c1d": {
-    "asset": 1574747602696,
-    "meta": 1574747641222,
+    "asset": 1578275261154,
+    "meta": 1578280459738,
     "relativePath": "Scripts\\Core\\Net\\lottery_BaseSocket.js"
   },
   "2313841e-9eec-4a60-b55c-6000e94165e4": {
-    "asset": 1574749411807,
-    "meta": 1574749412978,
+    "asset": 1578275261181,
+    "meta": 1578280461698,
     "relativePath": "Scripts\\UI\\view_login\\lottery_loginViewCom.js"
   },
   "7c9197bc-a770-4061-87c5-efd0e8678b65": {
-    "asset": 1575276836571,
-    "meta": 1575276836587,
+    "asset": 1578275261844,
+    "meta": 1578280458991,
     "relativePath": "resources\\Prefab\\loadingLayer.prefab"
   },
   "812941b8-3686-4d2c-88a3-62616a797047": {
-    "asset": 1574838617070,
-    "meta": 1574837982685,
+    "asset": 1578275261174,
+    "meta": 1578275261173,
     "relativePath": "Scripts\\UI\\animCom"
   },
   "5add5c93-11ce-44c1-a619-4180c58bbf88": {
-    "asset": 1574837892533,
-    "meta": 1574837892510,
+    "asset": 1578275261601,
+    "meta": 1578275261512,
     "relativePath": "resources\\Altas\\little\\ebet3dBall"
   },
   "46f0dfef-7709-40fc-a8b4-7d59626f5ca0": {
-    "asset": 1574679555353,
-    "meta": 1574838349351,
+    "asset": 1578275261513,
+    "meta": 1578280455959,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00000.png"
   },
   "76e5a23e-b2ea-477c-97f5-05c5890b413c": {
-    "asset": 1574679555415,
-    "meta": 1574838349405,
+    "asset": 1578275261514,
+    "meta": 1578280455995,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00001.png"
   },
   "244f4485-6792-4cb8-86c0-6ebb26e5e84d": {
-    "asset": 1574679555528,
-    "meta": 1574838349451,
+    "asset": 1578275261516,
+    "meta": 1578280456030,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00003.png"
   },
   "5dbdab49-6ffc-4d2e-b0ca-2204055842eb": {
-    "asset": 1574679555476,
-    "meta": 1574838349457,
+    "asset": 1578275261515,
+    "meta": 1578280455998,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00002.png"
   },
   "10d42e7d-5e88-4fe9-85d7-abeb3fc7e0d6": {
-    "asset": 1574679555587,
-    "meta": 1574838349504,
+    "asset": 1578275261518,
+    "meta": 1578280456037,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00004.png"
   },
   "d166e2bb-32a3-4ce4-9b11-b4dcdd889112": {
-    "asset": 1574679555639,
-    "meta": 1574838349508,
+    "asset": 1578275261519,
+    "meta": 1578280456078,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00005.png"
   },
   "14bb6958-ddb6-4912-9817-ff49672ef039": {
-    "asset": 1574679555699,
-    "meta": 1574838349555,
+    "asset": 1578275261520,
+    "meta": 1578280456068,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00006.png"
   },
   "061443c8-a80f-4415-a4b7-6146882d7244": {
-    "asset": 1574679555755,
-    "meta": 1574838349561,
+    "asset": 1578275261521,
+    "meta": 1578280456107,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00007.png"
   },
   "af619b6f-0fb1-444c-9e20-991039ad3c74": {
-    "asset": 1574679555798,
-    "meta": 1574838349609,
+    "asset": 1578275261522,
+    "meta": 1578280456114,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00008.png"
   },
   "10507f93-96d0-4a40-89cf-11cb3c4432f8": {
-    "asset": 1574679555839,
-    "meta": 1574838349615,
+    "asset": 1578275261523,
+    "meta": 1578280456151,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00009.png"
   },
   "ed80e9d3-45de-4ab4-8185-558dc12b5f44": {
-    "asset": 1574679555881,
-    "meta": 1574838349653,
+    "asset": 1578275261525,
+    "meta": 1578280456159,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00010.png"
   },
   "31b516f6-cbe0-4486-806a-bbac9d2a93de": {
-    "asset": 1574679555924,
-    "meta": 1574838349665,
+    "asset": 1578275261526,
+    "meta": 1578280456192,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00011.png"
   },
   "ce01e8ec-9a92-43ff-95ba-f8beb2037693": {
-    "asset": 1574679555965,
-    "meta": 1574838349701,
+    "asset": 1578275261527,
+    "meta": 1578280456200,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00012.png"
   },
   "c6e8a1b2-84a7-462f-b9e3-86c2f45a37d5": {
-    "asset": 1574679556006,
-    "meta": 1574838349710,
+    "asset": 1578275261528,
+    "meta": 1578280456238,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00013.png"
   },
   "f4d3f618-996c-4296-9738-dc6be9ce2cc0": {
-    "asset": 1574679556051,
-    "meta": 1574838349751,
+    "asset": 1578275261529,
+    "meta": 1578280456229,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00014.png"
   },
   "2517b68a-f858-4376-b153-5ae85c792acd": {
-    "asset": 1574679556094,
-    "meta": 1574838349757,
+    "asset": 1578275261530,
+    "meta": 1578280456272,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00015.png"
   },
   "39691a2a-7ef7-4af3-876f-083dd40289c1": {
-    "asset": 1574679556136,
-    "meta": 1574838349795,
+    "asset": 1578275261532,
+    "meta": 1578280456281,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00016.png"
   },
   "ad623863-a7e9-43c6-8cab-6f3e5ec86e71": {
-    "asset": 1574679556181,
-    "meta": 1574838349805,
+    "asset": 1578275261533,
+    "meta": 1578280456313,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00017.png"
   },
   "7f2cb6f5-77b7-42e9-9a90-fb0e7e9ad198": {
-    "asset": 1574679556222,
-    "meta": 1574838349841,
+    "asset": 1578275261534,
+    "meta": 1578280456321,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00018.png"
   },
   "03c83dc2-2210-47bf-a741-c57134ec4d1c": {
-    "asset": 1574679556268,
-    "meta": 1574838349862,
+    "asset": 1578275261535,
+    "meta": 1578280456354,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00019.png"
   },
   "6d80d27a-ac13-49b0-92b1-817008e823a7": {
-    "asset": 1574679556315,
-    "meta": 1574838349865,
+    "asset": 1578275261537,
+    "meta": 1578280456362,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00020.png"
   },
   "c1d321c8-aad2-4f39-9134-1b13ee4dc064": {
-    "asset": 1574679556356,
-    "meta": 1574838349921,
+    "asset": 1578275261538,
+    "meta": 1578280456394,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00021.png"
   },
   "00f42486-74f6-4cad-8d23-73b94cf0de0c": {
-    "asset": 1574679556399,
-    "meta": 1574838349926,
+    "asset": 1578275261539,
+    "meta": 1578280456403,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00022.png"
   },
   "895ec928-d00c-4aa3-a2f6-4c88389a70ef": {
-    "asset": 1574679556485,
-    "meta": 1574838349991,
+    "asset": 1578275261541,
+    "meta": 1578280456442,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00024.png"
   },
   "a1a4cb76-b931-457e-9108-479c9cef7153": {
-    "asset": 1574679556441,
-    "meta": 1574838349995,
+    "asset": 1578275261540,
+    "meta": 1578280456433,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00023.png"
   },
   "21caf9fd-923a-4218-b37d-17169b6237d7": {
-    "asset": 1574679556528,
-    "meta": 1574838350049,
+    "asset": 1578275261543,
+    "meta": 1578280456480,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00025.png"
   },
   "6eca1132-5167-482a-add3-d7c31a431b51": {
-    "asset": 1574679556569,
-    "meta": 1574838350054,
+    "asset": 1578275261544,
+    "meta": 1578280456472,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00026.png"
   },
   "2614feab-d182-4682-9388-a405270cdf80": {
-    "asset": 1574679556613,
-    "meta": 1574838350089,
+    "asset": 1578275261545,
+    "meta": 1578280456513,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00027.png"
   },
   "927f71b3-d19e-4e55-9116-9fec808d93be": {
-    "asset": 1574679556655,
-    "meta": 1574838350106,
+    "asset": 1578275261546,
+    "meta": 1578280456521,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00028.png"
   },
   "fdf358d5-c02b-42af-a874-1af3474efed0": {
-    "asset": 1574679556699,
-    "meta": 1574838350127,
+    "asset": 1578275261547,
+    "meta": 1578280456560,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00029.png"
   },
   "2feec8f1-fee7-45a2-8d71-c10e583eec89": {
-    "asset": 1574679556741,
-    "meta": 1574838350163,
+    "asset": 1578275261549,
+    "meta": 1578280456551,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00030.png"
   },
   "d908d3b9-a272-4be1-9686-3b69ee0bcd83": {
-    "asset": 1574679556784,
-    "meta": 1574838350180,
+    "asset": 1578275261550,
+    "meta": 1578280456589,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00031.png"
   },
   "9a22dac5-64da-4f30-b140-d15117b399f4": {
-    "asset": 1574679556830,
-    "meta": 1574838350213,
+    "asset": 1578275261551,
+    "meta": 1578280456598,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00032.png"
   },
   "05b6075e-a031-482e-bc2c-9cc506549339": {
-    "asset": 1574679556874,
-    "meta": 1574838350226,
+    "asset": 1578275261552,
+    "meta": 1578280456627,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00033.png"
   },
   "52d10006-c921-4034-a94f-b181453c5f35": {
-    "asset": 1574679556916,
-    "meta": 1574838350263,
+    "asset": 1578275261553,
+    "meta": 1578280456634,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00034.png"
   },
   "1e4bb605-9278-48be-a9bc-c577f49be95f": {
-    "asset": 1574679556963,
-    "meta": 1574838350280,
+    "asset": 1578275261554,
+    "meta": 1578280456674,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00035.png"
   },
   "b980df72-d56d-433f-b6d0-95be739b64e9": {
-    "asset": 1574679557004,
-    "meta": 1574838350313,
+    "asset": 1578275261556,
+    "meta": 1578280456667,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00036.png"
   },
   "01383a83-8877-440f-abe0-77515a678841": {
-    "asset": 1574679557047,
-    "meta": 1574838350333,
+    "asset": 1578275261557,
+    "meta": 1578280456712,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00037.png"
   },
   "87919698-a952-43b2-a741-725c888d2478": {
-    "asset": 1574679557097,
-    "meta": 1574838350366,
+    "asset": 1578275261558,
+    "meta": 1578280456704,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00038.png"
   },
   "607d0a69-ce8f-4e01-8b68-3bb2101a8123": {
-    "asset": 1574679557138,
-    "meta": 1574838350378,
+    "asset": 1578275261559,
+    "meta": 1578280456752,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00039.png"
   },
   "cdc978ac-200c-4626-bd23-710560279a9c": {
-    "asset": 1574679557184,
-    "meta": 1574838350410,
+    "asset": 1578275261560,
+    "meta": 1578280456744,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00040.png"
   },
   "363fa17d-d313-4fbd-92dc-cb8ef96c3927": {
-    "asset": 1574679557228,
-    "meta": 1574838350427,
+    "asset": 1578275261562,
+    "meta": 1578280456782,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00041.png"
   },
   "9e578bb5-7cb5-4f42-87a2-1d76839bb14d": {
-    "asset": 1574679557312,
-    "meta": 1574838350455,
+    "asset": 1578275261564,
+    "meta": 1578280456836,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00043.png"
   },
   "942b1818-bb10-4e20-b7a3-5d8a3b5e4863": {
-    "asset": 1574679557270,
-    "meta": 1574838350456,
+    "asset": 1578275261563,
+    "meta": 1578280456791,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00042.png"
   },
   "6c9c744a-5dc5-4ff3-9dec-bb285580f2ab": {
-    "asset": 1574679557403,
-    "meta": 1574838350505,
+    "asset": 1578275261566,
+    "meta": 1578280456868,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00045.png"
   },
   "ed39b3ec-67a1-4920-8ec0-33b38836b15c": {
-    "asset": 1574679557361,
-    "meta": 1574838350509,
+    "asset": 1578275261565,
+    "meta": 1578280456828,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00044.png"
   },
   "9520b87e-fed7-4d5f-b2ff-ba67b8b7d7cb": {
-    "asset": 1574679557446,
-    "meta": 1574838350546,
+    "asset": 1578275261568,
+    "meta": 1578280456876,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00046.png"
   },
   "c361cd1f-8e78-4b85-97b5-b51c15a2f309": {
-    "asset": 1574679557491,
-    "meta": 1574838350560,
+    "asset": 1578275261569,
+    "meta": 1578280456907,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00047.png"
   },
   "d0a25328-6365-4208-8821-340fe4b90216": {
-    "asset": 1574679557534,
-    "meta": 1574838350591,
+    "asset": 1578275261570,
+    "meta": 1578280456915,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00048.png"
   },
   "0389377c-7ff0-4018-8ea8-0c654f7fc2cb": {
-    "asset": 1574679557577,
-    "meta": 1574838350608,
+    "asset": 1578275261571,
+    "meta": 1578280456947,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00049.png"
   },
   "27bbd9fd-7594-4631-ba28-6985e50da659": {
-    "asset": 1574679557623,
-    "meta": 1574838350635,
+    "asset": 1578275261572,
+    "meta": 1578280456954,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00050.png"
   },
   "b6a27033-6068-4eb9-a7f2-52f08ac9d4fb": {
-    "asset": 1574679557668,
-    "meta": 1574838350657,
+    "asset": 1578275261574,
+    "meta": 1578280456985,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00051.png"
   },
   "0c5ddbd8-694d-49bb-a59c-ab8ddc71bb20": {
-    "asset": 1574679557712,
-    "meta": 1574838350679,
+    "asset": 1578275261575,
+    "meta": 1578280456993,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00052.png"
   },
   "d5d3de0c-4926-4226-91b7-d55eac175429": {
-    "asset": 1574679557754,
-    "meta": 1574838350703,
+    "asset": 1578275261576,
+    "meta": 1578280457024,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00053.png"
   },
   "53bccc39-7e04-41e0-8a65-f3d3ae6ab4f3": {
-    "asset": 1574679557796,
-    "meta": 1574838350727,
+    "asset": 1578275261577,
+    "meta": 1578280457031,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00054.png"
   },
   "2a9aefd1-4629-4d1d-8e3b-d36858c6429c": {
-    "asset": 1574679557839,
-    "meta": 1574838350744,
+    "asset": 1578275261578,
+    "meta": 1578280457071,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00055.png"
   },
   "ebfc38a5-2581-47bb-97d2-ec7e388f00aa": {
-    "asset": 1574679557884,
-    "meta": 1574838350771,
+    "asset": 1578275261579,
+    "meta": 1578280457062,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00056.png"
   },
   "8417492c-1674-4db9-8433-786532a470cd": {
-    "asset": 1574679557929,
-    "meta": 1574838350791,
+    "asset": 1578275261581,
+    "meta": 1578280457101,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00057.png"
   },
   "1c097e6f-05f3-406d-bbbb-7894eddb10eb": {
-    "asset": 1574679557973,
-    "meta": 1574838350811,
+    "asset": 1578275261582,
+    "meta": 1578280457109,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00058.png"
   },
   "62baef5b-c328-47f0-9fbd-90c9de4a3dd5": {
-    "asset": 1574679558017,
-    "meta": 1574838350847,
+    "asset": 1578275261583,
+    "meta": 1578280457149,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00059.png"
   },
   "d186ec56-de14-421a-b659-28d0616fa7e6": {
-    "asset": 1574679558060,
-    "meta": 1574838350857,
+    "asset": 1578275261584,
+    "meta": 1578280457141,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00060.png"
   },
   "8ebba3e1-3410-4d49-bdf8-64858cfa53e3": {
-    "asset": 1574679558106,
-    "meta": 1574838350894,
+    "asset": 1578275261585,
+    "meta": 1578280457180,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00061.png"
   },
   "d86a05e5-59bc-4580-822c-26a4058f12ea": {
-    "asset": 1574679558150,
-    "meta": 1574838350900,
+    "asset": 1578275261587,
+    "meta": 1578280457189,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00062.png"
   },
   "51ca4eca-569d-47e9-9246-c6d468355e96": {
-    "asset": 1574679558193,
-    "meta": 1574838350942,
+    "asset": 1578275261588,
+    "meta": 1578280457229,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00063.png"
   },
   "58194d62-19cc-46e0-af2e-76d17db560aa": {
-    "asset": 1574679558236,
-    "meta": 1574838350947,
+    "asset": 1578275261589,
+    "meta": 1578280457219,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00064.png"
   },
   "2297328e-f6b0-4004-ad4e-3f87b13842e5": {
-    "asset": 1574679558280,
-    "meta": 1574838350992,
+    "asset": 1578275261590,
+    "meta": 1578280457262,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00065.png"
   },
   "fcc4d10f-d783-4f20-9591-5357042c13ad": {
-    "asset": 1574679558322,
-    "meta": 1574838350995,
+    "asset": 1578275261591,
+    "meta": 1578280457270,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00066.png"
   },
   "fc353025-83fa-464e-b249-8bac0e52b016": {
-    "asset": 1574679558367,
-    "meta": 1574838351032,
+    "asset": 1578275261592,
+    "meta": 1578280457303,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00067.png"
   },
   "eb0bccfc-8ee2-4dbc-853c-3b656e6086d8": {
-    "asset": 1574679558413,
-    "meta": 1574838351042,
+    "asset": 1578275261594,
+    "meta": 1578280457311,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00068.png"
   },
   "59b707ce-9193-4ef1-a74e-c67b597ef9ec": {
-    "asset": 1574679558452,
-    "meta": 1574838351074,
+    "asset": 1578275261595,
+    "meta": 1578280457343,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00069.png"
   },
   "48ba62c0-be74-4cbe-a44b-fee2ef2e97f6": {
-    "asset": 1574679558496,
-    "meta": 1574838351084,
+    "asset": 1578275261596,
+    "meta": 1578280457351,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00070.png"
   },
   "8f9cd421-644f-4a6d-9cbb-89e8ebcc9e9f": {
-    "asset": 1574679558583,
-    "meta": 1574838351127,
+    "asset": 1578275261598,
+    "meta": 1578280457381,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00072.png"
   },
   "30354bc6-68c2-4105-9351-a3fb2c0f8e1a": {
-    "asset": 1574679558538,
-    "meta": 1574838351132,
+    "asset": 1578275261597,
+    "meta": 1578280457389,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00071.png"
   },
   "83c71bdb-87c9-4dfd-ae9a-9da4ed6fd835": {
-    "asset": 1574679558626,
-    "meta": 1574838351192,
+    "asset": 1578275261600,
+    "meta": 1578280457419,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00073.png"
   },
   "4cf6ce91-432c-4596-99c3-0ef13d911adf": {
-    "asset": 1574679558670,
-    "meta": 1574838351196,
+    "asset": 1578275261601,
+    "meta": 1578280457427,
     "relativePath": "resources\\Altas\\little\\ebet3dBall\\ebet3dxq_00074.png"
   },
   "415415a0-6a24-4d35-a53e-d1068bbaa586": {
-    "asset": 1574837892657,
-    "meta": 1574837892582,
+    "asset": 1578275261512,
+    "meta": 1578275261211,
     "relativePath": "resources\\Altas\\little\\ebet"
   },
   "27cc43c2-296e-4a66-b7d3-4c6d059c7e6a": {
-    "asset": 1574402028790,
-    "meta": 1574838362121,
+    "asset": 1578275261212,
+    "meta": 1578280445414,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00000.png"
   },
   "0231ed8d-b0da-4312-98b9-52827bee440a": {
-    "asset": 1574402029362,
-    "meta": 1574838362167,
+    "asset": 1578275261213,
+    "meta": 1578280445458,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00001.png"
   },
   "efdebe7d-33c9-460d-8c3a-a1b7857cd307": {
-    "asset": 1574402029965,
-    "meta": 1574838362245,
+    "asset": 1578275261214,
+    "meta": 1578280445498,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00002.png"
   },
   "783f5051-31ac-4ad3-8fe0-4f3e680ad381": {
-    "asset": 1574402030579,
-    "meta": 1574838362297,
+    "asset": 1578275261215,
+    "meta": 1578280445549,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00003.png"
   },
   "87edff49-2ca2-458c-9680-ed322447549a": {
-    "asset": 1574402031193,
-    "meta": 1574838362371,
+    "asset": 1578275261216,
+    "meta": 1578280445598,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00004.png"
   },
   "46a35d9c-db6d-4957-ab0c-fc83af9028a4": {
-    "asset": 1574402031807,
-    "meta": 1574838362404,
+    "asset": 1578275261217,
+    "meta": 1578280445632,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00005.png"
   },
   "97c0db11-bf3f-4b9a-8bf2-799cc80104f4": {
-    "asset": 1574402032424,
-    "meta": 1574838362483,
+    "asset": 1578275261218,
+    "meta": 1578280445686,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00006.png"
   },
   "9c9b9207-18cf-4c7f-9f08-91d53c964b79": {
-    "asset": 1574402033040,
-    "meta": 1574838362508,
+    "asset": 1578275261219,
+    "meta": 1578280445721,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00007.png"
   },
   "2f7c59a7-a79f-429e-85cc-ca6815760878": {
-    "asset": 1574402033657,
-    "meta": 1574838362617,
+    "asset": 1578275261221,
+    "meta": 1578280445772,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00008.png"
   },
   "163cad7e-86de-4550-a24a-8e5cce8d8623": {
-    "asset": 1574402034264,
-    "meta": 1574838362642,
+    "asset": 1578275261222,
+    "meta": 1578280445806,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00009.png"
   },
   "bb19ff0b-5f42-4603-bed5-e07286f125f2": {
-    "asset": 1574402034878,
-    "meta": 1574838362752,
+    "asset": 1578275261223,
+    "meta": 1578280445856,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00010.png"
   },
   "de284465-0c5e-4a5d-9eb2-f875a0e517c2": {
-    "asset": 1574402035492,
-    "meta": 1574838362776,
+    "asset": 1578275261224,
+    "meta": 1578280445890,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00011.png"
   },
   "a988c10b-7796-40c6-99b1-338a73cdeea3": {
-    "asset": 1574402037863,
-    "meta": 1574838362884,
+    "asset": 1578275261226,
+    "meta": 1578280445973,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00013.png"
   },
   "71f47137-0bcc-461a-9586-20b3c760a65a": {
-    "asset": 1574402037231,
-    "meta": 1574838362909,
+    "asset": 1578275261225,
+    "meta": 1578280445938,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00012.png"
   },
   "1e3c3867-9f0f-4f78-ae05-068e15930087": {
-    "asset": 1574402038474,
-    "meta": 1574838363020,
+    "asset": 1578275261228,
+    "meta": 1578280446021,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00014.png"
   },
   "0e69f005-88d4-4913-853a-48da1df59dfa": {
-    "asset": 1574402039079,
-    "meta": 1574838363045,
+    "asset": 1578275261229,
+    "meta": 1578280446058,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00015.png"
   },
   "7cdef878-ce6c-46bb-b64e-b5510240911d": {
-    "asset": 1574402039692,
-    "meta": 1574838363161,
+    "asset": 1578275261231,
+    "meta": 1578280446106,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00016.png"
   },
   "299527ed-e7da-46a1-9f96-8d9953fc2693": {
-    "asset": 1574402040293,
-    "meta": 1574838363184,
+    "asset": 1578275261232,
+    "meta": 1578280446141,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00017.png"
   },
   "ac08d17f-86c9-4bb3-b01d-d873896a530a": {
-    "asset": 1574402040907,
-    "meta": 1574838363293,
+    "asset": 1578275261233,
+    "meta": 1578280446190,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00018.png"
   },
   "f3dc6789-187f-46f5-b349-422cbdbe5d85": {
-    "asset": 1574402041512,
-    "meta": 1574838363317,
+    "asset": 1578275261233,
+    "meta": 1578280446226,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00019.png"
   },
   "456f328d-7f96-4c48-b366-dc85ddfddd4c": {
-    "asset": 1574402042761,
-    "meta": 1574838363424,
+    "asset": 1578275261236,
+    "meta": 1578280446309,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00021.png"
   },
   "da51c059-0ae1-4f82-93c2-84ee639d7c96": {
-    "asset": 1574402042128,
-    "meta": 1574838363448,
+    "asset": 1578275261235,
+    "meta": 1578280446274,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00020.png"
   },
   "4469ab99-87d3-4430-8d28-81a4e65016fa": {
-    "asset": 1574402043376,
-    "meta": 1574838363558,
+    "asset": 1578275261237,
+    "meta": 1578280446357,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00022.png"
   },
   "77ee2fda-fb71-411d-a473-074d42e4b489": {
-    "asset": 1574402044009,
-    "meta": 1574838363582,
+    "asset": 1578275261238,
+    "meta": 1578280446394,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00023.png"
   },
   "8210929d-dfeb-407a-90da-bde61a9845f7": {
-    "asset": 1574402044631,
-    "meta": 1574838363693,
+    "asset": 1578275261239,
+    "meta": 1578280446442,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00024.png"
   },
   "48ed583a-452a-446e-b527-833c2cc465cf": {
-    "asset": 1574402045290,
-    "meta": 1574838363719,
+    "asset": 1578275261241,
+    "meta": 1578280446479,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00025.png"
   },
   "a4a6bd1b-bc1f-4fad-8705-2ea00c74397f": {
-    "asset": 1574402045859,
-    "meta": 1574838363829,
+    "asset": 1578275261242,
+    "meta": 1578280446526,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00026.png"
   },
   "8cb9eea6-b2f8-4207-8fc5-cca0cbc92a7c": {
-    "asset": 1574402046421,
-    "meta": 1574838363855,
+    "asset": 1578275261243,
+    "meta": 1578280446563,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00027.png"
   },
   "1c3fa5b1-cf76-47ac-b2a7-1e80402a6700": {
-    "asset": 1574402047545,
-    "meta": 1574838363967,
+    "asset": 1578275261245,
+    "meta": 1578280446645,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00029.png"
   },
   "7c2a4b62-95fb-45de-8d2a-66f03e1033aa": {
-    "asset": 1574402046984,
-    "meta": 1574838363992,
+    "asset": 1578275261244,
+    "meta": 1578280446610,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00028.png"
   },
   "ff2854c0-3c80-43c1-99df-8107a8d409c1": {
-    "asset": 1574402048112,
-    "meta": 1574838364130,
+    "asset": 1578275261247,
+    "meta": 1578280446693,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00030.png"
   },
   "ceb098ec-2c73-45bb-9cdf-e360645af6b7": {
-    "asset": 1574402048675,
-    "meta": 1574838364131,
+    "asset": 1578275261248,
+    "meta": 1578280446728,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00031.png"
   },
   "bb8d79fc-5f27-4886-ac73-69faf0b1626d": {
-    "asset": 1574402049268,
-    "meta": 1574838364242,
+    "asset": 1578275261249,
+    "meta": 1578280446775,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00032.png"
   },
   "39e4b88a-f23f-4de0-a676-8df9d5eec9bc": {
-    "asset": 1574402049878,
-    "meta": 1574838364269,
+    "asset": 1578275261250,
+    "meta": 1578280446810,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00033.png"
   },
   "a09cf1c3-3233-452c-92ae-24240022a52d": {
-    "asset": 1574402050477,
-    "meta": 1574838364387,
+    "asset": 1578275261251,
+    "meta": 1578280446860,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00034.png"
   },
   "8249f078-94e2-409d-b9e8-2ee44ff69589": {
-    "asset": 1574402051080,
-    "meta": 1574838364418,
+    "asset": 1578275261253,
+    "meta": 1578280446895,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00035.png"
   },
   "7982f366-6b0c-451d-96a3-a60d6546d389": {
-    "asset": 1574402052292,
-    "meta": 1574838364539,
+    "asset": 1578275261255,
+    "meta": 1578280446977,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00037.png"
   },
   "63f13013-52ee-4a8c-8842-81e03c32d33d": {
-    "asset": 1574402051687,
-    "meta": 1574838364565,
+    "asset": 1578275261254,
+    "meta": 1578280446941,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00036.png"
   },
   "b02c3251-33c2-4bad-b37e-d8f627f3ccd3": {
-    "asset": 1574402052908,
-    "meta": 1574838364675,
+    "asset": 1578275261256,
+    "meta": 1578280447025,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00038.png"
   },
   "7f4df679-0f24-4fd8-9dec-36ad95184aaa": {
-    "asset": 1574402053531,
-    "meta": 1574838364703,
+    "asset": 1578275261257,
+    "meta": 1578280447059,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00039.png"
   },
   "f9d06548-514c-443c-9214-879435a046bc": {
-    "asset": 1574402054143,
-    "meta": 1574838364816,
+    "asset": 1578275261258,
+    "meta": 1578280447107,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00040.png"
   },
   "33f2a905-d1a8-44f8-ada2-f79a44d911e4": {
-    "asset": 1574402054759,
-    "meta": 1574838364843,
+    "asset": 1578275261260,
+    "meta": 1578280447142,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00041.png"
   },
   "60ccba20-0592-4ba0-890c-5ce1a8bebc0f": {
-    "asset": 1574402055981,
-    "meta": 1574838364955,
+    "asset": 1578275261262,
+    "meta": 1578280447226,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00043.png"
   },
   "1a0ef431-9d3b-4fa5-870a-bf469340b5a3": {
-    "asset": 1574402055413,
-    "meta": 1574838364980,
+    "asset": 1578275261261,
+    "meta": 1578280447193,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00042.png"
   },
   "bf8cdf43-2f0e-4a85-a54f-798eeaec08d3": {
-    "asset": 1574402056535,
-    "meta": 1574838365094,
+    "asset": 1578275261263,
+    "meta": 1578280447277,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00044.png"
   },
   "c7bb6561-3319-4888-80a5-4f5bd98ea797": {
-    "asset": 1574402057092,
-    "meta": 1574838365128,
+    "asset": 1578275261264,
+    "meta": 1578280447310,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00045.png"
   },
   "a4696ac5-78ac-495c-968b-712925e47157": {
-    "asset": 1574402058209,
-    "meta": 1574838365257,
+    "asset": 1578275261267,
+    "meta": 1578280447393,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00047.png"
   },
   "243d05bb-88b1-4c67-b6b9-9f499129f903": {
-    "asset": 1574402057653,
-    "meta": 1574838365284,
+    "asset": 1578275261265,
+    "meta": 1578280447361,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00046.png"
   },
   "510c3ba7-8415-4cc4-bbaa-951864f28b50": {
-    "asset": 1574402058763,
-    "meta": 1574838365392,
+    "asset": 1578275261268,
+    "meta": 1578280447445,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00048.png"
   },
   "a48ac91b-f606-4fc5-b438-26d31c3158eb": {
-    "asset": 1574402059320,
-    "meta": 1574838365418,
+    "asset": 1578275261269,
+    "meta": 1578280447477,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00049.png"
   },
   "f819e371-5020-44c2-908f-6177e7282e0f": {
-    "asset": 1574402059874,
-    "meta": 1574838365527,
+    "asset": 1578275261270,
+    "meta": 1578280447527,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00050.png"
   },
   "a7727563-6638-421c-b544-7fead425d215": {
-    "asset": 1574402060428,
-    "meta": 1574838365554,
+    "asset": 1578275261271,
+    "meta": 1578280447561,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00051.png"
   },
   "a8163aad-9416-4fda-90d4-71009c335cfc": {
-    "asset": 1574402060991,
-    "meta": 1574838365673,
+    "asset": 1578275261273,
+    "meta": 1578280447611,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00052.png"
   },
   "f3bba8c9-c6c5-4550-80a7-e3aeab970229": {
-    "asset": 1574402061545,
-    "meta": 1574838365697,
+    "asset": 1578275261274,
+    "meta": 1578280447646,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00053.png"
   },
   "f8cfafb5-5d99-42d0-96f6-2ebe7b4e9e5f": {
-    "asset": 1574402062657,
-    "meta": 1574838365802,
+    "asset": 1578275261276,
+    "meta": 1578280447730,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00055.png"
   },
   "e85fe37c-ac8e-47aa-99c4-0e9ac67d103e": {
-    "asset": 1574402062101,
-    "meta": 1574838365828,
+    "asset": 1578275261275,
+    "meta": 1578280447694,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00054.png"
   },
   "fdc3d142-a077-470d-bfc7-8912f6e0a7d7": {
-    "asset": 1574402063211,
-    "meta": 1574838365943,
+    "asset": 1578275261277,
+    "meta": 1578280447779,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00056.png"
   },
   "fb56d5fb-442d-435b-9a11-2ea8cb244471": {
-    "asset": 1574402063767,
-    "meta": 1574838365970,
+    "asset": 1578275261278,
+    "meta": 1578280447818,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00057.png"
   },
   "adf24d44-9a39-4506-98a3-50fc0ab7abc5": {
-    "asset": 1574402064880,
-    "meta": 1574838366081,
+    "asset": 1578275261281,
+    "meta": 1578280447909,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00059.png"
   },
   "96360d5a-ad68-46cc-99e5-56d5b26f00f7": {
-    "asset": 1574402064323,
-    "meta": 1574838366107,
+    "asset": 1578275261280,
+    "meta": 1578280447869,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00058.png"
   },
   "fa4bda38-2efc-402e-946f-f351254778c6": {
-    "asset": 1574402065439,
-    "meta": 1574838366217,
+    "asset": 1578275261282,
+    "meta": 1578280447952,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00060.png"
   },
   "02575d77-c378-4c5c-8715-2cd33d3d0171": {
-    "asset": 1574402065993,
-    "meta": 1574838366242,
+    "asset": 1578275261283,
+    "meta": 1578280447995,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00061.png"
   },
   "c24983af-7751-4ad6-8586-e248d90c7ee9": {
-    "asset": 1574402067098,
-    "meta": 1574838366349,
+    "asset": 1578275261285,
+    "meta": 1578280448078,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00063.png"
   },
   "e30e8917-55ae-4b10-9912-06cc22486b1b": {
-    "asset": 1574402066544,
-    "meta": 1574838366376,
+    "asset": 1578275261284,
+    "meta": 1578280448038,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00062.png"
   },
   "2a043fbe-6eab-477b-aab6-67dc8a6328eb": {
-    "asset": 1574402067658,
-    "meta": 1574838366484,
+    "asset": 1578275261287,
+    "meta": 1578280448120,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00064.png"
   },
   "56ce99d2-8f1b-4c59-83a5-cab9854d61fe": {
-    "asset": 1574402068213,
-    "meta": 1574838366510,
+    "asset": 1578275261288,
+    "meta": 1578280448161,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00065.png"
   },
   "c863eb2d-230a-44fe-a834-cb3ac20c51d5": {
-    "asset": 1574402069323,
-    "meta": 1574838366623,
+    "asset": 1578275261289,
+    "meta": 1578280448204,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00066.png"
   },
   "bfee7087-420c-47fc-9bc9-166478583f67": {
-    "asset": 1574402070465,
-    "meta": 1574838366647,
+    "asset": 1578275261290,
+    "meta": 1578280448242,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00067.png"
   },
   "0c371350-d157-4e9e-90bc-146dc0165d27": {
-    "asset": 1574402072780,
-    "meta": 1574838366752,
+    "asset": 1578275261293,
+    "meta": 1578280448323,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00069.png"
   },
   "a153c903-db05-4017-8b2c-b060443ad43a": {
-    "asset": 1574402071636,
-    "meta": 1574838366775,
+    "asset": 1578275261291,
+    "meta": 1578280448286,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00068.png"
   },
   "36059197-1fb5-477f-bcba-05780699220b": {
-    "asset": 1574402075039,
-    "meta": 1574838366886,
+    "asset": 1578275261296,
+    "meta": 1578280448406,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00071.png"
   },
   "50148dfb-25f0-4b0d-b9cf-e1a894988557": {
-    "asset": 1574402073931,
-    "meta": 1574838366913,
+    "asset": 1578275261294,
+    "meta": 1578280448370,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00070.png"
   },
   "7bfb617f-1946-4373-b44d-76d0a4aa0952": {
-    "asset": 1574402076171,
-    "meta": 1574838367063,
+    "asset": 1578275261297,
+    "meta": 1578280448454,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00072.png"
   },
   "598c8b63-c9c2-40ae-953d-2003a7f62d34": {
-    "asset": 1574402077289,
-    "meta": 1574838367064,
+    "asset": 1578275261298,
+    "meta": 1578280448489,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00073.png"
   },
   "f39f2abb-69e5-4e31-a351-39205394c917": {
-    "asset": 1574402078415,
-    "meta": 1574838367194,
+    "asset": 1578275261300,
+    "meta": 1578280448540,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00074.png"
   },
   "d124d719-87c0-44b8-9e43-a1d25ebc1c73": {
-    "asset": 1574402079552,
-    "meta": 1574838367220,
+    "asset": 1578275261301,
+    "meta": 1578280448573,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00075.png"
   },
   "fff65eea-c1dd-4dc2-bb79-49ab59894147": {
-    "asset": 1574402081820,
-    "meta": 1574838367329,
+    "asset": 1578275261304,
+    "meta": 1578280448658,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00077.png"
   },
   "490a89fc-42db-403a-bc59-13d8096db4f2": {
-    "asset": 1574402080679,
-    "meta": 1574838367354,
+    "asset": 1578275261302,
+    "meta": 1578280448624,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00076.png"
   },
   "02d101b1-ea51-4025-98e8-4eaf7f196f2b": {
-    "asset": 1574402084064,
-    "meta": 1574838367498,
+    "asset": 1578275261306,
+    "meta": 1578280448739,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00079.png"
   },
   "fc2fc572-7159-4163-809a-69451bb143de": {
-    "asset": 1574402082945,
-    "meta": 1574838367524,
+    "asset": 1578275261305,
+    "meta": 1578280448707,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00078.png"
   },
   "303359c3-2236-4a9f-b0ea-80edadfab7d1": {
-    "asset": 1574402085179,
-    "meta": 1574838367640,
+    "asset": 1578275261308,
+    "meta": 1578280448790,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00080.png"
   },
   "49d6c33d-bc62-4a91-84dd-22b1ac9d606c": {
-    "asset": 1574402086289,
-    "meta": 1574838367664,
+    "asset": 1578275261309,
+    "meta": 1578280448822,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00081.png"
   },
   "44256bf2-6392-41f2-812c-6a96b9f8a704": {
-    "asset": 1574402087408,
-    "meta": 1574838367788,
+    "asset": 1578275261311,
+    "meta": 1578280448874,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00082.png"
   },
   "67ae8425-21c9-4de4-840c-8d17a119123f": {
-    "asset": 1574402088563,
-    "meta": 1574838367813,
+    "asset": 1578275261312,
+    "meta": 1578280448905,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00083.png"
   },
   "a49e634b-f636-45eb-a368-7939ef297df0": {
-    "asset": 1574402090800,
-    "meta": 1574838367924,
+    "asset": 1578275261315,
+    "meta": 1578280448988,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00085.png"
   },
   "8c2d21cd-c074-4c5e-a2b1-781ee43283bd": {
-    "asset": 1574402089684,
-    "meta": 1574838367947,
+    "asset": 1578275261313,
+    "meta": 1578280448957,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00084.png"
   },
   "58d9f34c-4536-4ee2-a6d6-345bf830842a": {
-    "asset": 1574402091929,
-    "meta": 1574838368056,
+    "asset": 1578275261316,
+    "meta": 1578280449041,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00086.png"
   },
   "7338bfb5-9e0b-4be9-b275-99fbb14fa0a8": {
-    "asset": 1574402093078,
-    "meta": 1574838368081,
+    "asset": 1578275261317,
+    "meta": 1578280449071,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00087.png"
   },
   "5af1e52e-51c4-4151-8ed8-ca302771d29b": {
-    "asset": 1574402094205,
-    "meta": 1574838368195,
+    "asset": 1578275261319,
+    "meta": 1578280449121,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00088.png"
   },
   "272f0cd5-e762-4f0e-820b-4928dff7dd53": {
-    "asset": 1574402095311,
-    "meta": 1574838368219,
+    "asset": 1578275261320,
+    "meta": 1578280449154,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00089.png"
   },
   "590e0230-ce98-49e9-9bec-17ae0938528b": {
-    "asset": 1574402097559,
-    "meta": 1574838368339,
+    "asset": 1578275261323,
+    "meta": 1578280449235,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00091.png"
   },
   "bdeb4a7c-2333-4fe0-919e-e25e4e7819ae": {
-    "asset": 1574402096443,
-    "meta": 1574838368366,
+    "asset": 1578275261321,
+    "meta": 1578280449203,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00090.png"
   },
   "ebab8047-2787-4bc1-9030-0478f88eb9fd": {
-    "asset": 1574402099860,
-    "meta": 1574838368492,
+    "asset": 1578275261326,
+    "meta": 1578280449318,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00093.png"
   },
   "f5a0f48e-c32a-4284-af06-c76eaebe9965": {
-    "asset": 1574402098703,
-    "meta": 1574838368517,
+    "asset": 1578275261325,
+    "meta": 1578280449286,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00092.png"
   },
   "072495f5-ae02-46ef-bf22-112764a35792": {
-    "asset": 1574402101034,
-    "meta": 1574838368632,
+    "asset": 1578275261327,
+    "meta": 1578280449367,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00094.png"
   },
   "04142d60-9685-456e-88d5-e85d34e95b40": {
-    "asset": 1574402102240,
-    "meta": 1574838368658,
+    "asset": 1578275261328,
+    "meta": 1578280449399,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00095.png"
   },
   "ae8b4050-c7bf-4927-8aad-43407aad223a": {
-    "asset": 1574402103479,
-    "meta": 1574838368771,
+    "asset": 1578275261330,
+    "meta": 1578280449450,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00096.png"
   },
   "7a65ece7-1f37-4091-9b28-fdcd70bdab2f": {
-    "asset": 1574402104680,
-    "meta": 1574838368798,
+    "asset": 1578275261331,
+    "meta": 1578280449484,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00097.png"
   },
   "24acb4b3-b45a-485b-8328-73aae6d951e9": {
-    "asset": 1574402105943,
-    "meta": 1574838368910,
+    "asset": 1578275261332,
+    "meta": 1578280449533,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00098.png"
   },
   "c512e11d-a14f-44ed-9db9-f5b2720aa941": {
-    "asset": 1574402107178,
-    "meta": 1574838368937,
+    "asset": 1578275261333,
+    "meta": 1578280449569,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00099.png"
   },
   "74f7fbb5-dd0e-4aa6-b1a1-20e8f3992dc8": {
-    "asset": 1574402108378,
-    "meta": 1574838369051,
+    "asset": 1578275261334,
+    "meta": 1578280449618,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00100.png"
   },
   "adfb8961-31f2-4601-bca7-833f3ff64b7c": {
-    "asset": 1574402109588,
-    "meta": 1574838369080,
+    "asset": 1578275261335,
+    "meta": 1578280449653,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00101.png"
   },
   "341d1925-f2a1-44ea-8155-d1d069e81c0a": {
-    "asset": 1574402110794,
-    "meta": 1574838369189,
+    "asset": 1578275261337,
+    "meta": 1578280449704,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00102.png"
   },
   "bd632baf-1033-4591-8d50-c9c54f86e0cc": {
-    "asset": 1574402111404,
-    "meta": 1574838369216,
+    "asset": 1578275261338,
+    "meta": 1578280449739,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00103.png"
   },
   "47154d1c-97ff-41cf-aa94-1e6c821ac954": {
-    "asset": 1574402112637,
-    "meta": 1574838369364,
+    "asset": 1578275261340,
+    "meta": 1578280449824,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00105.png"
   },
   "708d47cc-fec4-458e-b149-834e20742458": {
-    "asset": 1574402112022,
-    "meta": 1574838369365,
+    "asset": 1578275261339,
+    "meta": 1578280449791,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00104.png"
   },
   "1f967569-ed59-42a4-b948-316cae487bbf": {
-    "asset": 1574402113855,
-    "meta": 1574838369478,
+    "asset": 1578275261343,
+    "meta": 1578280449907,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00107.png"
   },
   "d7ca4498-1747-4d39-9bf6-de647a79c787": {
-    "asset": 1574402113246,
-    "meta": 1574838369502,
+    "asset": 1578275261341,
+    "meta": 1578280449876,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00106.png"
   },
   "20329161-3bff-438a-a0f1-8eadf8198b80": {
-    "asset": 1574402114462,
-    "meta": 1574838369611,
+    "asset": 1578275261344,
+    "meta": 1578280449960,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00108.png"
   },
   "e87d281f-d149-45d3-888f-02990e9f31d7": {
-    "asset": 1574402115075,
-    "meta": 1574838369636,
+    "asset": 1578275261345,
+    "meta": 1578280449999,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00109.png"
   },
   "e534307f-80ce-4a74-b393-90082eb745ab": {
-    "asset": 1574402115689,
-    "meta": 1574838369744,
+    "asset": 1578275261346,
+    "meta": 1578280450047,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00110.png"
   },
   "ca3d9122-cf9a-46eb-ac69-3f408a79f091": {
-    "asset": 1574402116291,
-    "meta": 1574838369771,
+    "asset": 1578275261347,
+    "meta": 1578280450085,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00111.png"
   },
   "07231166-ca3f-47e1-8280-07a7b76ed05f": {
-    "asset": 1574402117521,
-    "meta": 1574838369883,
+    "asset": 1578275261350,
+    "meta": 1578280450169,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00113.png"
   },
   "29602248-7d98-47a5-9af6-79331d413296": {
-    "asset": 1574402116909,
-    "meta": 1574838369982,
+    "asset": 1578275261348,
+    "meta": 1578280450131,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00112.png"
   },
   "f1dddb9b-9d4d-48b9-9696-60f15ea62b45": {
-    "asset": 1574402118127,
-    "meta": 1574838370086,
+    "asset": 1578275261351,
+    "meta": 1578280450217,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00114.png"
   },
   "b7d1cc3e-1018-483d-a643-a13f0b45218b": {
-    "asset": 1574402118739,
-    "meta": 1574838370112,
+    "asset": 1578275261352,
+    "meta": 1578280450254,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00115.png"
   },
   "bbb29704-c729-475a-9825-2a3fc5ad300d": {
-    "asset": 1574402119954,
-    "meta": 1574838370226,
+    "asset": 1578275261354,
+    "meta": 1578280450337,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00117.png"
   },
   "59bea53d-9335-4eea-889f-c9b2993ea851": {
-    "asset": 1574402119341,
-    "meta": 1574838370251,
+    "asset": 1578275261353,
+    "meta": 1578280450302,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00116.png"
   },
   "d491437c-266b-4083-b9f3-0dceade66fe5": {
-    "asset": 1574402121176,
-    "meta": 1574838370364,
+    "asset": 1578275261357,
+    "meta": 1578280450422,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00119.png"
   },
   "0849fe9f-8091-4463-9a0a-5fe6ec323628": {
-    "asset": 1574402120558,
-    "meta": 1574838370391,
+    "asset": 1578275261355,
+    "meta": 1578280450386,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00118.png"
   },
   "02f5219c-ef27-44f8-a769-373fc5b05a2e": {
-    "asset": 1574402122404,
-    "meta": 1574838370505,
+    "asset": 1578275261359,
+    "meta": 1578280450506,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00121.png"
   },
   "9d2f8bff-7b59-482e-9397-078fe5dee4a9": {
-    "asset": 1574402121789,
-    "meta": 1574838370533,
+    "asset": 1578275261358,
+    "meta": 1578280450469,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00120.png"
   },
   "0e801559-b098-47e7-b438-d75e22f0b888": {
-    "asset": 1574402123023,
-    "meta": 1574838370648,
+    "asset": 1578275261360,
+    "meta": 1578280450554,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00122.png"
   },
   "87656c21-a5bf-4a90-ae91-0142c880bd56": {
-    "asset": 1574402123639,
-    "meta": 1574838370674,
+    "asset": 1578275261361,
+    "meta": 1578280450591,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00123.png"
   },
   "b9aa9a2b-4696-435c-b8a5-ec3dc9b657cf": {
-    "asset": 1574402124858,
-    "meta": 1574838370991,
+    "asset": 1578275261364,
+    "meta": 1578280450673,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00125.png"
   },
   "e44090d4-46dc-4464-929a-38d5f090a9b0": {
-    "asset": 1574402124246,
-    "meta": 1574838370991,
+    "asset": 1578275261363,
+    "meta": 1578280450636,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00124.png"
   },
   "5324a2e8-2f93-4b76-a097-78318c19b783": {
-    "asset": 1574402125503,
-    "meta": 1574838371109,
+    "asset": 1578275261365,
+    "meta": 1578280450720,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00126.png"
   },
   "6a34d76e-cb3d-4a56-a0c4-541d13f8194c": {
-    "asset": 1574402126123,
-    "meta": 1574838371134,
+    "asset": 1578275261366,
+    "meta": 1578280450756,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00127.png"
   },
   "d0ef3b4e-229b-4528-a144-0ad80dab91d8": {
-    "asset": 1574402127342,
-    "meta": 1574838371243,
+    "asset": 1578275261369,
+    "meta": 1578280450842,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00129.png"
   },
   "0f9ce096-88cf-4cb2-acd5-95d33af86ac2": {
-    "asset": 1574402126743,
-    "meta": 1574838371269,
+    "asset": 1578275261367,
+    "meta": 1578280450804,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00128.png"
   },
   "fa48427d-85d7-482b-ba74-2386e85a414d": {
-    "asset": 1574402128561,
-    "meta": 1574838371381,
+    "asset": 1578275261371,
+    "meta": 1578280450926,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00131.png"
   },
   "c0091f75-2817-4526-90c7-723d2ba605e4": {
-    "asset": 1574402127946,
-    "meta": 1574838371406,
+    "asset": 1578275261370,
+    "meta": 1578280450889,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00130.png"
   },
   "8d784c19-bf15-4b95-8887-303f818486fd": {
-    "asset": 1574402129181,
-    "meta": 1574838371512,
+    "asset": 1578275261372,
+    "meta": 1578280450974,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00132.png"
   },
   "fe0c4a18-b9ef-46a1-a2bc-8744b4465a4e": {
-    "asset": 1574402129791,
-    "meta": 1574838371537,
+    "asset": 1578275261373,
+    "meta": 1578280451011,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00133.png"
   },
   "66dc8c98-8e9a-4781-933b-d632df334943": {
-    "asset": 1574402130429,
-    "meta": 1574838371649,
+    "asset": 1578275261374,
+    "meta": 1578280451058,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00134.png"
   },
   "720f699d-be07-4056-8b31-6482a528f221": {
-    "asset": 1574402131042,
-    "meta": 1574838371675,
+    "asset": 1578275261376,
+    "meta": 1578280451095,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00135.png"
   },
   "17b4b617-277b-45c5-965d-ef5748a99668": {
-    "asset": 1574402132270,
-    "meta": 1574838371792,
+    "asset": 1578275261378,
+    "meta": 1578280451180,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00137.png"
   },
   "52a28b8f-8979-48c0-be5d-9dfaca46149a": {
-    "asset": 1574402131658,
-    "meta": 1574838371818,
+    "asset": 1578275261377,
+    "meta": 1578280451141,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00136.png"
   },
   "a8f45f23-a783-4e73-a3fb-c00549babb11": {
-    "asset": 1574402132889,
-    "meta": 1574838371929,
+    "asset": 1578275261379,
+    "meta": 1578280451227,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00138.png"
   },
   "98aa5d54-8f8c-4b10-aac8-7d61c05051c7": {
-    "asset": 1574402133506,
-    "meta": 1574838371953,
+    "asset": 1578275261380,
+    "meta": 1578280451265,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00139.png"
   },
   "bedf9516-a563-449d-bb6d-12c56dfe1965": {
-    "asset": 1574402134110,
-    "meta": 1574838372063,
+    "asset": 1578275261381,
+    "meta": 1578280451312,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00140.png"
   },
   "577f54be-a006-41f5-9750-9104058ef7ca": {
-    "asset": 1574402134720,
-    "meta": 1574838372089,
+    "asset": 1578275261383,
+    "meta": 1578280451349,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00141.png"
   },
   "65d8fdd3-8bee-435d-9440-6a5c79b1fba1": {
-    "asset": 1574402135324,
-    "meta": 1574838372201,
+    "asset": 1578275261384,
+    "meta": 1578280451397,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00142.png"
   },
   "951bd1ad-2ce0-41e1-8024-a469408d8d99": {
-    "asset": 1574402135940,
-    "meta": 1574838372225,
+    "asset": 1578275261385,
+    "meta": 1578280451433,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00143.png"
   },
   "5e0459d9-5fda-4e50-9a82-2e47751cab72": {
-    "asset": 1574402136542,
-    "meta": 1574838372329,
+    "asset": 1578275261386,
+    "meta": 1578280451482,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00144.png"
   },
   "8485446f-bf3b-4f5f-a499-77a6f9a0218b": {
-    "asset": 1574402137156,
-    "meta": 1574838372355,
+    "asset": 1578275261387,
+    "meta": 1578280451518,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00145.png"
   },
   "318cd5b2-9402-485e-86e3-cefd23b5f35e": {
-    "asset": 1574402137760,
-    "meta": 1574838372461,
+    "asset": 1578275261389,
+    "meta": 1578280451565,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00146.png"
   },
   "da147626-b364-4b5d-84a5-5d82bd399ac8": {
-    "asset": 1574402138375,
-    "meta": 1574838372485,
+    "asset": 1578275261390,
+    "meta": 1578280451603,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00147.png"
   },
   "a025ef22-2444-42e2-b29b-1f66a2dea4a9": {
-    "asset": 1574402138990,
-    "meta": 1574838372596,
+    "asset": 1578275261391,
+    "meta": 1578280451649,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00148.png"
   },
   "0126a25c-1dca-4e4b-b19f-d8a1f2499954": {
-    "asset": 1574402139594,
-    "meta": 1574838372624,
+    "asset": 1578275261392,
+    "meta": 1578280451687,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00149.png"
   },
   "325874a5-1383-4db7-b8fa-a8ecb34fa583": {
-    "asset": 1574402140204,
-    "meta": 1574838372732,
+    "asset": 1578275261393,
+    "meta": 1578280451733,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00150.png"
   },
   "3dfb7d85-aa1c-418b-aba2-1dfa6d523dd5": {
-    "asset": 1574402140812,
-    "meta": 1574838372757,
+    "asset": 1578275261395,
+    "meta": 1578280451773,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00151.png"
   },
   "e3c5c558-dcc8-40ea-bea1-cfc8ab39e189": {
-    "asset": 1574402141422,
-    "meta": 1574838372863,
+    "asset": 1578275261396,
+    "meta": 1578280451817,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00152.png"
   },
   "5393ab38-d8af-433d-8c1e-943df001c81d": {
-    "asset": 1574402142041,
-    "meta": 1574838372888,
+    "asset": 1578275261397,
+    "meta": 1578280451858,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00153.png"
   },
   "f6a590a4-4c18-41d1-b5f9-dc11564884c3": {
-    "asset": 1574402143262,
-    "meta": 1574838372994,
+    "asset": 1578275261400,
+    "meta": 1578280451942,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00155.png"
   },
   "9c6d085b-de3e-4bec-bcc1-8c333d7d45f6": {
-    "asset": 1574402142656,
-    "meta": 1574838373019,
+    "asset": 1578275261398,
+    "meta": 1578280451902,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00154.png"
   },
   "dd8e3c10-d351-4074-af94-d1aa7afb8b0d": {
-    "asset": 1574402144485,
-    "meta": 1574838373152,
+    "asset": 1578275261402,
+    "meta": 1578280452026,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00157.png"
   },
   "a0f4a587-e060-4b89-8678-cef3849a37bd": {
-    "asset": 1574402143874,
-    "meta": 1574838373153,
+    "asset": 1578275261401,
+    "meta": 1578280451984,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00156.png"
   },
   "0389467b-dc09-4acb-aadb-a13c4235102e": {
-    "asset": 1574402145696,
-    "meta": 1574838373261,
+    "asset": 1578275261404,
+    "meta": 1578280452115,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00159.png"
   },
   "92a05cc8-1cb8-471e-bdb7-d972c507af40": {
-    "asset": 1574402145089,
-    "meta": 1574838373287,
+    "asset": 1578275261403,
+    "meta": 1578280452077,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00158.png"
   },
   "ec472f9b-f883-457c-8e21-f15e19dfebbc": {
-    "asset": 1574402146308,
-    "meta": 1574838373394,
+    "asset": 1578275261405,
+    "meta": 1578280452163,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00160.png"
   },
   "d4e2359c-d5a6-482f-926c-bba105d99e1f": {
-    "asset": 1574402146923,
-    "meta": 1574838373418,
+    "asset": 1578275261407,
+    "meta": 1578280452202,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00161.png"
   },
   "3f7837b8-7374-4f7f-91c6-5d8ba1377c75": {
-    "asset": 1574402147538,
-    "meta": 1574838373529,
+    "asset": 1578275261408,
+    "meta": 1578280452247,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00162.png"
   },
   "a7ab3077-cbbd-4f14-9de3-ea826423235d": {
-    "asset": 1574402148142,
-    "meta": 1574838373556,
+    "asset": 1578275261409,
+    "meta": 1578280452287,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00163.png"
   },
   "f7ccb3b6-1201-4dc9-ad9b-52ebdfee8da7": {
-    "asset": 1574402148744,
-    "meta": 1574838373674,
+    "asset": 1578275261410,
+    "meta": 1578280452332,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00164.png"
   },
   "846001cc-12b8-49c9-9d71-56a5aac9f8ae": {
-    "asset": 1574402149354,
-    "meta": 1574838373700,
+    "asset": 1578275261411,
+    "meta": 1578280452372,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00165.png"
   },
   "dd8f7bfb-4ba2-4390-9d75-2943532a9daf": {
-    "asset": 1574402149959,
-    "meta": 1574838373810,
+    "asset": 1578275261413,
+    "meta": 1578280452417,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00166.png"
   },
   "d63de220-6dfb-47ca-8157-f3b997b036b9": {
-    "asset": 1574402150562,
-    "meta": 1574838373839,
+    "asset": 1578275261414,
+    "meta": 1578280452456,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00167.png"
   },
   "b99bff67-ae35-4b90-b6f9-84ca0ab47d5e": {
-    "asset": 1574402151175,
-    "meta": 1574838373948,
+    "asset": 1578275261415,
+    "meta": 1578280452499,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00168.png"
   },
   "6cfccc2a-b0ed-4151-9432-1e622a05c786": {
-    "asset": 1574402151787,
-    "meta": 1574838373983,
+    "asset": 1578275261416,
+    "meta": 1578280452541,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00169.png"
   },
   "138172f5-296c-4ba8-8fd9-ba69f2485215": {
-    "asset": 1574402152394,
-    "meta": 1574838374090,
+    "asset": 1578275261417,
+    "meta": 1578280452585,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00170.png"
   },
   "b36433ba-b1c0-4339-80f5-69bf45052895": {
-    "asset": 1574402153010,
-    "meta": 1574838374116,
+    "asset": 1578275261419,
+    "meta": 1578280452626,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00171.png"
   },
   "54ae544b-5e5c-4ec7-8de2-193433939744": {
-    "asset": 1574402154240,
-    "meta": 1574838374228,
+    "asset": 1578275261421,
+    "meta": 1578280452710,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00173.png"
   },
   "f6fafda0-b94d-4936-8c85-a65f6222eca3": {
-    "asset": 1574402153623,
-    "meta": 1574838374258,
+    "asset": 1578275261420,
+    "meta": 1578280452670,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00172.png"
   },
   "f1831a77-b03d-48c9-b6f4-7a0e95ca2816": {
-    "asset": 1574402154854,
-    "meta": 1574838374389,
+    "asset": 1578275261422,
+    "meta": 1578280452755,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00174.png"
   },
   "d7367d82-9e24-4632-8f86-74c3a2a07903": {
-    "asset": 1574402155462,
-    "meta": 1574838374410,
+    "asset": 1578275261423,
+    "meta": 1578280452797,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00175.png"
   },
   "25e29711-9409-4de0-9d7f-b989b4db3b84": {
-    "asset": 1574402156687,
-    "meta": 1574838374518,
+    "asset": 1578275261426,
+    "meta": 1578280452881,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00177.png"
   },
   "07338100-70ca-42c7-8cc5-22faa2bdb2d6": {
-    "asset": 1574402156072,
-    "meta": 1574838374541,
+    "asset": 1578275261424,
+    "meta": 1578280452842,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00176.png"
   },
   "21de6321-e87d-43a5-ad51-6ab0335281a0": {
-    "asset": 1574402157293,
-    "meta": 1574838374644,
+    "asset": 1578275261427,
+    "meta": 1578280452927,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00178.png"
   },
   "9850b279-350a-475f-b84b-a824f285a146": {
-    "asset": 1574402157905,
-    "meta": 1574838374667,
+    "asset": 1578275261428,
+    "meta": 1578280452967,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00179.png"
   },
   "a9c57c72-5866-4ef3-9fc4-79b37f627da9": {
-    "asset": 1574402158506,
-    "meta": 1574838374770,
+    "asset": 1578275261429,
+    "meta": 1578280453013,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00180.png"
   },
   "113df3a6-e85c-47ef-afd5-d096e9d08250": {
-    "asset": 1574402159121,
-    "meta": 1574838374794,
+    "asset": 1578275261430,
+    "meta": 1578280453055,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00181.png"
   },
   "f74ff3f1-1257-4a6e-adcb-bb7a67bba9f8": {
-    "asset": 1574402159736,
-    "meta": 1574838374901,
+    "asset": 1578275261432,
+    "meta": 1578280453100,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00182.png"
   },
   "e07a6a99-daeb-4385-93a3-a34cc3f20b44": {
-    "asset": 1574402160342,
-    "meta": 1574838374924,
+    "asset": 1578275261433,
+    "meta": 1578280453140,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00183.png"
   },
   "89611813-bf53-442b-a204-4ff45c671fa7": {
-    "asset": 1574402161571,
-    "meta": 1574838375032,
+    "asset": 1578275261435,
+    "meta": 1578280453225,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00185.png"
   },
   "a37a4abf-129b-494a-b099-aaab5e970a36": {
-    "asset": 1574402160954,
-    "meta": 1574838375056,
+    "asset": 1578275261434,
+    "meta": 1578280453185,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00184.png"
   },
   "96710626-d25d-4308-912c-7b451a3f1a4b": {
-    "asset": 1574402162792,
-    "meta": 1574838375163,
+    "asset": 1578275261437,
+    "meta": 1578280453309,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00187.png"
   },
   "b2f54978-e528-491e-8117-0ac525429755": {
-    "asset": 1574402162186,
-    "meta": 1574838375186,
+    "asset": 1578275261436,
+    "meta": 1578280453269,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00186.png"
   },
   "ffccfaab-99a8-4881-ae92-f43959b2960a": {
-    "asset": 1574402164010,
-    "meta": 1574838375295,
+    "asset": 1578275261440,
+    "meta": 1578280453394,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00189.png"
   },
   "311530a6-3750-4d22-8c43-1e4a8743040a": {
-    "asset": 1574402163403,
-    "meta": 1574838375320,
+    "asset": 1578275261439,
+    "meta": 1578280453353,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00188.png"
   },
   "35aa2c82-6b4a-4782-b27a-3c9dafd7b238": {
-    "asset": 1574402165223,
-    "meta": 1574838375428,
+    "asset": 1578275261442,
+    "meta": 1578280453477,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00191.png"
   },
   "85be27a1-8f76-450c-b018-66d7f1a6f926": {
-    "asset": 1574402164619,
-    "meta": 1574838375453,
+    "asset": 1578275261441,
+    "meta": 1578280453436,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00190.png"
   },
   "628cc3b4-14fa-47a3-a274-36af8c371503": {
-    "asset": 1574402165838,
-    "meta": 1574838375562,
+    "asset": 1578275261443,
+    "meta": 1578280453519,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00192.png"
   },
   "74f34dbb-b625-4b61-abad-49092179523d": {
-    "asset": 1574402166441,
-    "meta": 1574838375589,
+    "asset": 1578275261445,
+    "meta": 1578280453560,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00193.png"
   },
   "ab97a93a-68ea-47f8-8ff3-c699f93f8d4f": {
-    "asset": 1574402167059,
-    "meta": 1574838375699,
+    "asset": 1578275261446,
+    "meta": 1578280453604,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00194.png"
   },
   "55ef73fb-e470-4577-bd02-4148ab32cc62": {
-    "asset": 1574402167676,
-    "meta": 1574838375723,
+    "asset": 1578275261447,
+    "meta": 1578280453646,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00195.png"
   },
   "082ab5d0-5153-4051-b30b-27312d511c92": {
-    "asset": 1574402168904,
-    "meta": 1574838375833,
+    "asset": 1578275261449,
+    "meta": 1578280453729,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00197.png"
   },
   "9028ef75-3353-4475-b624-e97ede89f372": {
-    "asset": 1574402168289,
-    "meta": 1574838375858,
+    "asset": 1578275261448,
+    "meta": 1578280453687,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00196.png"
   },
   "2a753a97-6aa0-4193-ae88-20554e5ca925": {
-    "asset": 1574402170119,
-    "meta": 1574838375994,
+    "asset": 1578275261452,
+    "meta": 1578280453814,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00199.png"
   },
   "7caf44a6-48dc-4285-b7ce-dddb8a77478c": {
-    "asset": 1574402169510,
-    "meta": 1574838375995,
+    "asset": 1578275261451,
+    "meta": 1578280453772,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00198.png"
   },
   "0a6c1ac6-6c3a-46ad-87b9-32fda54271c3": {
-    "asset": 1574402171341,
-    "meta": 1574838376105,
+    "asset": 1578275261454,
+    "meta": 1578280453899,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00201.png"
   },
   "194bd8df-ed1a-4cf3-a82a-82e38931638f": {
-    "asset": 1574402170738,
-    "meta": 1574838376129,
+    "asset": 1578275261453,
+    "meta": 1578280453857,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00200.png"
   },
   "b1c37ea1-61e6-4b93-8596-fa2256fb7859": {
-    "asset": 1574402171945,
-    "meta": 1574838376233,
+    "asset": 1578275261455,
+    "meta": 1578280453940,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00202.png"
   },
   "df1c38f5-4855-4a74-b9a1-0cf908f09c09": {
-    "asset": 1574402172554,
-    "meta": 1574838376259,
+    "asset": 1578275261457,
+    "meta": 1578280453983,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00203.png"
   },
   "db86a6cc-2ca1-41c3-94b4-c25ba3f69a38": {
-    "asset": 1574402173156,
-    "meta": 1574838376378,
+    "asset": 1578275261458,
+    "meta": 1578280454027,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00204.png"
   },
   "8fef0b05-c2eb-424d-a6cf-ff3e8355a3be": {
-    "asset": 1574402173765,
-    "meta": 1574838376401,
+    "asset": 1578275261459,
+    "meta": 1578280454072,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00205.png"
   },
   "36ae1b26-33f9-4d14-80f0-f1aa53b669bd": {
-    "asset": 1574402174994,
-    "meta": 1574838376509,
+    "asset": 1578275261461,
+    "meta": 1578280454155,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00207.png"
   },
   "41ef650a-5611-450a-abb2-027e3af153c4": {
-    "asset": 1574402174378,
-    "meta": 1574838376533,
+    "asset": 1578275261460,
+    "meta": 1578280454113,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00206.png"
   },
   "2bd74519-df1e-4cc8-9e80-7c2d95534719": {
-    "asset": 1574402175606,
-    "meta": 1574838376664,
+    "asset": 1578275261463,
+    "meta": 1578280454197,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00208.png"
   },
   "d8de2454-b51c-4035-a5ee-60647110d1c5": {
-    "asset": 1574402176219,
-    "meta": 1574838376689,
+    "asset": 1578275261464,
+    "meta": 1578280454245,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00209.png"
   },
   "8ae39ac7-195a-4ba6-9c2f-20ed1789602d": {
-    "asset": 1574402177425,
-    "meta": 1574838376810,
+    "asset": 1578275261466,
+    "meta": 1578280454333,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00211.png"
   },
   "a0506928-e80f-4635-b2ab-0c93ccf9076a": {
-    "asset": 1574402176822,
-    "meta": 1574838376833,
+    "asset": 1578275261465,
+    "meta": 1578280454286,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00210.png"
   },
   "752982ae-b1b0-44a5-b34f-2cce56d9ed1a": {
-    "asset": 1574402178032,
-    "meta": 1574838376938,
+    "asset": 1578275261467,
+    "meta": 1578280454372,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00212.png"
   },
   "be7ac6c7-fd5d-4bf7-86f2-9d0ecd2a1e94": {
-    "asset": 1574402178645,
-    "meta": 1574838376963,
+    "asset": 1578275261469,
+    "meta": 1578280454420,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00213.png"
   },
   "1f653a64-ab7e-4b3b-9589-8eea25c4d5c7": {
-    "asset": 1574402179859,
-    "meta": 1574838377070,
+    "asset": 1578275261471,
+    "meta": 1578280454504,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00215.png"
   },
   "26fed6c4-dd02-4fa1-b3bf-b00e5fe437b4": {
-    "asset": 1574402179253,
-    "meta": 1574838377097,
+    "asset": 1578275261470,
+    "meta": 1578280454456,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00214.png"
   },
   "98ccabdc-76f4-469a-9b9c-6027dd6ef314": {
-    "asset": 1574402180470,
-    "meta": 1574838377208,
+    "asset": 1578275261472,
+    "meta": 1578280454541,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00216.png"
   },
   "d0ee44b7-fd62-469c-995b-909fda64e1d9": {
-    "asset": 1574402181089,
-    "meta": 1574838377233,
+    "asset": 1578275261473,
+    "meta": 1578280454589,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00217.png"
   },
   "53882375-e0e6-449a-bdb3-fa817f6e7df4": {
-    "asset": 1574402181691,
-    "meta": 1574838377382,
+    "asset": 1578275261475,
+    "meta": 1578280454627,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00218.png"
   },
   "0e91dc2f-a0aa-4a1c-97e9-a7b48f4767fa": {
-    "asset": 1574402182302,
-    "meta": 1574838377415,
+    "asset": 1578275261476,
+    "meta": 1578280454673,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00219.png"
   },
   "4a70de8d-e9a8-4ea9-95f8-ef38c5a958b2": {
-    "asset": 1574402183512,
-    "meta": 1574838377523,
+    "asset": 1578275261478,
+    "meta": 1578280454757,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00221.png"
   },
   "710117e4-2633-4d8a-9e1c-2cb59d66db15": {
-    "asset": 1574402182907,
-    "meta": 1574838377547,
+    "asset": 1578275261477,
+    "meta": 1578280454712,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00220.png"
   },
   "70130c30-01fa-4808-8008-96497fd27382": {
-    "asset": 1574402184127,
-    "meta": 1574838377654,
+    "asset": 1578275261479,
+    "meta": 1578280454800,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00222.png"
   },
   "2a15fea8-9aa7-4206-a81d-c64afc187a47": {
-    "asset": 1574402184738,
-    "meta": 1574838377679,
+    "asset": 1578275261481,
+    "meta": 1578280454842,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00223.png"
   },
   "3fa3e4fd-f9e1-41e3-aa99-dd82e0f7c322": {
-    "asset": 1574402185338,
-    "meta": 1574838377788,
+    "asset": 1578275261482,
+    "meta": 1578280454885,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00224.png"
   },
   "55fdeef6-0de0-4d0d-9a40-6afe3af91d95": {
-    "asset": 1574402185941,
-    "meta": 1574838377812,
+    "asset": 1578275261483,
+    "meta": 1578280454927,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00225.png"
   },
   "04be84b6-3b0f-4f4b-b82b-608bb081c1d2": {
-    "asset": 1574402187174,
-    "meta": 1574838377920,
+    "asset": 1578275261485,
+    "meta": 1578280455011,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00227.png"
   },
   "b548b979-f6f7-49b1-a849-b88d6a3ce9b3": {
-    "asset": 1574402186562,
-    "meta": 1574838377944,
+    "asset": 1578275261484,
+    "meta": 1578280454970,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00226.png"
   },
   "06cfa6b4-741d-46ae-ac72-6e19bb3e42ab": {
-    "asset": 1574402188375,
-    "meta": 1574838378052,
+    "asset": 1578275261488,
+    "meta": 1578280455094,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00229.png"
   },
   "1e49b063-d1bf-4ffc-b8d1-de4e60d096bb": {
-    "asset": 1574402187775,
-    "meta": 1574838378077,
+    "asset": 1578275261486,
+    "meta": 1578280455055,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00228.png"
   },
   "bf85f95f-a717-44c5-9345-0422af722871": {
-    "asset": 1574402188985,
-    "meta": 1574838378186,
+    "asset": 1578275261489,
+    "meta": 1578280455138,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00230.png"
   },
   "0d10835c-a093-4ffa-b697-0aa1182ce547": {
-    "asset": 1574402189590,
-    "meta": 1574838378211,
+    "asset": 1578275261490,
+    "meta": 1578280455180,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00231.png"
   },
   "12285a7c-1aa8-4db7-8114-b6907205be09": {
-    "asset": 1574402190202,
-    "meta": 1574838378316,
+    "asset": 1578275261491,
+    "meta": 1578280455224,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00232.png"
   },
   "000387ee-c273-4866-9b6c-c76161f69131": {
-    "asset": 1574402190808,
-    "meta": 1574838378342,
+    "asset": 1578275261492,
+    "meta": 1578280455265,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00233.png"
   },
   "6c379785-a454-4895-bca3-8188612db7dd": {
-    "asset": 1574402191412,
-    "meta": 1574838378448,
+    "asset": 1578275261494,
+    "meta": 1578280455311,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00234.png"
   },
   "6e065117-8629-4fac-971e-2472c41d653e": {
-    "asset": 1574402192019,
-    "meta": 1574838378474,
+    "asset": 1578275261495,
+    "meta": 1578280455352,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00235.png"
   },
   "09446a3b-75d2-46ed-93d2-36ab159cdf14": {
-    "asset": 1574402192613,
-    "meta": 1574838378583,
+    "asset": 1578275261496,
+    "meta": 1578280455397,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00236.png"
   },
   "5aeadfdb-00b3-41c2-829d-a8c3a2e4d437": {
-    "asset": 1574402193196,
-    "meta": 1574838378608,
+    "asset": 1578275261497,
+    "meta": 1578280455437,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00237.png"
   },
   "c583d415-d83b-4880-821e-451b9f51ad10": {
-    "asset": 1574402193779,
-    "meta": 1574838378720,
+    "asset": 1578275261498,
+    "meta": 1578280455481,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00238.png"
   },
   "5f3683e1-ee86-40b9-a680-fac4cc0e5a80": {
-    "asset": 1574402194371,
-    "meta": 1574838378755,
+    "asset": 1578275261499,
+    "meta": 1578280455522,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00239.png"
   },
   "66560c19-f0d2-43e0-b56d-e988f872ce55": {
-    "asset": 1574402195552,
-    "meta": 1574838378869,
+    "asset": 1578275261502,
+    "meta": 1578280455608,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00241.png"
   },
   "2d86732b-eab7-4b2f-b50b-57675a96f455": {
-    "asset": 1574402194959,
-    "meta": 1574838378896,
+    "asset": 1578275261501,
+    "meta": 1578280455566,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00240.png"
   },
   "c0a2b46b-7b34-427e-ad66-2651e3f74fde": {
-    "asset": 1574402196146,
-    "meta": 1574838379012,
+    "asset": 1578275261503,
+    "meta": 1578280455651,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00242.png"
   },
   "3b371cdb-ec47-4140-9e95-5c41c0e176b8": {
-    "asset": 1574402196745,
-    "meta": 1574838379039,
+    "asset": 1578275261504,
+    "meta": 1578280455694,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00243.png"
   },
   "85a0e559-b729-4d36-ac30-a8279153eba7": {
-    "asset": 1574402197335,
-    "meta": 1574838379155,
+    "asset": 1578275261506,
+    "meta": 1578280455736,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00244.png"
   },
   "77462412-465f-4ea8-bc27-010ee92f853e": {
-    "asset": 1574402197925,
-    "meta": 1574838379180,
+    "asset": 1578275261507,
+    "meta": 1578280455779,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00245.png"
   },
   "34bcebfe-f8c4-4017-94a7-796ebac2fd44": {
-    "asset": 1574402198511,
-    "meta": 1574838379300,
+    "asset": 1578275261508,
+    "meta": 1578280455825,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00246.png"
   },
   "36cc0b66-0a67-4b3d-addf-07b75aa875e3": {
-    "asset": 1574402199104,
-    "meta": 1574838379336,
+    "asset": 1578275261509,
+    "meta": 1578280455866,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00247.png"
   },
   "05a0598d-a92f-4064-92b7-f35d769bd4df": {
-    "asset": 1574402200279,
-    "meta": 1574838379445,
+    "asset": 1578275261511,
+    "meta": 1578280455951,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00249.png"
   },
   "597f7066-039c-498d-9215-025b2460bea1": {
-    "asset": 1574402199693,
-    "meta": 1574838379471,
+    "asset": 1578275261510,
+    "meta": 1578280455911,
     "relativePath": "resources\\Altas\\little\\ebet\\ebetxl_00248.png"
   },
   "1c3b9014-7933-46bd-9045-c07cd2418bda": {
-    "asset": 1574837892746,
-    "meta": 1574837892739,
+    "asset": 1578275261644,
+    "meta": 1578275261601,
     "relativePath": "resources\\Altas\\little\\startLotteryBg"
   },
   "552bb902-741a-423a-9116-3067961f90d7": {
-    "asset": 1575251681150,
-    "meta": 1574837892747,
+    "asset": 1578275261692,
+    "meta": 1578275261644,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop"
   },
   "e2450cb7-7a5b-4617-8190-4294793dfd68": {
-    "asset": 1574844748960,
-    "meta": 1574844789541,
+    "asset": 1578275261159,
+    "meta": 1578280460072,
     "relativePath": "Scripts\\Core\\Tools\\lottery_Utils.js"
   },
   "7b9b1e54-0350-4a1d-bf3d-90261d62f528": {
-    "asset": 1574921917982,
-    "meta": 1574922000885,
+    "asset": 1578275261156,
+    "meta": 1578280459871,
     "relativePath": "Scripts\\Core\\ResHandle\\lottery_BaseResLoad.js"
   },
   "0eb924e7-f532-4858-9634-6ffc8f74f5da": {
-    "asset": 1574929177554,
-    "meta": 1574929081074,
+    "asset": 1578275261644,
+    "meta": 1578275261210,
     "relativePath": "resources\\Altas\\little"
   },
   "e33fe047-7693-4434-afb1-d0c4c14eaa98": {
-    "asset": 1575007408167,
-    "meta": 1575007615296,
+    "asset": 1578275261177,
+    "meta": 1578280461439,
     "relativePath": "Scripts\\UI\\tools\\lottery_loadingTip.js"
   },
   "be1c97f6-f77a-4b8f-b3d2-4fd1edb7d6b2": {
-    "asset": 1575279654191,
-    "meta": 1575010828708,
+    "asset": 1578275261837,
+    "meta": 1578275261693,
     "relativePath": "resources\\Altas\\move"
   },
   "ccc9d227-30b3-4811-bf03-f1a4b93519b2": {
-    "asset": 1575015182158,
-    "meta": 1575015184785,
+    "asset": 1578275261177,
+    "meta": 1578280461348,
     "relativePath": "Scripts\\UI\\tools\\lottery_helper.js"
   },
   "88659f0b-827c-4fdb-ac33-765bf8541625": {
-    "asset": 1575015237081,
-    "meta": 1575015239213,
+    "asset": 1578275261180,
+    "meta": 1578280461679,
     "relativePath": "Scripts\\UI\\view_login\\lottery_Login.js"
   },
   "64cf7fe0-a30e-4ab3-82b7-fce3512a3612": {
-    "asset": 1575015268191,
-    "meta": 1575015271370,
+    "asset": 1578275261181,
+    "meta": 1578280461798,
     "relativePath": "Scripts\\UI\\view_login\\lottery_TypeSelect.js"
   },
   "d2eab767-9020-45e0-9897-02a2f92cd4cc": {
-    "asset": 1575015291957,
-    "meta": 1575015293775,
+    "asset": 1578275261184,
+    "meta": 1578280462121,
     "relativePath": "Scripts\\UI\\view_videoSys\\lottery_VideoSysCtr.js"
   },
   "4438b0c9-1c25-439f-85e9-b7b0ed4f3c97": {
-    "asset": 1575215261268,
-    "meta": 1575251084338,
+    "asset": 1578275261174,
+    "meta": 1578280461176,
     "relativePath": "Scripts\\UI\\animCom\\lottery_animCom.js"
   },
   "34d014e4-c64b-444b-bcb1-4cee6b671c82": {
-    "asset": 1575002690450,
-    "meta": 1575020540364,
+    "asset": 1578275261836,
+    "meta": 1578275261837,
     "relativePath": "resources\\Altas\\move\\wait.mp4"
   },
   "7eec1053-a595-485e-9277-693b06fb9f4e": {
-    "asset": 1574999704917,
-    "meta": 1575020540365,
+    "asset": 1578275261716,
+    "meta": 1578275261717,
     "relativePath": "resources\\Altas\\move\\firstStage.mp4"
   },
   "5fcf488c-5128-4098-b058-28ddfc85f1df": {
-    "asset": 1574337502132,
-    "meta": 1575020540367,
+    "asset": 1578275261806,
+    "meta": 1578275261808,
     "relativePath": "resources\\Altas\\move\\secondStage.mp4"
   },
   "ec489017-07f2-44e2-9b27-7a1b1161f9dc": {
-    "asset": 1575021208440,
-    "meta": 1575021209450,
+    "asset": 1578275261186,
+    "meta": 1578280462070,
     "relativePath": "Scripts\\UI\\view_videoSys\\lottery_videoPlayer.js"
   },
   "fb8e0fbc-cedf-42ab-8d65-a851d37e122b": {
-    "asset": 1575002965993,
-    "meta": 1575251681197,
+    "asset": 1578275261602,
+    "meta": 1578280457478,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00000.png"
   },
   "60df1173-640e-44b1-8d3e-df28774540eb": {
-    "asset": 1575002966073,
-    "meta": 1575251681212,
+    "asset": 1578275261602,
+    "meta": 1578280457491,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00001.png"
   },
   "160f3587-907b-4416-99bf-9bbf75b8a5ad": {
-    "asset": 1575002966151,
-    "meta": 1575251681230,
+    "asset": 1578275261603,
+    "meta": 1578280457541,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00002.png"
   },
   "0cd67587-b036-441d-a0f3-2498e25aec35": {
-    "asset": 1575002966243,
-    "meta": 1575251681246,
+    "asset": 1578275261604,
+    "meta": 1578280457553,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00003.png"
   },
   "7038f23d-30b6-4ae9-8eb4-6fd17da69381": {
-    "asset": 1575002966350,
-    "meta": 1575251681267,
+    "asset": 1578275261606,
+    "meta": 1578280457615,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00004.png"
   },
   "72dd1947-f5b0-411b-82af-e1cc305734d8": {
-    "asset": 1575002966484,
-    "meta": 1575251681295,
+    "asset": 1578275261607,
+    "meta": 1578280457604,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00005.png"
   },
   "d8934060-8a4b-4749-888a-cb6740fdb64e": {
-    "asset": 1575002966628,
-    "meta": 1575251681314,
+    "asset": 1578275261609,
+    "meta": 1578280457664,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00006.png"
   },
   "921d1ba2-f217-47a7-9637-27b039783039": {
-    "asset": 1575002966803,
-    "meta": 1575251681342,
+    "asset": 1578275261611,
+    "meta": 1578280457673,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00007.png"
   },
   "9b7e0e61-3439-462c-bd8b-7929625a8369": {
-    "asset": 1575002966984,
-    "meta": 1575251681362,
+    "asset": 1578275261613,
+    "meta": 1578280457724,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00008.png"
   },
   "4135884b-2522-4835-850d-f423a060d10c": {
-    "asset": 1575002967188,
-    "meta": 1575251681388,
+    "asset": 1578275261616,
+    "meta": 1578280457733,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00009.png"
   },
   "3f579dac-692b-4b83-b281-3116716de486": {
-    "asset": 1575002967416,
-    "meta": 1575251681408,
+    "asset": 1578275261618,
+    "meta": 1578280457791,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00010.png"
   },
   "5267610d-3cd8-4775-b1d0-c91aa10d24cf": {
-    "asset": 1575002967667,
-    "meta": 1575251681441,
+    "asset": 1578275261620,
+    "meta": 1578280457783,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00011.png"
   },
   "c76217d0-c876-4e29-8629-d7010f04e7b4": {
-    "asset": 1575002967919,
-    "meta": 1575251681456,
+    "asset": 1578275261622,
+    "meta": 1578280457839,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00012.png"
   },
   "df357c51-e503-4baa-a8bf-e5c671607b5e": {
-    "asset": 1575002968173,
-    "meta": 1575251681488,
+    "asset": 1578275261624,
+    "meta": 1578280457845,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00013.png"
   },
   "dee0281b-2d33-4e6b-9c84-ade75c5c95a5": {
-    "asset": 1575002968429,
-    "meta": 1575251681505,
+    "asset": 1578275261626,
+    "meta": 1578280457896,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00014.png"
   },
   "0aada5b5-91fe-4331-95b9-d6e81a7f4e73": {
-    "asset": 1575002968682,
-    "meta": 1575251681534,
+    "asset": 1578275261628,
+    "meta": 1578280457903,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00015.png"
   },
   "7045192c-6465-460d-89e2-1192cc5d59c2": {
-    "asset": 1575002968935,
-    "meta": 1575251681553,
+    "asset": 1578275261630,
+    "meta": 1578280457963,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00016.png"
   },
   "7f2c5bde-e891-42b0-8ff0-c417a0798ea6": {
-    "asset": 1575002969190,
-    "meta": 1575251681586,
+    "asset": 1578275261631,
+    "meta": 1578280457956,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00017.png"
   },
   "ac46a866-aa9b-42cb-b0a9-c7a012968efe": {
-    "asset": 1575002969446,
-    "meta": 1575251681602,
+    "asset": 1578275261634,
+    "meta": 1578280458015,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00018.png"
   },
   "39cae894-1ca0-4b46-bbed-96a117147d15": {
-    "asset": 1575002969698,
-    "meta": 1575251681636,
+    "asset": 1578275261636,
+    "meta": 1578280458023,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00019.png"
   },
   "afe2e2ff-9b28-48e4-8407-ef313c3bd873": {
-    "asset": 1575002969951,
-    "meta": 1575251681654,
+    "asset": 1578275261638,
+    "meta": 1578280458082,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00020.png"
   },
   "ed09661a-fcb3-4860-8f40-797876367dd9": {
-    "asset": 1575002970204,
-    "meta": 1575251681684,
+    "asset": 1578275261640,
+    "meta": 1578280458074,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00021.png"
   },
   "481e6e08-e87d-4fbd-8171-4d633415efc6": {
-    "asset": 1575002970458,
-    "meta": 1575251681699,
+    "asset": 1578275261642,
+    "meta": 1578280458134,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00022.png"
   },
   "bb8d974d-b7d8-46f4-8d0d-cfef23213739": {
-    "asset": 1575002970712,
-    "meta": 1575251681731,
+    "asset": 1578275261644,
+    "meta": 1578280458140,
     "relativePath": "resources\\Altas\\little\\startLotteryBg\\kaiqiu01_00023.png"
   },
   "ba4d6f13-ee61-4b85-9c9f-e10232ff9772": {
-    "asset": 1575002897551,
-    "meta": 1575251681753,
+    "asset": 1578275261646,
+    "meta": 1578280458198,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00000.png"
   },
   "916fe9fd-35ef-46b5-8a17-3707d36b6a56": {
-    "asset": 1575002897828,
-    "meta": 1575251681778,
+    "asset": 1578275261648,
+    "meta": 1578280458192,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00001.png"
   },
   "1ea30c98-18e1-4902-9d1b-67f334e99790": {
-    "asset": 1575002898084,
-    "meta": 1575251681805,
+    "asset": 1578275261650,
+    "meta": 1578280458255,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00002.png"
   },
   "39667f3e-5c75-467b-81f4-88d411dbddb3": {
-    "asset": 1575002898343,
-    "meta": 1575251681822,
+    "asset": 1578275261652,
+    "meta": 1578280458248,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00003.png"
   },
   "c65eb612-420d-454c-97bc-24115c203572": {
-    "asset": 1575002898598,
-    "meta": 1575251681852,
+    "asset": 1578275261654,
+    "meta": 1578280458313,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00004.png"
   },
   "607e8675-2edd-460a-a0bb-7d27490c1ca0": {
-    "asset": 1575002898864,
-    "meta": 1575251681876,
+    "asset": 1578275261656,
+    "meta": 1578280458306,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00005.png"
   },
   "695fabd4-223a-469f-b7e3-9ed44b3bb9d9": {
-    "asset": 1575002899118,
-    "meta": 1575251681897,
+    "asset": 1578275261658,
+    "meta": 1578280458364,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00006.png"
   },
   "9a028bd2-e24c-4b83-a8b2-14770230cea0": {
-    "asset": 1575002899376,
-    "meta": 1575251681926,
+    "asset": 1578275261660,
+    "meta": 1578280458370,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00007.png"
   },
   "cc869020-55b0-4c4c-9e0b-7fcb1decb800": {
-    "asset": 1575002899631,
-    "meta": 1575251681947,
+    "asset": 1578275261662,
+    "meta": 1578280458420,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00008.png"
   },
   "79c04567-e22e-4a56-86be-42746274ac3b": {
-    "asset": 1575002899885,
-    "meta": 1575251681969,
+    "asset": 1578275261664,
+    "meta": 1578280458426,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00009.png"
   },
   "10c97e36-2685-4233-b4fc-bb1df3a04572": {
-    "asset": 1575002900141,
-    "meta": 1575251681999,
+    "asset": 1578275261666,
+    "meta": 1578280458480,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00010.png"
   },
   "6c8333bb-ee1e-4621-89c1-ff9699e62956": {
-    "asset": 1575002900397,
-    "meta": 1575251682019,
+    "asset": 1578275261668,
+    "meta": 1578280458474,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00011.png"
   },
   "5ba662c8-5ba1-470d-bbe1-74430f6da9d5": {
-    "asset": 1575002900653,
-    "meta": 1575251682044,
+    "asset": 1578275261670,
+    "meta": 1578280458537,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00012.png"
   },
   "08c07e29-9617-4461-90b8-007032e6029e": {
-    "asset": 1575002900908,
-    "meta": 1575251682063,
+    "asset": 1578275261672,
+    "meta": 1578280458530,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00013.png"
   },
   "eb2f20e1-f1a8-43b2-a174-c0d0bf7b1190": {
-    "asset": 1575002901164,
-    "meta": 1575251682098,
+    "asset": 1578275261674,
+    "meta": 1578280458593,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00014.png"
   },
   "c9feace3-d37a-44a3-b118-c682701d58a8": {
-    "asset": 1575002901421,
-    "meta": 1575251682111,
+    "asset": 1578275261676,
+    "meta": 1578280458587,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00015.png"
   },
   "09ba9f24-3ff0-4f36-978d-8ddc212a287b": {
-    "asset": 1575002901679,
-    "meta": 1575251682149,
+    "asset": 1578275261678,
+    "meta": 1578280458643,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00016.png"
   },
   "a5510c57-90c6-4cad-8845-e7fc588f5849": {
-    "asset": 1575002901934,
-    "meta": 1575251682174,
+    "asset": 1578275261680,
+    "meta": 1578280458649,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00017.png"
   },
   "04ad4d91-74e8-4615-bddc-d29eb6c2fd5f": {
-    "asset": 1575002902190,
-    "meta": 1575251682211,
+    "asset": 1578275261682,
+    "meta": 1578280458706,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00018.png"
   },
   "4b177d58-5644-4374-873f-1f11cf431b6b": {
-    "asset": 1575002902448,
-    "meta": 1575251682246,
+    "asset": 1578275261684,
+    "meta": 1578280458699,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00019.png"
   },
   "d7db1990-fc67-47de-b578-67cad3e19a96": {
-    "asset": 1575002902702,
-    "meta": 1575251682267,
+    "asset": 1578275261686,
+    "meta": 1578280458756,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00020.png"
   },
   "6e177775-426a-4b47-8dfc-04f6199187b8": {
-    "asset": 1575002902956,
-    "meta": 1575251682297,
+    "asset": 1578275261689,
+    "meta": 1578280458763,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00021.png"
   },
   "a8a4b808-d89f-44f3-a4bd-1d05633e4625": {
-    "asset": 1575002903211,
-    "meta": 1575251682317,
+    "asset": 1578275261690,
+    "meta": 1578280458818,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00022.png"
   },
   "10480729-23e9-4c6c-a9a0-6f346434ec79": {
-    "asset": 1575002903464,
-    "meta": 1575251682340,
+    "asset": 1578275261692,
+    "meta": 1578280458824,
     "relativePath": "resources\\Altas\\little\\startLotteryBgLoop\\kaiqiuxh_00023.png"
   },
   "6f90d9cd-16ee-484e-b60a-f1138e06c87d": {
-    "asset": 1574334424822,
-    "meta": 1575020540366,
+    "asset": 1578275261748,
+    "meta": 1578275261750,
     "relativePath": "resources\\Altas\\move\\fiveStage.mp4"
   },
   "e6832916-a1ae-48b5-a359-5ddf3b27a9ac": {
-    "asset": 1575001453557,
-    "meta": 1575256585951,
+    "asset": 1578275261821,
+    "meta": 1578275261822,
     "relativePath": "resources\\Altas\\move\\sixStage.mp4"
   },
   "f81ec998-d4c9-42ac-85cc-c830a549b748": {
-    "asset": 1575000818802,
-    "meta": 1575256599396,
+    "asset": 1578275261761,
+    "meta": 1578275261762,
     "relativePath": "resources\\Altas\\move\\fourStage.mp4"
   },
   "530de0c7-196f-47d7-9e4f-c60311afc89d": {
-    "asset": 1575345125323,
-    "meta": 1575345414612,
+    "asset": 1578275261167,
+    "meta": 1578280460640,
     "relativePath": "Scripts\\Manager\\lottery_SocketManager.js"
   },
   "2af3c548-dc41-4357-8297-7cf333d4602c": {
-    "asset": 1575281813349,
-    "meta": 1575281814594,
+    "asset": 1578275261199,
+    "meta": 1578280463505,
     "relativePath": "resources\\Altas\\LEDAtlas.plist"
   },
   "706f3b7f-5732-421c-88c3-5d513c56d7a2": {
-    "asset": 1575281813334,
-    "meta": 1575281814576,
+    "asset": 1578275261203,
+    "meta": 1578280445372,
     "relativePath": "resources\\Altas\\LEDAtlas.png"
   },
   "5202f286-2375-450d-9866-3fcb5d16b49d": {
-    "asset": 1575338564881,
-    "meta": 1575338564954,
+    "asset": 1578275261205,
+    "meta": 1578280463382,
     "relativePath": "resources\\Altas\\countDown.plist"
   },
   "384382da-1fa0-4a65-926e-20cffc20037b": {
-    "asset": 1575338564882,
-    "meta": 1575338564942,
+    "asset": 1578275261206,
+    "meta": 1578280445238,
     "relativePath": "resources\\Altas\\countDown.png"
   },
   "ef7965c3-6957-497d-9825-c875f241c3fe": {
-    "asset": 1575510929103,
-    "meta": 1575511016684,
+    "asset": 1578275261195,
+    "meta": 1578280463270,
     "relativePath": "VideoSimple\\js\\lib\\videoSocketController.js"
   },
   "a95eca28-faf4-42f3-83eb-1983d2b556d2": {
-    "asset": 1575453727502,
-    "meta": 1575512011441,
+    "asset": 1578275261173,
+    "meta": 1578275261171,
     "relativePath": "Scripts\\Tools\\screenfull"
   },
   "f5556364-d0a0-4a0a-a982-8e1c73773c1a": {
-    "asset": 1567979194000,
-    "meta": 1575513324825,
+    "asset": 1578275261172,
+    "meta": 1578280461055,
     "relativePath": "Scripts\\Tools\\screenfull\\screenfull.js"
   },
   "1d9ae09f-bd50-47f8-90fa-af0c72e11e6e": {
-    "asset": 1567979194000,
-    "meta": 1575512011631,
+    "asset": 1578275261172,
+    "meta": 1578280461007,
     "relativePath": "Scripts\\Tools\\screenfull\\screenfull.d.ts"
   },
   "bba35ae5-82be-4513-9259-c179e88564bc": {
-    "asset": 1567979194000,
-    "meta": 1575513328543,
+    "asset": 1578275261173,
+    "meta": 1578280461057,
     "relativePath": "Scripts\\Tools\\screenfull\\screenfull.min.js"
   },
   "f6609e9b-1104-47e4-97cf-b0c773c5378b": {
-    "asset": 1575516291327,
-    "meta": 1575516303467,
+    "asset": 1578275261185,
+    "meta": 1578280462171,
     "relativePath": "Scripts\\UI\\view_videoSys\\lottery_VideoSysView.js"
   },
   "7bcfddba-a152-44d2-ab9a-255b69f5e861": {
-    "asset": 1575517198615,
-    "meta": 1575517392888,
+    "asset": 1578275261210,
+    "meta": 1578280445322,
     "relativePath": "resources\\Altas\\ebet3d.png"
   },
   "28c559cf-d19d-4844-9869-d589e2d553a4": {
-    "asset": 1575524812546,
-    "meta": 1575524812757,
+    "asset": 1578275261841,
+    "meta": 1578280463724,
     "relativePath": "resources\\Altas\\texture1.plist"
   },
   "e2745b76-567d-4b02-b0a0-179140622e54": {
-    "asset": 1575524812547,
-    "meta": 1575524812742,
+    "asset": 1578275261843,
+    "meta": 1578280458930,
     "relativePath": "resources\\Altas\\texture1.png"
   },
   "3ce9e030-5afe-443d-be9e-ff779424f70f": {
-    "asset": 1575525522410,
-    "meta": 1574677631198,
+    "asset": 1578275261853,
+    "meta": 1578275261853,
     "relativePath": "resources\\config.txt"
   },
   "9656d5a9-ca97-4363-a2c0-04150bf3cccb": {
-    "asset": 1576554120522,
-    "meta": 1576554493631,
+    "asset": 1578275261161,
+    "meta": 1578280460144,
     "relativePath": "Scripts\\Data\\lottery_animDataMgr.js"
   },
   "3a25e8e4-c8f2-4079-8bb0-86081eafb72b": {
-    "asset": 1576554236418,
-    "meta": 1576554493631,
+    "asset": 1578275261162,
+    "meta": 1578280460259,
     "relativePath": "Scripts\\Data\\lottery_lotteryData.js"
   },
   "f15ebcbe-e164-4a49-abf8-154fada9e0b2": {
-    "asset": 1577327467458,
-    "meta": 1577328201774,
+    "asset": 1578275261187,
+    "meta": 1578280462190,
     "relativePath": "Scripts\\UI\\view_videoSys\\videoMsgFactory.js"
   },
   "7bd8048a-d10f-4a1c-aab9-6a25207d6d02": {
-    "asset": 1577329601468,
-    "meta": 1577329665193,
+    "asset": 1578275261179,
+    "meta": 1578280461590,
     "relativePath": "Scripts\\UI\\videoCom\\videoShader1.js"
   },
   "1738632c-49ee-46f3-a6b0-492267e3a7a7": {
-    "asset": 1577329785181,
-    "meta": 1577329874643,
+    "asset": 1578275261179,
+    "meta": 1578280461587,
     "relativePath": "Scripts\\UI\\videoCom\\lottery_videoCom.js"
   },
   "1e147cee-342e-4a10-9793-13d7b4b335f1": {
-    "asset": 1577329871621,
-    "meta": 1577329874644,
+    "asset": 1578275261183,
+    "meta": 1578280461864,
     "relativePath": "Scripts\\UI\\view_videoPlay\\lottery_VideoPlayView.js"
   },
   "18729e63-4c8d-4d9e-9329-9bd680979b11": {
-    "asset": 1577330025328,
-    "meta": 1577330171061,
+    "asset": 1578275261189,
+    "meta": 1578275261190,
     "relativePath": "VideoSimple\\js.rar"
   },
   "d79bbab6-d682-47c3-9ded-cd527dab568b": {
-    "asset": 1577331323265,
-    "meta": 1577331325751,
+    "asset": 1578275261197,
+    "meta": 1578280463335,
     "relativePath": "VideoSimple\\js\\videoSprite.js"
   },
   "35ab2109-158e-4527-a826-678d6f5abc43": {
-    "asset": 1577331836096,
-    "meta": 1577332158712,
+    "asset": 1578275261160,
+    "meta": 1578280460166,
     "relativePath": "Scripts\\Data\\lottery_EventDefine.js"
   },
   "fc8747a5-143c-4751-9e02-1f659af24d60": {
-    "asset": 1578045699172,
-    "meta": 1578045699181,
+    "asset": 1578275261847,
+    "meta": 1578280459027,
     "relativePath": "resources\\Prefab\\videoSysPre.prefab"
   },
   "30e24cbd-7f84-4a96-91a3-d6b8c839cde5": {
-    "asset": 1578044911061,
-    "meta": 1578044911066,
+    "asset": 1578275261850,
+    "meta": 1578280458958,
     "relativePath": "resources\\anim\\ball_move.anim"
   },
   "66ec98dd-ff66-45c0-a970-d3e520071fc8": {
-    "asset": 1578045196971,
-    "meta": 1578045196976,
+    "asset": 1578275261848,
+    "meta": 1578280458904,
     "relativePath": "resources\\anim\\ball_1.anim"
   },
   "d861a1e8-7fba-4ea0-9c73-27be24ab0e72": {
-    "asset": 1578045183130,
-    "meta": 1578045183137,
+    "asset": 1578275261849,
+    "meta": 1578280458913,
     "relativePath": "resources\\anim\\ball_2.anim"
   },
   "4351792e-eb54-4bae-aff0-327b2d337dac": {
-    "asset": 1578045163949,
-    "meta": 1578045163956,
+    "asset": 1578275261849,
+    "meta": 1578280458922,
     "relativePath": "resources\\anim\\ball_3.anim"
   },
   "521e6284-896f-4516-b4b4-4a4b220146aa": {
-    "asset": 1578045826172,
-    "meta": 1578045826176,
+    "asset": 1578275261852,
+    "meta": 1578280458984,
     "relativePath": "resources\\anim\\startLottery.anim"
   },
   "c1f244d0-26a8-4d2f-82b8-a0fbe223096d": {
-    "asset": 1577349747770,
-    "meta": 1577349747776,
+    "asset": 1578275261853,
+    "meta": 1578280458977,
     "relativePath": "resources\\anim\\startLottery_qishu.anim"
   },
   "8a660405-dc8c-4428-956b-e2acb5d208d8": {
-    "asset": 1578045013632,
-    "meta": 1578045013644,
+    "asset": 1578275261850,
+    "meta": 1578280458937,
     "relativePath": "resources\\anim\\ball_move - 001.anim"
   },
   "1a5a47fa-f5d1-4aae-8c51-8fdcc3fd676c": {
-    "asset": 1578045097464,
-    "meta": 1578045097471,
+    "asset": 1578275261850,
+    "meta": 1578280458943,
     "relativePath": "resources\\anim\\ball_move - 002.anim"
   },
   "e6013cf7-23a0-4618-82d6-1a9d40b5eca1": {
-    "asset": 1577762638970,
-    "meta": 1577346393186,
+    "asset": 1578275261853,
+    "meta": 1578275261848,
     "relativePath": "resources\\anim"
   },
   "4204f27c-7df3-4fe1-a178-f03a81b6f0a2": {
-    "asset": 1577780614689,
-    "meta": 1577780614711,
+    "asset": 1578275261851,
+    "meta": 1578280458964,
     "relativePath": "resources\\anim\\qishu0.anim"
   },
   "208afbb0-a162-4690-8f08-8ecf21c619d9": {
-    "asset": 1577762712554,
-    "meta": 1577762712568,
+    "asset": 1578275261851,
+    "meta": 1578280458970,
     "relativePath": "resources\\anim\\qishu2.anim"
   },
   "7559beb8-024f-4f93-ac59-a824ebc5ebf7": {
-    "asset": 1577949323297,
-    "meta": 1578039254209,
+    "asset": 1578275261167,
+    "meta": 1578280460707,
     "relativePath": "Scripts\\Manager\\lottery_SockMsgDefine.js"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
-    "asset": 1530695500000,
-    "meta": 1578044535659,
+    "asset": 1530753100000,
+    "meta": 1578280443436,
     "relativePath": "image\\default_btn_disabled.png"
   },
   "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
-    "asset": 1530695500000,
-    "meta": 1578044535660,
+    "asset": 1530753100000,
+    "meta": 1578280443432,
     "relativePath": "image\\default_btn_normal.png"
   },
   "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
-    "asset": 1530695500000,
-    "meta": 1578044535666,
+    "asset": 1530753100000,
+    "meta": 1578280443446,
     "relativePath": "image\\default_panel.png"
   },
   "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
-    "asset": 1530695500000,
-    "meta": 1578044535667,
+    "asset": 1530753100000,
+    "meta": 1578280443450,
     "relativePath": "image\\default_btn_pressed.png"
   },
   "99170b0b-d210-46f1-b213-7d9e3f23098a": {
-    "asset": 1530695500000,
-    "meta": 1578044535673,
+    "asset": 1530753100000,
+    "meta": 1578280443460,
     "relativePath": "image\\default_progressbar_bg.png"
   },
   "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
-    "asset": 1530695500000,
-    "meta": 1578044535674,
+    "asset": 1530753100000,
+    "meta": 1578280443465,
     "relativePath": "image\\default_progressbar.png"
   },
   "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
-    "asset": 1530695500000,
-    "meta": 1578044535679,
+    "asset": 1530753100000,
+    "meta": 1578280443479,
     "relativePath": "image\\default_radio_button_on.png"
   },
   "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
-    "asset": 1530695500000,
-    "meta": 1578044535681,
+    "asset": 1530753100000,
+    "meta": 1578280443475,
     "relativePath": "image\\default_radio_button_off.png"
   },
   "4bab67cb-18e6-4099-b840-355f0473f890": {
-    "asset": 1530695500000,
-    "meta": 1578044535687,
+    "asset": 1530753100000,
+    "meta": 1578280443489,
     "relativePath": "image\\default_scrollbar_bg.png"
   },
   "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
-    "asset": 1530695500000,
-    "meta": 1578044535689,
+    "asset": 1530753100000,
+    "meta": 1578280443494,
     "relativePath": "image\\default_scrollbar_vertical_bg.png"
   },
   "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
-    "asset": 1530695500000,
-    "meta": 1578044535695,
+    "asset": 1530753100000,
+    "meta": 1578280443510,
     "relativePath": "image\\default_scrollbar_vertical.png"
   },
   "0291c134-b3da-4098-b7b5-e397edbe947f": {
-    "asset": 1530695500000,
-    "meta": 1578044535696,
+    "asset": 1530753100000,
+    "meta": 1578280443512,
     "relativePath": "image\\default_scrollbar.png"
   },
   "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
-    "asset": 1530695500000,
-    "meta": 1578044535702,
+    "asset": 1530753100000,
+    "meta": 1578280443521,
     "relativePath": "image\\default_sprite_splash.png"
   },
   "6e056173-d285-473c-b206-40a7fff5386e": {
-    "asset": 1530695500000,
-    "meta": 1578044535704,
+    "asset": 1530753100000,
+    "meta": 1578280443526,
     "relativePath": "image\\default_sprite.png"
   },
   "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
-    "asset": 1530695500000,
-    "meta": 1578044535711,
+    "asset": 1530753100000,
+    "meta": 1578280443541,
     "relativePath": "image\\default_toggle_disabled.png"
   },
   "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
-    "asset": 1530695500000,
-    "meta": 1578044535712,
+    "asset": 1530753100000,
+    "meta": 1578280443536,
     "relativePath": "image\\default_toggle_checkmark.png"
   },
   "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
-    "asset": 1530695500000,
-    "meta": 1578044535718,
+    "asset": 1530753100000,
+    "meta": 1578280443555,
     "relativePath": "image\\default_toggle_pressed.png"
   },
   "d29077ba-1627-4a72-9579-7b56a235340c": {
-    "asset": 1530695500000,
-    "meta": 1578044535720,
+    "asset": 1530753100000,
+    "meta": 1578280443556,
     "relativePath": "image\\default_toggle_normal.png"
   },
   "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
-    "asset": 1530695500000,
-    "meta": 1578044535724,
+    "asset": 1530753100000,
+    "meta": 1578280443575,
     "relativePath": "prefab\\button.prefab"
   },
   "2c937608-2562-40ea-b264-7395df6f0cea": {
-    "asset": 1530695500000,
-    "meta": 1578044535725,
+    "asset": 1530753100000,
+    "meta": 1578280443573,
     "relativePath": "prefab\\canvas.prefab"
   },
   "61aeb05b-3b32-452b-8eed-2b76deeed554": {
-    "asset": 1530695500000,
-    "meta": 1578044535728,
+    "asset": 1530753100000,
+    "meta": 1578280443582,
     "relativePath": "prefab\\editbox.prefab"
   },
   "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
-    "asset": 1530695500000,
-    "meta": 1578044535729,
+    "asset": 1530753100000,
+    "meta": 1578280443587,
     "relativePath": "prefab\\label.prefab"
   },
   "785a442c-3ceb-45be-a46e-7317f625f3b9": {
-    "asset": 1530695500000,
-    "meta": 1578044535733,
+    "asset": 1530753100000,
+    "meta": 1578280443591,
     "relativePath": "prefab\\layout.prefab"
   },
   "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
-    "asset": 1530695500000,
-    "meta": 1578044535734,
+    "asset": 1530753100000,
+    "meta": 1578280443596,
     "relativePath": "prefab\\pageview.prefab"
   },
   "cd33edea-55f5-46c2-958d-357a01384a36": {
-    "asset": 1530695500000,
-    "meta": 1578044535736,
+    "asset": 1530753100000,
+    "meta": 1578280443601,
     "relativePath": "prefab\\particlesystem.prefab"
   },
   "5965ffac-69da-4b55-bcde-9225d0613c28": {
-    "asset": 1530695500000,
-    "meta": 1578044535737,
+    "asset": 1530753100000,
+    "meta": 1578280443606,
     "relativePath": "prefab\\progressBar.prefab"
   },
   "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
-    "asset": 1530695500000,
-    "meta": 1578044535739,
+    "asset": 1530753100000,
+    "meta": 1578280443611,
     "relativePath": "prefab\\richtext.prefab"
   },
   "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
-    "asset": 1530695500000,
-    "meta": 1578044535740,
+    "asset": 1530753100000,
+    "meta": 1578280443617,
     "relativePath": "prefab\\scrollview.prefab"
   },
   "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
-    "asset": 1530695500000,
-    "meta": 1578044535743,
+    "asset": 1530753100000,
+    "meta": 1578280443623,
     "relativePath": "prefab\\slider.prefab"
   },
   "1f55e3be-b89b-4b79-88de-47fd31018044": {
-    "asset": 1530695500000,
-    "meta": 1578044535744,
+    "asset": 1530753100000,
+    "meta": 1578280443627,
     "relativePath": "prefab\\sprite_splash.prefab"
   },
   "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
-    "asset": 1530695500000,
-    "meta": 1578044535746,
+    "asset": 1530753100000,
+    "meta": 1578280443633,
     "relativePath": "prefab\\sprite.prefab"
   },
   "7de03a80-4457-438d-95a7-3e7cdffd6086": {
-    "asset": 1530695500000,
-    "meta": 1578044535747,
+    "asset": 1530753100000,
+    "meta": 1578280443639,
     "relativePath": "prefab\\tiledmap.prefab"
   },
   "0d784963-d024-4ea6-a7db-03be0ad63010": {
-    "asset": 1530695500000,
-    "meta": 1578044535749,
+    "asset": 1530753100000,
+    "meta": 1578280443645,
     "relativePath": "prefab\\toggle.prefab"
   },
   "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
-    "asset": 1530695500000,
-    "meta": 1578044535750,
+    "asset": 1530753100000,
+    "meta": 1578280443650,
     "relativePath": "prefab\\toggleContainer.prefab"
   },
   "d1b8be49-b0a0-435c-83b7-552bed4bbe35": {
-    "asset": 1530695500000,
-    "meta": 1578044535753,
+    "asset": 1530753100000,
+    "meta": 1578280443655,
     "relativePath": "prefab\\toggleGroup.prefab"
   },
   "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
-    "asset": 1530695500000,
-    "meta": 1578044535754,
+    "asset": 1530753100000,
+    "meta": 1578280443660,
     "relativePath": "prefab\\videoplayer.prefab"
   },
   "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
-    "asset": 1530695500000,
-    "meta": 1578044535755,
+    "asset": 1530753100000,
+    "meta": 1578280443664,
     "relativePath": "prefab\\webview.prefab"
   },
   "3b1434b3-3ec3-4270-9fd6-53ba335d0802": {
-    "asset": 1578045376705,
-    "meta": 1578045380075,
+    "asset": 1578275261161,
+    "meta": 1578280460286,
     "relativePath": "Scripts\\Data\\lottery_MsgStation.js"
   },
   "c60d7e6a-9c5f-4c7f-8d74-a769663f577f": {
-    "asset": 1578045375574,
-    "meta": 1578045380351,
+    "asset": 1578275261162,
+    "meta": 1578280460315,
     "relativePath": "Scripts\\GameStart.js"
   },
   "92475a0f-8cf6-4f02-8956-9ae8d5d97298": {
-    "asset": 1578045352632,
-    "meta": 1578045380368,
+    "asset": 1578275261185,
+    "meta": 1578280462052,
     "relativePath": "Scripts\\UI\\view_videoSys\\lottery_videoFlow.js"
   }
 }

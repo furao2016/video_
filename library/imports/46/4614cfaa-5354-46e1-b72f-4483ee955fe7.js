@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '4614c+qU1RG4bcvRIPulV/n', 'lottery_loginViewCtr');
-// Scripts/UI/login/lottery_loginViewCtr.js
+// Scripts/UI/view_login/lottery_loginViewCtr.js
 
 "use strict";
 
