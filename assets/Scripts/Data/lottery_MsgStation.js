@@ -35,6 +35,7 @@ export default class lottery_MsgStation extends SingletonBase {
         socket.On(MsgDefine.DOWN.SC_KaiPan, this.lotteryOpeningOrClosed, this);
         socket.On(MsgDefine.DOWN.SC_JianQi, this.setJianQi, this);
         socket.On(MsgDefine.DOWN.SC_JIANQIU, this.lotteryResults, this);
+        socket.On(MsgDefine.DOWN.SC_VideoUrl, this.lotteryVideoUrlChange, this);
     }
     /**
      * 系统消息初始化
@@ -74,9 +75,9 @@ export default class lottery_MsgStation extends SingletonBase {
      *根据彩种登陆
      */
     onSendLotteryChoice(lotteryCode) {
+        Helper.getInstance().showLoading();
         lottery_lotteryData.getInstance().lotteryCode = lotteryCode;
-        lottery_loginViewCtr.getInstance().Close();
-        lottery_VideoPlayCtr.getInstance().Open();
+        SocketManager.getInstance().Connect(this.socketIP, this.socketPort, lottery_lotteryData.getInstance().userId);//与服务器建立长连接
     }
 
     /**
@@ -84,7 +85,13 @@ export default class lottery_MsgStation extends SingletonBase {
      */
     onSendLinkHeGuan() {
         Helper.getInstance().showLoading();
-        SocketManager.getInstance().Connect(this.socketIP, this.socketPort, lottery_lotteryData.getInstance().userId);//与服务器建立长连接
+        let one = {
+            'codeBack': 2020,
+            'data': {
+                'lotteryCode': lottery_lotteryData.getInstance().lotteryCode
+            }
+        };
+        SocketManager.getInstance().Send(JSON.stringify(one));
         lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 1 });
     }
 
@@ -124,14 +131,9 @@ export default class lottery_MsgStation extends SingletonBase {
     /*------------------------------------------socket回调--------------------------------------*/
     //建立长连接成功
     socketConnect(data) {
+        lottery_loginViewCtr.getInstance().Close();
+        lottery_VideoPlayCtr.getInstance().Open();
         Helper.getInstance().showLoading(false);
-        let one = {
-            'codeBack': 2020,
-            'data': {
-                'lotteryCode': lottery_lotteryData.getInstance().lotteryCode
-            }
-        };
-        SocketManager.getInstance().Send(JSON.stringify(one));
     }
 
     //链接何荷官端后得回调
@@ -174,6 +176,17 @@ export default class lottery_MsgStation extends SingletonBase {
         console.log(data);
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.BALLINFO, data);
     }
+    /**接收到视频链接更改*/
+    lotteryVideoUrlChange(data) {
+        console.log(data);
+    }
+    /**请求视频链接*/
+    lotteryVideoUrl() {
+        let msg = {};
+        msg.codeBack = SockMsgDefine.DOWN.SC_VideoUrl;
+        msg.data = { type: "GET", lotteryCode: lottery_lotteryData.getInstance().lotteryCode };
+        SocketManager.getInstance().Send(msg);
+    }
     /*-----------------------------------------系统事件回调-----------------------------------------*/
     loadingOvertime() {
         console.log("加载超时");
@@ -185,8 +198,10 @@ export function simulationAward() {
     setTimeout(() => {
         lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 4 });
         setTimeout(() => {
-            lottery_MsgStation.getInstance().lotteryOpenAward();
-            lottery_MsgStation.getInstance().lotteryReadyAward(7);
-        }, 0);
+            lottery_MsgStation.getInstance().lotteryOpeningOrClosed(0);
+            setTimeout(() => {
+                lottery_MsgStation.getInstance().setJianQi({ expect: 11, nestExpect: 12 })
+            }, 10000);
+        }, 10000);
     }, 5000);
 }

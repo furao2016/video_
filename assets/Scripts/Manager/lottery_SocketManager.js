@@ -52,10 +52,8 @@ export default class SocketManager extends SingletonBase {
             this.socketEventDic[msgId] && this.socketEventDic[msgId](data.data)
         }
         else if (data.code == 2) {//错误信息返回
-
+            
         }
-
-
     }
     /**
      * 连接状态改变函数

@@ -17,7 +17,9 @@ export default class lottery_lotteryData extends SingletonBase {
     awardTime = 0;
     //开奖结果
     awardResult = [1, 2, 3];
-
+    //模拟开奖
+    simulated = true;
+    
     static _onNewObject() {
         let one = new lottery_lotteryData();
         return one;

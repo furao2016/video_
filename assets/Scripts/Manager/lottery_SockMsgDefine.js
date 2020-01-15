@@ -6,6 +6,7 @@ var MsgDefine = {
         SC_KaiPan: "2010",  //开封盘
         SC_JianQi: '1014',//推送当前奖期
         SC_JIANQIU: '1013',//当前奖球数据
+        SC_VideoUrl: '2015',//视频链接更改
         //////////////////////////////////////
         SC_OpenLotteryByHand: "2012",  //手动开奖
         SC_UpData: "2011",  //更新界面彩票数据

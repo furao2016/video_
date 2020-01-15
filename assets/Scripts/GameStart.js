@@ -1,8 +1,6 @@
 import lottery_MsgStation, { simulationAward } from "./Data/lottery_MsgStation";
 import lottery_animDataMgr from "./Data/lottery_animDataMgr";
-import lottery_loginViewCtr from "./UI/view_login/lottery_loginViewCtr";
 import lottery_VideoPlayCtr from "./UI/view_videoPlay/lottery_VideoPlayCtr";
-import lottery_VideoSysCtr from "./UI/view_videoSys/lottery_VideoSysCtr";
 cc.Class({
     extends: cc.Component,
     properties: {
@@ -30,10 +28,9 @@ cc.Class({
             instance.socketPort = json.SocketPort
         })
         lottery_animDataMgr.getInstance().init(this.setLoadingProgress.bind(this), () => {
-     //       lottery_loginViewCtr.getInstance().Open();
+
             this.loadingNode.active = false;
-            lottery_VideoSysCtr.getInstance().Open();
-            simulationAward();
+            lottery_VideoPlayCtr.getInstance().Open();
         });
 
     },

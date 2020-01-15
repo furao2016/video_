@@ -1,5 +1,6 @@
-import lottery_MsgStation from "../../Data/lottery_MsgStation";
+import lottery_MsgStation, { simulationAward } from "../../Data/lottery_MsgStation";
 import lottery_videoCom from "../videoCom/lottery_videoCom"
+import lottery_lotteryData from "../../Data/lottery_lotteryData";
 cc.Class({
     extends: require("lottery_viewBaseComponent"),
     properties: {
@@ -38,6 +39,9 @@ cc.Class({
     //全屏播放
     videoPlayBtnDown() {
         lottery_MsgStation.getInstance().onFullPlay();
+        if (lottery_lotteryData.getInstance().simulated) {
+            simulationAward();
+        }
     },
     //小窗口全屏播放
     screenBtnDown(event, data) {

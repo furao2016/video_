@@ -12,7 +12,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class lottery_videoFlow extends cc.Component {
     //定义的收到消息后的方法
-    msgFuncDefine = ['firstStage', 'secondStage', 'thirdStage', 'fourStage', 'fiveStage', 'sixStage', 'waitStage','fengPan'];
+    msgFuncDefine = ['firstStage', 'secondStage', 'thirdStage', 'fourStage', 'fiveStage', 'sixStage', 'waitStage', 'fengPan'];
     @property([cc.VideoPlayer])
     videoArr = []; //视频合集
     @property([cc.Node])
@@ -145,13 +145,13 @@ export default class lottery_videoFlow extends cc.Component {
             this.littleCom.setData('startLotteryBgLoop', 0, true);
             this.startLottery.node.active = true
             this.startLottery.play();
-            if (videosMsgFatory.ins().period == 0) {
+            if (lottery_lotteryData.getInstance().simulated) {
                 let one = 0;
                 let timer = setInterval(() => {
                     if (one >= 2) {
                         clearInterval(timer);
                     }
-                    lottery_MsgStation.getInstance().lotteryResults({ index: one++, ballNum: 1 });
+                    lottery_MsgStation.getInstance().lotteryResults({ index: one++, openCode: 1 });
                 }, 2000);
             }
         })
