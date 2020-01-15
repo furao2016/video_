@@ -44,15 +44,16 @@ export default class lottery_lotteryData extends SingletonBase {
             HD: "rtmp://test.xshny.com:1935/lobby/L01-1",
             SD: "rtmp://test.xshny.com:1935/lobby/L01-1_ff"
         }
-    };
-    get videoUrl(value) {
+    }
+
+    set videoUrl(value) {
         if (this._videoUrl != value) {
             this._videoUrl = value;
             cc.systemEvent.emit(lottery_EventDefine.URL_CHANGE, data);
         }
     }
 
-    set videoUrl() {
+    get videoUrl() {
         return this._videoUrl;
     }
 }

@@ -1,7 +1,6 @@
 import SingletonBase from "../Singleton/SingletonBase";
 import NetManager from "../Manager/lottery_NetManager";
 import SocketManager from "../Manager/lottery_SocketManager";
-import lottery_lotteryData from "./lottery_lotteryData";
 import MsgDefine from "../Manager/lottery_SockMsgDefine";
 import GlobalMsg from "../Core/Event/lottery_GlobalMsg";
 import { lottery_EventDefine } from "./lottery_EventDefine";
@@ -10,6 +9,7 @@ import lottery_VideoSysCtr from "../UI/view_videoSys/lottery_VideoSysCtr";
 import lottery_loginViewCtr from "../UI/view_login/lottery_loginViewCtr";
 import lottery_VideoPlayCtr from "../UI/view_videoPlay/lottery_VideoPlayCtr";
 import videosMsgFatory from "../UI/view_videoSys/videoMsgFactory";
+import lottery_lotteryData from "./lottery_lotteryData";
 /**
  * 消息中转
  */
