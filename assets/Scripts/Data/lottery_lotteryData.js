@@ -1,4 +1,5 @@
 import SingletonBase from "../Singleton/SingletonBase";
+import { lottery_EventDefine } from "./lottery_EventDefine";
 
 export default class lottery_lotteryData extends SingletonBase {
     //用户ID
@@ -19,7 +20,7 @@ export default class lottery_lotteryData extends SingletonBase {
     awardResult = [1, 2, 3];
     //模拟开奖
     simulated = true;
-    
+
     static _onNewObject() {
         let one = new lottery_lotteryData();
         return one;
@@ -30,5 +31,28 @@ export default class lottery_lotteryData extends SingletonBase {
             if (this.hasOwnProperty(one))
                 this[one] = data[one];
         }
+    }
+    /*--------------------------------视频链接-------------------------------------*/
+    _videoUrl = {
+        master:
+        {
+            HD: "rtmp://test.xshny.com:1935/lobby/L01",
+            SD: "rtmp://test.xshny.com:1935/lobby/L01_ff"
+        },
+        vice:
+        {
+            HD: "rtmp://test.xshny.com:1935/lobby/L01-1",
+            SD: "rtmp://test.xshny.com:1935/lobby/L01-1_ff"
+        }
+    };
+    get videoUrl(value) {
+        if (this._videoUrl != value) {
+            this._videoUrl = value;
+            cc.systemEvent.emit(lottery_EventDefine.URL_CHANGE, data);
+        }
+    }
+
+    set videoUrl() {
+        return this._videoUrl;
     }
 }

@@ -14,4 +14,6 @@ export class lottery_EventDefine {
         /**球信息*/
         BALLINFO: 'BALLINFO'
     }
+    //地址更改
+    static URL_CHANGE = "URL_CHANGE";
 }

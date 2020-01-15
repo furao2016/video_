@@ -52,6 +52,10 @@ export default class lottery_videoCom extends cc.Component {
             this.actionNode.runAction(repfor)
         }
     }
+    //更改地址
+    changeUrl(url){
+        this._socketController.setUrl(url);
+    }
     //暂停
     pause() {
         this.isPlay = false;

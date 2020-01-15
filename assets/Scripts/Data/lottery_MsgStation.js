@@ -131,6 +131,7 @@ export default class lottery_MsgStation extends SingletonBase {
     /*------------------------------------------socket回调--------------------------------------*/
     //建立长连接成功
     socketConnect(data) {
+        this.getVideoUrl();
         lottery_loginViewCtr.getInstance().Close();
         lottery_VideoPlayCtr.getInstance().Open();
         Helper.getInstance().showLoading(false);
@@ -178,10 +179,10 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     /**接收到视频链接更改*/
     lotteryVideoUrlChange(data) {
-        console.log(data);
+        lottery_lotteryData.getInstance().videoUrl = data.videoUrl;
     }
     /**请求视频链接*/
-    lotteryVideoUrl() {
+    getVideoUrl() {
         let msg = {};
         msg.codeBack = SockMsgDefine.DOWN.SC_VideoUrl;
         msg.data = { type: "GET", lotteryCode: lottery_lotteryData.getInstance().lotteryCode };

@@ -1,6 +1,7 @@
 import lottery_MsgStation, { simulationAward } from "../../Data/lottery_MsgStation";
 import lottery_videoCom from "../videoCom/lottery_videoCom"
 import lottery_lotteryData from "../../Data/lottery_lotteryData";
+import { lottery_EventDefine } from "../../Data/lottery_EventDefine";
 cc.Class({
     extends: require("lottery_viewBaseComponent"),
     properties: {
@@ -15,6 +16,7 @@ cc.Class({
         this.moduleName = "videoSysPre";
         this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
         this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
+        cc.systemEvent.on(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
         this.initVideo();
     },
     OnShow() { },
@@ -42,6 +44,12 @@ cc.Class({
         if (lottery_lotteryData.getInstance().simulated) {
             simulationAward();
         }
+    },
+    //地址更改
+    videoUrlChange() {
+        let urls = lottery_lotteryData.getInstance().videoUrl;
+        this.videoCanvas[0].changeUrl(urls.master.HD);
+        this.videoCanvas[1].changeUrl(urls.vice.HD);
     },
     //小窗口全屏播放
     screenBtnDown(event, data) {
