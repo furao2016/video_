@@ -52,7 +52,7 @@ export default class lottery_videoFlow extends cc.Component {
             one.style.zIndex = '-1';
         }
         this.videoStream.node.opacity = 0;
-        this.videoStream.init(null, true);
+        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.master.HD);
         cc.systemEvent.on(lottery_EventDefine.VIDEOFLOW.RESTART, this.startPlay, this);
     }
 

@@ -9,7 +9,8 @@ cc.Class({
         videoPlayBtn: cc.Node,
         videoCanvas: [lottery_videoCom],
         inputEvents: cc.Node,
-        bigCanvas: cc.Sprite
+        bigCanvas: cc.Sprite,
+        loadNodes: [cc.Node]
     },
     /*----------------------------------生命周期函数-----------------------------------------*/
     OnInit() {
@@ -17,7 +18,17 @@ cc.Class({
         this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
         this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
         cc.systemEvent.on(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
-        this.initVideo();
+        for (let node of this.loadNodes) {
+            if (node) {
+                node.stopAllActions();
+                let callFunc = cc.callFunc(function () {
+                    node.rotation += 30;
+                    node.rotation %= 360;
+                }.bind(this));
+                let repfor = cc.repeatForever(cc.sequence(cc.delayTime(0.1), callFunc));
+                node.runAction(repfor)
+            }
+        }
     },
     OnShow() { },
     OnHide() { },
@@ -29,8 +40,7 @@ cc.Class({
     initVideo() {
         let videoUrl = ["ws://47.90.11.101:8081/lobbyB/L01", "ws://47.90.11.101:8081/lobbyB/L01-1"];
         this.videoCanvas.forEach((element, index) => {
-            element.init(videoUrl[index], ebet.baccarat);
-            element.isPlay = true;
+            element.setUrl(videoUrl[index]);
         });
     },
     /*-------------------------------------------事件-----------------------------------------*/
@@ -48,8 +58,8 @@ cc.Class({
     //地址更改
     videoUrlChange() {
         let urls = lottery_lotteryData.getInstance().videoUrl;
-        this.videoCanvas[0].changeUrl(urls.master.HD);
-        this.videoCanvas[1].changeUrl(urls.vice.HD);
+        this.videoCanvas[0].setUrl(urls.master.HD);
+        this.videoCanvas[1].setUrl(urls.vice.HD);
     },
     //小窗口全屏播放
     screenBtnDown(event, data) {

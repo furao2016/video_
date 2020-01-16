@@ -6,19 +6,14 @@ export default class lottery_videoCom extends cc.Component {
     @property(cc.String)
     currentUrl = 'ws://ws4.jiasula.info:8081/lobbyB/B15/19148936/6eca0113e34c41c1f45a5f9eaf13429c'
     @property(cc.Sprite)
-    targetSprite = null;
-    @property(cc.Boolean)
-    isPlay = false; //是否播放,这里不能完全控制
-    @property(cc.Node)
-    actionNode = null;
+    targetSprite = null; //目标sprite
 
-    //
+    /*目标纹理2D*/
     texureImag = null;
-    //socket控制
+    /**目标spriteFrame*/
+    targetSpriteFrame = null;
+    /**socket控制*/
     _socketController = null;
-    //输出大小
-    outPutWidth = 0;
-    outPutHeight = 0;
 
     onLoad() {
         cc.game.on(cc.game.EVENT_HIDE, this.gameHideClose, this);
@@ -39,43 +34,31 @@ export default class lottery_videoCom extends cc.Component {
             console.log('canvas下无法播放');
             return;
         }
-        this.VideoShader = new videoShader1();
-        this.VideoShader.ShaderEffect(this.node);
-        this.texureImag = new cc.Texture2D();
+        //获取播放sprite
         !this.targetSprite && (this.targetSprite = this.node.getComponent(cc.Sprite));
-        this.targetSprite.spriteFrame = new cc.SpriteFrame(this.texureImag);
-        this.outPutHeight = this.node.height;
-        this.outPutWidth = this.node.width;
-
-        if (this.actionNode) {
-            let callFunc = cc.callFunc(function () {
-                this.actionNode.rotation += 30;
-                this.actionNode.rotation %= 360;
-            }.bind(this));
-            let repfor = cc.repeatForever(cc.sequence(cc.delayTime(0.1), callFunc));
-            this.actionNode.runAction(repfor)
-        }
+        !this.targetSprite && (this.targetSprite = this.node.addComponent(cc.Sprite));
+        //创建纹理
+        this.VideoShader = new videoShader1();
+        this.VideoShader.ShaderEffect(this.targetSprite.node);
+        this.texureImag = new cc.Texture2D();
+        //绑定sprite
+        this.targetSpriteFrame = new cc.SpriteFrame(this.texureImag);
+        this.targetSprite.spriteFrame = this.targetSpriteFrame;
     }
-    //更改地址
-    changeUrl(url) {
+
+    //设置url
+    setUrl(url) {
+        this.targetSprite.spriteFrame = null;
         this.currentUrl = url;
         if (this._socketController) {
-            this._socketController = new ebet.baccarat.VideoSocketController(this.currentUrl, false, true);
-            this._socketController.onPictureDecoded = this.onPictureDecoded.bind(this);
+            if (this.node.active) {
+                this._socketController._packageCache.clear();
+                this._socketController.setUrl(this.currentUrl);
+            }
         } else {
-            this._socketController.setUrl(this.currentUrl);
+            this._socketController = new lottery.video.VideoSocketController(this.currentUrl, false, true);
+            this._socketController.onPictureDecoded = this.onPictureDecoded.bind(this);
         }
-    }
-
-    //暂停
-    pause() {
-        this.isPlay = false;
-        this.gameHideClose();
-    }
-    //开始
-    continue() {
-        this.isPlay = true;
-        this.gameShowReOpen();
     }
     //播放投射到其他地方
     changeTargetSprite(target) {
@@ -87,9 +70,11 @@ export default class lottery_videoCom extends cc.Component {
 
     //图片编码
     onPictureDecoded(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize) {
-        if (!this.isPlay) return;
+        if (!this.targetSprite.spriteFrame) this.targetSprite.spriteFrame = this.targetSpriteFrame;
         this.VideoShader._currentBuffer = data;
         this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
+        this.targetSprite.node.width = this.node.parent.width;
+        this.targetSprite.node.height = this.node.parent.width * pixelsHeight / pixelsWidth;
     }
 
     gameHideClose() {
@@ -99,14 +84,13 @@ export default class lottery_videoCom extends cc.Component {
     }
 
     gameShowReOpen() {
-        if (this._socketController && this.isPlay) {
+        if (this._socketController) {
             this._socketController._currentUrl = this.currentUrl;
             this._socketController.reOpen();
         }
     }
 
     update(dt) {
-        if (!this.isPlay) return;
         if (this._socketController && this._socketController.onRenderingBefore) {
             this._socketController.onRenderingBefore(dt);
             this.VideoShader.Myrendering(ebet.videoSize);
@@ -118,6 +102,5 @@ export default class lottery_videoCom extends cc.Component {
         cc.game.off(cc.game.EVENT_SHOW, this.gameShowReOpen);
         this._socketController.close();
         this._socketController = null;
-        this.unscheduleAllCallbacks();
     }
 }

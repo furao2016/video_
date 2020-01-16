@@ -1564,10 +1564,6 @@
     "currentUrl": "",
     "targetSprite": {
       "__id__": 46
-    },
-    "isPlay": false,
-    "actionNode": {
-      "__id__": 41
     }
   },
   {
@@ -2715,10 +2711,6 @@
     "currentUrl": "",
     "targetSprite": {
       "__id__": 83
-    },
-    "isPlay": false,
-    "actionNode": {
-      "__id__": 78
     }
   },
   {
@@ -4651,7 +4643,15 @@
     },
     "bigCanvas": {
       "__id__": 146
-    }
+    },
+    "loadNodes": [
+      {
+        "__id__": 41
+      },
+      {
+        "__id__": 78
+      }
+    ]
   },
   {
     "__type__": "cc.PrefabInfo",
