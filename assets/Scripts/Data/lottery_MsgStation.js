@@ -59,6 +59,7 @@ export default class lottery_MsgStation extends SingletonBase {
             switch (msg.code) {
                 case 1:
                     lottery_lotteryData.getInstance().updataData(msg.data);
+                    console.log(msg.data);
                     lottery_loginViewCtr.getInstance().OnMessageHandle({ type: 1, data: lottery_lotteryData.getInstance().roleList });
                     break;
                 case 0:
@@ -131,6 +132,7 @@ export default class lottery_MsgStation extends SingletonBase {
     /*------------------------------------------socket回调--------------------------------------*/
     //建立长连接成功
     socketConnect(data) {
+        console.log('建立长链接');
         this.getVideoUrl();
         lottery_loginViewCtr.getInstance().Close();
         lottery_VideoPlayCtr.getInstance().Open();
@@ -146,10 +148,11 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //接收到开封盘命令
     lotteryOpeningOrClosed(data) {
+        console.log(data);
         if (data == 0) {
             videosMsgFatory.ins().changePeriod(-1);
         } else {
-            videosMsgFatory.ins().changePeriod(1);
+            videosMsgFatory.ins().changePeriod(2);
         }
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
@@ -179,14 +182,15 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     /**接收到视频链接更改*/
     lotteryVideoUrlChange(data) {
-        lottery_lotteryData.getInstance().videoUrl = data.videoUrl;
+        lottery_lotteryData.getInstance().videoUrl = JSON.parse(data.videoUrl);
+        console.log(lottery_lotteryData.getInstance().videoUrl);
     }
     /**请求视频链接*/
     getVideoUrl() {
         let msg = {};
-        msg.codeBack = SockMsgDefine.DOWN.SC_VideoUrl;
+        msg.codeBack = MsgDefine.DOWN.SC_VideoUrl;
         msg.data = { type: "GET", lotteryCode: lottery_lotteryData.getInstance().lotteryCode };
-        SocketManager.getInstance().Send(msg);
+        SocketManager.getInstance().Send(JSON.stringify(msg));
     }
     /*-----------------------------------------系统事件回调-----------------------------------------*/
     loadingOvertime() {

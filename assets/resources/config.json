@@ -1,0 +1,4 @@
+{
+    "local":{"HttpServer":"http://192.168.0.143:7050/","SocketIP":"192.168.0.198","SocketPort":"7070"},
+   "work":{"HttpServer":"http://47.52.34.18:7050/","SocketIP":"47.56.65.141","SocketPort":"7070"}
+}

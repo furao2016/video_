@@ -12,8 +12,6 @@ export default class lottery_videoCom extends cc.Component {
     @property(cc.Node)
     actionNode = null;
 
-    loadOver = false;
-
     //
     texureImag = null;
     //socket控制
@@ -25,16 +23,22 @@ export default class lottery_videoCom extends cc.Component {
     onLoad() {
         cc.game.on(cc.game.EVENT_HIDE, this.gameHideClose, this);
         cc.game.on(cc.game.EVENT_SHOW, this.gameShowReOpen, this);
+        this.init();
     }
 
-    init(url, isPlay = false) {
+    onEnable() {
+        this.gameShowReOpen();
+    }
+
+    onDisable() {
+        this.gameHideClose();
+    }
+
+    init() {
         if (cc._renderType == cc.game.RENDER_TYPE_CANVAS) {
             console.log('canvas下无法播放');
             return;
         }
-        this.isPlay = isPlay;
-        this.currentUrl = url || this.currentUrl;
-        this._socketController = new ebet.baccarat.VideoSocketController(this.currentUrl, false, true);
         this.VideoShader = new videoShader1();
         this.VideoShader.ShaderEffect(this.node);
         this.texureImag = new cc.Texture2D();
@@ -42,7 +46,7 @@ export default class lottery_videoCom extends cc.Component {
         this.targetSprite.spriteFrame = new cc.SpriteFrame(this.texureImag);
         this.outPutHeight = this.node.height;
         this.outPutWidth = this.node.width;
-        this._socketController.onPictureDecoded = this.onPictureDecoded.bind(this);
+
         if (this.actionNode) {
             let callFunc = cc.callFunc(function () {
                 this.actionNode.rotation += 30;
@@ -53,9 +57,16 @@ export default class lottery_videoCom extends cc.Component {
         }
     }
     //更改地址
-    changeUrl(url){
-        this._socketController.setUrl(url);
+    changeUrl(url) {
+        this.currentUrl = url;
+        if (this._socketController) {
+            this._socketController = new ebet.baccarat.VideoSocketController(this.currentUrl, false, true);
+            this._socketController.onPictureDecoded = this.onPictureDecoded.bind(this);
+        } else {
+            this._socketController.setUrl(this.currentUrl);
+        }
     }
+
     //暂停
     pause() {
         this.isPlay = false;
@@ -77,7 +88,6 @@ export default class lottery_videoCom extends cc.Component {
     //图片编码
     onPictureDecoded(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize) {
         if (!this.isPlay) return;
-        this.loadOver = true;
         this.VideoShader._currentBuffer = data;
         this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
     }

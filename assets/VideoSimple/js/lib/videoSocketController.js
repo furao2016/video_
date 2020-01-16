@@ -347,6 +347,7 @@ function videoScoketContrl(baccarat) {
       this._client.close();
     }
 
+    this._currentUrl = url;
     if (this._currentUrl) {
       this.reOpen();
     }

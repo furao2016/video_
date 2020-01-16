@@ -2,6 +2,10 @@ import SingletonBase from "../Singleton/SingletonBase";
 import { lottery_EventDefine } from "./lottery_EventDefine";
 
 export default class lottery_lotteryData extends SingletonBase {
+    //模拟开奖
+    simulated = false;
+    //什么环境
+    isLocal = true;
     //用户ID
     userId = null;
     //用户名字
@@ -18,8 +22,7 @@ export default class lottery_lotteryData extends SingletonBase {
     awardTime = 0;
     //开奖结果
     awardResult = [1, 2, 3];
-    //模拟开奖
-    simulated = true;
+
 
     static _onNewObject() {
         let one = new lottery_lotteryData();
@@ -49,7 +52,7 @@ export default class lottery_lotteryData extends SingletonBase {
     set videoUrl(value) {
         if (this._videoUrl != value) {
             this._videoUrl = value;
-            cc.systemEvent.emit(lottery_EventDefine.URL_CHANGE, data);
+            cc.systemEvent.emit(lottery_EventDefine.URL_CHANGE);
         }
     }
 
