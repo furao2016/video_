@@ -15,12 +15,6 @@ cc.Class({
     /*----------------------------------生命周期函数-----------------------------------------*/
     OnInit() {
         this.moduleName = "videoSysPre";
-        this.exitBtn.off(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
-        this.videoPlayBtn.off(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
-        cc.systemEvent.off(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
-        this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
-        this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
-        cc.systemEvent.on(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
         for (let node of this.loadNodes) {
             if (node) {
                 node.stopAllActions();
@@ -35,8 +29,18 @@ cc.Class({
         this.videoUrlChange();
     },
     OnShow() { },
+    onEnable() {
+        this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
+        this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
+        cc.systemEvent.on(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
+    },
+    onDisable() {
+        this.exitBtn.off(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
+        this.videoPlayBtn.off(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
+        cc.systemEvent.off(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
+    },
     OnHide() {
-        console.log('111');
+
     },
     OnDispose() {
         console.log('2222');
@@ -71,7 +75,7 @@ cc.Class({
     },
     //小窗口全屏播放
     screenBtnDown(event, data) {
-        if (!this.videoCanvas[data].loadOver) return;
+        if (!this.videoCanvas[data].isPlay) return;
         this.videoCanvas[data].changeTargetSprite(this.bigCanvas);
         this.inputEvents.active = true;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.escEvent, this);
