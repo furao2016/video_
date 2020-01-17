@@ -1,6 +1,6 @@
-(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/VideoSimple/js/lib/videoSocketController.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'ef796XDaVdJfZglyHXyQcP+', 'videoSocketController', __filename);
-// VideoSimple/js/lib/videoSocketController.js
+(function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Scripts/UI/videoCom/videoSocketController1.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
+cc._RF.push(module, '4b3801LxMZGK6M0kM8Tq7LA', 'videoSocketController1', __filename);
+// Scripts/UI/videoCom/videoSocketController1.js
 
 "use strict";
 
@@ -10,11 +10,10 @@ cc._RF.push(module, 'ef796XDaVdJfZglyHXyQcP+', 'videoSocketController', __filena
  * Proprietary and confidential
  * Written by ebet.com
  **************************************************************************/
-// var ebet = {};
-// ebet.baccarat = {};
-module.exports = videoScoketContrl;
-
-function videoScoketContrl(baccarat) {
+var lottery = {};
+lottery.video = {};
+window['lottery'] = lottery;
+(function (baccarat) {
   //connection status
   var state = true;
   var decodeWorkerUrl = "lib/H264Decoder.js";
@@ -41,7 +40,7 @@ function videoScoketContrl(baccarat) {
     this.timerId = setInterval(function () {
       self.decodeFromQueueTimer();
     }, TIME_INTERVAL);
-    //this.audioPlayer.play();
+    // this.audioPlayer.play();
     this._useWorker = useWorker === undefined ? baccarat.USE_WORKER : useWorker;
     this._useGL = webgl === undefined ? cc._renderType === cc._RENDER_TYPE_WEBGL : webgl;
     this.reuseMemory = false; //
@@ -339,7 +338,7 @@ function videoScoketContrl(baccarat) {
     if (url !== this._currentUrl) {
       this._client.close();
     }
-
+    this._currentUrl = url;
     if (this._currentUrl) {
       this.reOpen();
     }
@@ -567,7 +566,7 @@ function videoScoketContrl(baccarat) {
       this._audioCache.push(pkg);
     }
   };
-}
+})(lottery.video);
 
 cc._RF.pop();
         }
@@ -580,5 +579,5 @@ cc._RF.pop();
             });
         }
         })();
-        //# sourceMappingURL=videoSocketController.js.map
+        //# sourceMappingURL=videoSocketController1.js.map
         

@@ -11,7 +11,7 @@ exports.default = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4;
+var _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2;
 
 var _videoShader = require('./videoShader1');
 
@@ -71,7 +71,7 @@ function _initializerWarningHelper(descriptor, context) {
 var _cc$_decorator = cc._decorator,
     ccclass = _cc$_decorator.ccclass,
     property = _cc$_decorator.property;
-var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite), _dec3 = property(cc.Boolean), _dec4 = property(cc.Node), ccclass(_class = (_class2 = function (_cc$Component) {
+var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite), ccclass(_class = (_class2 = function (_cc$Component) {
     _inherits(lottery_videoCom, _cc$Component);
 
     function lottery_videoCom() {
@@ -85,15 +85,14 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_videoCom.__proto__ || Object.getPrototypeOf(lottery_videoCom)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'currentUrl', _descriptor, _this), _initDefineProp(_this, 'targetSprite', _descriptor2, _this), _initDefineProp(_this, 'isPlay', _descriptor3, _this), _initDefineProp(_this, 'actionNode', _descriptor4, _this), _this.loadOver = false, _this.texureImag = null, _this._socketController = null, _this.outPutWidth = 0, _this.outPutHeight = 0, _temp), _possibleConstructorReturn(_this, _ret);
-    } //是否播放,这里不能完全控制
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_videoCom.__proto__ || Object.getPrototypeOf(lottery_videoCom)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'currentUrl', _descriptor, _this), _initDefineProp(_this, 'targetSprite', _descriptor2, _this), _this.texureImag = null, _this.targetSpriteFrame = null, _this._socketController = null, _temp), _possibleConstructorReturn(_this, _ret);
+    } //目标sprite
 
+    /*目标纹理2D*/
 
-    //
+    /**目标spriteFrame*/
 
-    //socket控制
-
-    //输出大小
+    /**socket控制*/
 
 
     _createClass(lottery_videoCom, [{
@@ -101,51 +100,53 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
         value: function onLoad() {
             cc.game.on(cc.game.EVENT_HIDE, this.gameHideClose, this);
             cc.game.on(cc.game.EVENT_SHOW, this.gameShowReOpen, this);
+            this.init();
+        }
+    }, {
+        key: 'onEnable',
+        value: function onEnable() {
+            this.gameShowReOpen();
+        }
+    }, {
+        key: 'onDisable',
+        value: function onDisable() {
+            this.gameHideClose();
         }
     }, {
         key: 'init',
-        value: function init(url) {
-            var isPlay = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
+        value: function init() {
             if (cc._renderType == cc.game.RENDER_TYPE_CANVAS) {
                 console.log('canvas下无法播放');
                 return;
             }
-            this.isPlay = isPlay;
-            this.currentUrl = url || this.currentUrl;
-            this._socketController = new ebet.baccarat.VideoSocketController(this.currentUrl, false, true);
-            this.VideoShader = new _videoShader2.default();
-            this.VideoShader.ShaderEffect(this.node);
-            this.texureImag = new cc.Texture2D();
+            //获取播放sprite
             !this.targetSprite && (this.targetSprite = this.node.getComponent(cc.Sprite));
-            this.targetSprite.spriteFrame = new cc.SpriteFrame(this.texureImag);
-            this.outPutHeight = this.node.height;
-            this.outPutWidth = this.node.width;
-            this._socketController.onPictureDecoded = this.onPictureDecoded.bind(this);
-            if (this.actionNode) {
-                var callFunc = cc.callFunc(function () {
-                    this.actionNode.rotation += 30;
-                    this.actionNode.rotation %= 360;
-                }.bind(this));
-                var repfor = cc.repeatForever(cc.sequence(cc.delayTime(0.1), callFunc));
-                this.actionNode.runAction(repfor);
+            !this.targetSprite && (this.targetSprite = this.node.addComponent(cc.Sprite));
+            //创建纹理
+            this.VideoShader = new _videoShader2.default();
+            this.VideoShader.ShaderEffect(this.targetSprite.node);
+            this.texureImag = new cc.Texture2D();
+            //绑定sprite
+            this.targetSpriteFrame = new cc.SpriteFrame(this.texureImag);
+            this.targetSprite.spriteFrame = this.targetSpriteFrame;
+        }
+
+        //设置url
+
+    }, {
+        key: 'setUrl',
+        value: function setUrl(url) {
+            this.targetSprite.spriteFrame = null;
+            this.currentUrl = url;
+            if (this._socketController) {
+                if (this.node.active) {
+                    this._socketController._packageCache.clear();
+                    this._socketController.setUrl(this.currentUrl);
+                }
+            } else {
+                this._socketController = new lottery.video.VideoSocketController(this.currentUrl, false, true);
+                this._socketController.onPictureDecoded = this.onPictureDecoded.bind(this);
             }
-        }
-        //暂停
-
-    }, {
-        key: 'pause',
-        value: function pause() {
-            this.isPlay = false;
-            this.gameHideClose();
-        }
-        //开始
-
-    }, {
-        key: 'continue',
-        value: function _continue() {
-            this.isPlay = true;
-            this.gameShowReOpen();
         }
         //播放投射到其他地方
 
@@ -163,10 +164,11 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
     }, {
         key: 'onPictureDecoded',
         value: function onPictureDecoded(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize) {
-            if (!this.isPlay) return;
-            this.loadOver = true;
+            if (!this.targetSprite.spriteFrame) this.targetSprite.spriteFrame = this.targetSpriteFrame;
             this.VideoShader._currentBuffer = data;
             this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
+            // this.targetSprite.node.width = this.node.parent.width;
+            // this.targetSprite.node.height = this.node.parent.width * pixelsHeight / pixelsWidth;
         }
     }, {
         key: 'gameHideClose',
@@ -178,7 +180,7 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
     }, {
         key: 'gameShowReOpen',
         value: function gameShowReOpen() {
-            if (this._socketController && this.isPlay) {
+            if (this._socketController) {
                 this._socketController._currentUrl = this.currentUrl;
                 this._socketController.reOpen();
             }
@@ -186,7 +188,6 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
     }, {
         key: 'update',
         value: function update(dt) {
-            if (!this.isPlay) return;
             if (this._socketController && this._socketController.onRenderingBefore) {
                 this._socketController.onRenderingBefore(dt);
                 this.VideoShader.Myrendering(ebet.videoSize);
@@ -199,7 +200,6 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
             cc.game.off(cc.game.EVENT_SHOW, this.gameShowReOpen);
             this._socketController.close();
             this._socketController = null;
-            this.unscheduleAllCallbacks();
         }
     }]);
 
@@ -210,16 +210,6 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
         return 'ws://ws4.jiasula.info:8081/lobbyB/B15/19148936/6eca0113e34c41c1f45a5f9eaf13429c';
     }
 }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'targetSprite', [_dec2], {
-    enumerable: true,
-    initializer: function initializer() {
-        return null;
-    }
-}), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'isPlay', [_dec3], {
-    enumerable: true,
-    initializer: function initializer() {
-        return false;
-    }
-}), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'actionNode', [_dec4], {
     enumerable: true,
     initializer: function initializer() {
         return null;

@@ -37,7 +37,7 @@ var _lottery_videoCom2 = _interopRequireDefault(_lottery_videoCom);
 
 var _lottery_EventDefine = require("../../Data/lottery_EventDefine");
 
-var _lottery_MsgStation = require("./Data/lottery_MsgStation");
+var _lottery_MsgStation = require("../../Data/lottery_MsgStation");
 
 var _lottery_MsgStation2 = _interopRequireDefault(_lottery_MsgStation);
 
@@ -112,7 +112,7 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_videoFlow.__proto__ || Object.getPrototypeOf(lottery_videoFlow)).call.apply(_ref, [this].concat(args))), _this), _this.msgFuncDefine = ['firstStage', 'secondStage', 'thirdStage', 'fourStage', 'fiveStage', 'sixStage', 'waitStage'], _initDefineProp(_this, "videoArr", _descriptor, _this), _initDefineProp(_this, "qiShuArr", _descriptor2, _this), _initDefineProp(_this, "nodeItem", _descriptor3, _this), _initDefineProp(_this, "littleCom", _descriptor4, _this), _initDefineProp(_this, "startLottery", _descriptor5, _this), _initDefineProp(_this, "balls", _descriptor6, _this), _initDefineProp(_this, "videoStream", _descriptor7, _this), _initDefineProp(_this, "countDownArr", _descriptor8, _this), _this.msgList = [], _this.totalTime = 60, _this.nowMsgPos = 0, _this.isPlayCountDown = false, _temp), _possibleConstructorReturn(_this, _ret);
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_videoFlow.__proto__ || Object.getPrototypeOf(lottery_videoFlow)).call.apply(_ref, [this].concat(args))), _this), _this.msgFuncDefine = ['firstStage', 'secondStage', 'thirdStage', 'fourStage', 'fiveStage', 'sixStage', 'waitStage', 'fengPan'], _initDefineProp(_this, "videoArr", _descriptor, _this), _initDefineProp(_this, "qiShuArr", _descriptor2, _this), _initDefineProp(_this, "nodeItem", _descriptor3, _this), _initDefineProp(_this, "littleCom", _descriptor4, _this), _initDefineProp(_this, "startLottery", _descriptor5, _this), _initDefineProp(_this, "balls", _descriptor6, _this), _initDefineProp(_this, "videoStream", _descriptor7, _this), _initDefineProp(_this, "countDownArr", _descriptor8, _this), _this.msgList = [], _this.totalTime = 60, _this.nowMsgPos = 0, _this.isPlayCountDown = false, _temp), _possibleConstructorReturn(_this, _ret);
     }
     //定义的收到消息后的方法
     //视频合集
@@ -125,8 +125,6 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
     //当前顺序
 
     //是否播放倒计时
-
-    //获取当前期数
 
     /**上一阶段的结束后执行的操作*/
 
@@ -188,7 +186,7 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             }
 
             this.videoStream.node.opacity = 0;
-            this.videoStream.init(null, true);
+            this.videoStream.setUrl(_lottery_lotteryData2.default.getInstance().videoUrl.master.HD);
             cc.systemEvent.on(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART, this.startPlay, this);
         }
 
@@ -243,10 +241,11 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             var _this2 = this;
 
             //设置期数
-            this.lotteryId = _lottery_lotteryData2.default.getInstance().lotteryId++;
-            this.setQiShu(this.lotteryId, this.qiShuArr[0], true);
-            this.setQiShu(this.lotteryId, this.qiShuArr[1], false);
-            this.setQiShu(this.lotteryId + 1, this.qiShuArr[2], true);
+            var expect = _lottery_lotteryData2.default.getInstance().expect;
+            var nestExpect = _lottery_lotteryData2.default.getInstance().nestExpect;
+            this.setQiShu(expect, this.qiShuArr[0], true);
+            this.setQiShu(expect, this.qiShuArr[1], false);
+            this.setQiShu(nestExpect, this.qiShuArr[2], true);
             //
             this.videoArr[0].node.active = true;
             this.videoArr[0].play();
@@ -306,13 +305,13 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
                 _this4.littleCom.setData('startLotteryBgLoop', 0, true);
                 _this4.startLottery.node.active = true;
                 _this4.startLottery.play();
-                if (_videoMsgFactory2.default.ins().period == 0) {
+                if (_lottery_lotteryData2.default.getInstance().simulated) {
                     var one = 0;
                     var timer = (0, _timers.setInterval)(function () {
                         if (one >= 2) {
                             (0, _timers.clearInterval)(timer);
                         }
-                        _lottery_MsgStation2.default.getInstance().lotteryResults({ index: one++, ballNum: 1 });
+                        _lottery_MsgStation2.default.getInstance().lotteryResults({ index: one++, openCode: 1 });
                     }, 2000);
                 }
             });
@@ -436,6 +435,20 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
                 _this8.videoArr[5].node.active = false;
             };
         }
+        /**封盘**/
+
+    }, {
+        key: "fengPan",
+        value: function fengPan() {
+            var _this9 = this;
+
+            this.videoArr[6].node.active = true;
+            this.videoArr[6].play();
+            this.stageFinsh = function () {
+                _this9.videoArr[6].node.active = false;
+                _this9.videoArr[6].stop();
+            };
+        }
         /*----------------------------------------------相关设置----------------------------------------------*/
         /**
          * 设置当前播放期数
@@ -444,14 +457,14 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
     }, {
         key: "setQiShu",
         value: function setQiShu(str, node) {
-            var _this9 = this;
+            var _this10 = this;
 
             var isBig = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
 
             node.removeAllChildren();
             var arr = (str + '').split('');
             var func = function func(url) {
-                var one = cc.instantiate(_this9.nodeItem);
+                var one = cc.instantiate(_this10.nodeItem);
                 _lottery_Utils2.default.getInstance().setSprite(one.getComponent(cc.Sprite), url, 'LEDAtlas');
                 node.addChild(one);
             };
@@ -538,17 +551,17 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
     }, {
         key: "setOneBallFly",
         value: function setOneBallFly(event) {
-            var _this10 = this;
+            var _this11 = this;
 
             var index = event.detail.index;
-            var ballNum = event.detail.ballNum;
+            var ballNum = event.detail.openCode;
             _lottery_Utils2.default.getInstance().setSprite(this.balls[index].getComponent(cc.Sprite), 'cq_' + ballNum, 'LEDAtlas');
             this.balls[index].node.active = true;
             this.balls[index].play();
             if (index == 2) {
                 console.log("最后一颗球");
                 setTimeout(function () {
-                    _this10.animFinshCallBack();
+                    _this11.animFinshCallBack();
                 }, 2000);
             }
         }

@@ -25,10 +25,6 @@ var _lottery_SocketManager = require("../Manager/lottery_SocketManager");
 
 var _lottery_SocketManager2 = _interopRequireDefault(_lottery_SocketManager);
 
-var _lottery_lotteryData = require("./lottery_lotteryData");
-
-var _lottery_lotteryData2 = _interopRequireDefault(_lottery_lotteryData);
-
 var _lottery_SockMsgDefine = require("../Manager/lottery_SockMsgDefine");
 
 var _lottery_SockMsgDefine2 = _interopRequireDefault(_lottery_SockMsgDefine);
@@ -58,6 +54,10 @@ var _lottery_VideoPlayCtr2 = _interopRequireDefault(_lottery_VideoPlayCtr);
 var _videoMsgFactory = require("../UI/view_videoSys/videoMsgFactory");
 
 var _videoMsgFactory2 = _interopRequireDefault(_videoMsgFactory);
+
+var _lottery_lotteryData = require("./lottery_lotteryData");
+
+var _lottery_lotteryData2 = _interopRequireDefault(_lottery_lotteryData);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -100,6 +100,7 @@ var lottery_MsgStation = function (_SingletonBase) {
             socket.On(_lottery_SockMsgDefine2.default.DOWN.SC_KaiPan, this.lotteryOpeningOrClosed, this);
             socket.On(_lottery_SockMsgDefine2.default.DOWN.SC_JianQi, this.setJianQi, this);
             socket.On(_lottery_SockMsgDefine2.default.DOWN.SC_JIANQIU, this.lotteryResults, this);
+            socket.On(_lottery_SockMsgDefine2.default.DOWN.SC_VideoUrl, this.lotteryVideoUrlChange, this);
         }
         /**
          * 系统消息初始化
@@ -129,6 +130,7 @@ var lottery_MsgStation = function (_SingletonBase) {
                 switch (msg.code) {
                     case 1:
                         _lottery_lotteryData2.default.getInstance().updataData(msg.data);
+                        console.log(msg.data);
                         _lottery_loginViewCtr2.default.getInstance().OnMessageHandle({ type: 1, data: _lottery_lotteryData2.default.getInstance().roleList });
                         break;
                     case 0:
@@ -148,9 +150,9 @@ var lottery_MsgStation = function (_SingletonBase) {
     }, {
         key: "onSendLotteryChoice",
         value: function onSendLotteryChoice(lotteryCode) {
+            _lottery_helper2.default.getInstance().showLoading();
             _lottery_lotteryData2.default.getInstance().lotteryCode = lotteryCode;
-            _lottery_loginViewCtr2.default.getInstance().Close();
-            _lottery_VideoPlayCtr2.default.getInstance().Open();
+            _lottery_SocketManager2.default.getInstance().Connect(this.socketIP, this.socketPort, _lottery_lotteryData2.default.getInstance().userId); //与服务器建立长连接
         }
 
         /**
@@ -161,7 +163,13 @@ var lottery_MsgStation = function (_SingletonBase) {
         key: "onSendLinkHeGuan",
         value: function onSendLinkHeGuan() {
             _lottery_helper2.default.getInstance().showLoading();
-            _lottery_SocketManager2.default.getInstance().Connect(this.socketIP, this.socketPort, _lottery_lotteryData2.default.getInstance().userId); //与服务器建立长连接
+            var one = {
+                'codeBack': 2020,
+                'data': {
+                    'lotteryCode': _lottery_lotteryData2.default.getInstance().lotteryCode
+                }
+            };
+            _lottery_SocketManager2.default.getInstance().Send(JSON.stringify(one));
             _lottery_VideoSysCtr2.default.getInstance().OnMessageHandle({ type: 1 });
         }
 
@@ -215,14 +223,11 @@ var lottery_MsgStation = function (_SingletonBase) {
     }, {
         key: "socketConnect",
         value: function socketConnect(data) {
+            console.log('建立长链接');
+            this.getVideoUrl();
+            _lottery_loginViewCtr2.default.getInstance().Close();
+            _lottery_VideoPlayCtr2.default.getInstance().Open();
             _lottery_helper2.default.getInstance().showLoading(false);
-            var one = {
-                'codeBack': 2020,
-                'data': {
-                    'lotteryCode': _lottery_lotteryData2.default.getInstance().lotteryCode
-                }
-            };
-            _lottery_SocketManager2.default.getInstance().Send(JSON.stringify(one));
         }
 
         //链接何荷官端后得回调
@@ -237,20 +242,24 @@ var lottery_MsgStation = function (_SingletonBase) {
     }, {
         key: "lotteryOpeningOrClosed",
         value: function lotteryOpeningOrClosed(data) {
+            console.log(data);
             if (data == 0) {
                 _videoMsgFactory2.default.ins().changePeriod(-1);
             } else {
-                _videoMsgFactory2.default.ins().changePeriod(1);
+                _videoMsgFactory2.default.ins().changePeriod(2);
             }
+            cc.systemEvent.emit(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART);
         }
-        //设置奖期
+        //收到奖期之后 马上跳播
 
     }, {
         key: "setJianQi",
         value: function setJianQi(data) {
-            var expect = data.expect; //当前期号
-            var next = data.nestExpect;
-            console.log(data);
+            _lottery_lotteryData2.default.getInstance().expect = data.expect;
+            _lottery_lotteryData2.default.getInstance().nestExpect = data.nestExpect;
+            _videoMsgFactory2.default.ins().changePeriod(0);
+            cc.systemEvent.emit(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART);
+            _videoMsgFactory2.default.ins().changePeriod(-1);
         }
 
         //接收到当前期售彩结束准备开奖,?第一期 马上跳播
@@ -261,6 +270,7 @@ var lottery_MsgStation = function (_SingletonBase) {
             _videoMsgFactory2.default.ins().changePeriod(0);
             cc.systemEvent.emit(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART);
         }
+
         //接收到当前期播放倒计时
 
     }, {
@@ -275,6 +285,24 @@ var lottery_MsgStation = function (_SingletonBase) {
         value: function lotteryResults(data) {
             console.log(data);
             cc.systemEvent.emit(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.BALLINFO, data);
+        }
+        /**接收到视频链接更改*/
+
+    }, {
+        key: "lotteryVideoUrlChange",
+        value: function lotteryVideoUrlChange(data) {
+            _lottery_lotteryData2.default.getInstance().videoUrl = JSON.parse(data.videoUrl);
+            console.log(_lottery_lotteryData2.default.getInstance().videoUrl);
+        }
+        /**请求视频链接*/
+
+    }, {
+        key: "getVideoUrl",
+        value: function getVideoUrl() {
+            var msg = {};
+            msg.codeBack = _lottery_SockMsgDefine2.default.DOWN.SC_VideoUrl;
+            msg.data = { type: "GET", lotteryCode: _lottery_lotteryData2.default.getInstance().lotteryCode };
+            _lottery_SocketManager2.default.getInstance().Send(JSON.stringify(msg));
         }
         /*-----------------------------------------系统事件回调-----------------------------------------*/
 
@@ -304,9 +332,11 @@ function simulationAward() {
     setTimeout(function () {
         _lottery_VideoSysCtr2.default.getInstance().OnMessageHandle({ type: 4 });
         setTimeout(function () {
-            lottery_MsgStation.getInstance().lotteryOpenAward();
-            lottery_MsgStation.getInstance().lotteryReadyAward(7);
-        }, 0);
+            lottery_MsgStation.getInstance().lotteryOpeningOrClosed(0);
+            setTimeout(function () {
+                lottery_MsgStation.getInstance().setJianQi({ expect: 11, nestExpect: 12 });
+            }, 10000);
+        }, 10000);
     }, 5000);
 }
 

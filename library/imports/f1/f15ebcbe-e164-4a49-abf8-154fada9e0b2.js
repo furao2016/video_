@@ -21,12 +21,13 @@ var videosMsgFatory = function () {
 
         this.stanardFlow = [[1], [2], [3], [4], [5], [6, 7]];
         this._msgList = [];
-        this.period = -1;
+        this.period = 2;
     }
 
     _createClass(videosMsgFatory, [{
         key: "firstToDay",
-        // -1第一期 0 常规期 1 最后一期
+        // -1第一期 0 常规期 1 最后一期 ,2封盘
+
         /**第一期开盘特殊处理 */
         value: function firstToDay() {
             this._msgList = this.anlyArr([[1, 10000]]);
@@ -44,6 +45,13 @@ var videosMsgFatory = function () {
         key: "commonToDay",
         value: function commonToDay() {
             this._msgList = this.anlyArr(this.stanardFlow);
+        }
+        /**封盘*/
+
+    }, {
+        key: "closePanToDay",
+        value: function closePanToDay() {
+            this._msgList = this.anlyArr([[8, 3000]]);
         }
         /**获取消息队列*/
 
@@ -99,6 +107,9 @@ var videosMsgFatory = function () {
                     break;
                 case 1:
                     this.endToDay();
+                    break;
+                case 2:
+                    this.closePanToDay();
                     break;
                 default:
                     this._msgList = [];

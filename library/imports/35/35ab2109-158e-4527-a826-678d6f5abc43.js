@@ -25,6 +25,7 @@ var lottery_EventDefine = exports.lottery_EventDefine = (_temp = _class = functi
     RESTART: 'RESTART',
     /**球信息*/
     BALLINFO: 'BALLINFO'
-}, _temp);
+    //地址更改
+}, _class.URL_CHANGE = "URL_CHANGE", _temp);
 
 cc._RF.pop();
