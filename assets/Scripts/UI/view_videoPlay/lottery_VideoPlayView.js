@@ -15,6 +15,9 @@ cc.Class({
     /*----------------------------------生命周期函数-----------------------------------------*/
     OnInit() {
         this.moduleName = "videoSysPre";
+        this.exitBtn.off(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
+        this.videoPlayBtn.off(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
+        cc.systemEvent.off(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
         this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
         this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
         cc.systemEvent.on(lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
@@ -29,10 +32,15 @@ cc.Class({
                 node.runAction(repfor)
             }
         }
+        this.videoUrlChange();
     },
     OnShow() { },
-    OnHide() { },
-    OnDispose() { },
+    OnHide() {
+        console.log('111');
+    },
+    OnDispose() {
+        console.log('2222');
+    },
     _onMessageHandel(data) {
 
     },

@@ -16,7 +16,7 @@ cc.Class({
     _GameStart() {
         if (cc.sys.isBrowser) {
             (require('AAC'))(window); //初始化web端的直播视频
-            (require('videoSocketController'))(ebet.baccarat); //初始化web端的直播视频
+            // (require('videoSocketController'))(ebet.baccarat); //初始化web端的直播视频
         }
         cc.loader.loadRes("config", this.setLoadingProgress.bind(this), (err, res) => {
             if (err) {
