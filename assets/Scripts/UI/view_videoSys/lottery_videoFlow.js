@@ -68,7 +68,7 @@ export default class lottery_videoFlow extends cc.Component {
      * 结束播放
      */
     stopPlay() {
-        this.videoStream.pause();
+        this.videoStream.gameHideClose();
     }
     /*--------------------------------------------播放阶段设置--------------------------------------------- */
     //每一阶段结束回调,这里的判断条件是单段视频播放完毕，然而存在循环播放的情况，这种写法则会重复调用

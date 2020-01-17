@@ -15,6 +15,9 @@ export default class lottery_videoCom extends cc.Component {
     /**socket控制*/
     _socketController = null;
 
+    /**isplay*/
+    isPlay = false;
+
     onLoad() {
         cc.game.on(cc.game.EVENT_HIDE, this.gameHideClose, this);
         cc.game.on(cc.game.EVENT_SHOW, this.gameShowReOpen, this);
@@ -34,6 +37,7 @@ export default class lottery_videoCom extends cc.Component {
             console.log('canvas下无法播放');
             return;
         }
+        this.isplay = true;
         //获取播放sprite
         !this.targetSprite && (this.targetSprite = this.node.getComponent(cc.Sprite));
         !this.targetSprite && (this.targetSprite = this.node.addComponent(cc.Sprite));
@@ -70,6 +74,7 @@ export default class lottery_videoCom extends cc.Component {
 
     //图片编码
     onPictureDecoded(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize) {
+        if (!this.isPlay) return;
         if (!this.targetSprite.spriteFrame) this.targetSprite.spriteFrame = this.targetSpriteFrame;
         this.VideoShader._currentBuffer = data;
         this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
@@ -91,7 +96,7 @@ export default class lottery_videoCom extends cc.Component {
     }
 
     update(dt) {
-        if (this._socketController && this._socketController.onRenderingBefore) {
+        if (this.isPlay && this._socketController && this._socketController.onRenderingBefore) {
             this._socketController.onRenderingBefore(dt);
             this.VideoShader.Myrendering(ebet.videoSize);
         }

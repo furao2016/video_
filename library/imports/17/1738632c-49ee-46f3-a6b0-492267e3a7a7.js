@@ -85,7 +85,7 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_videoCom.__proto__ || Object.getPrototypeOf(lottery_videoCom)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'currentUrl', _descriptor, _this), _initDefineProp(_this, 'targetSprite', _descriptor2, _this), _this.texureImag = null, _this.targetSpriteFrame = null, _this._socketController = null, _temp), _possibleConstructorReturn(_this, _ret);
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_videoCom.__proto__ || Object.getPrototypeOf(lottery_videoCom)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, 'currentUrl', _descriptor, _this), _initDefineProp(_this, 'targetSprite', _descriptor2, _this), _this.texureImag = null, _this.targetSpriteFrame = null, _this._socketController = null, _this.isPlay = false, _temp), _possibleConstructorReturn(_this, _ret);
     } //目标sprite
 
     /*目标纹理2D*/
@@ -93,6 +93,9 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
     /**目标spriteFrame*/
 
     /**socket控制*/
+
+
+    /**isplay*/
 
 
     _createClass(lottery_videoCom, [{
@@ -119,6 +122,7 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
                 console.log('canvas下无法播放');
                 return;
             }
+            this.isplay = true;
             //获取播放sprite
             !this.targetSprite && (this.targetSprite = this.node.getComponent(cc.Sprite));
             !this.targetSprite && (this.targetSprite = this.node.addComponent(cc.Sprite));
@@ -164,6 +168,7 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
     }, {
         key: 'onPictureDecoded',
         value: function onPictureDecoded(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize) {
+            if (!this.isPlay) return;
             if (!this.targetSprite.spriteFrame) this.targetSprite.spriteFrame = this.targetSpriteFrame;
             this.VideoShader._currentBuffer = data;
             this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
@@ -188,7 +193,7 @@ var lottery_videoCom = (_dec = property(cc.String), _dec2 = property(cc.Sprite),
     }, {
         key: 'update',
         value: function update(dt) {
-            if (this._socketController && this._socketController.onRenderingBefore) {
+            if (this.isPlay && this._socketController && this._socketController.onRenderingBefore) {
                 this._socketController.onRenderingBefore(dt);
                 this.VideoShader.Myrendering(ebet.videoSize);
             }

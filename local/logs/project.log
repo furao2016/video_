@@ -1,324 +1,57 @@
-2020-01-17T02:16:20.225Z - normal: Load ~/.CocosCreator/settings.json
-2020-01-17T02:16:20.228Z - normal: checking language setting...
-2020-01-17T02:16:20.228Z - normal: Language: zh
-2020-01-17T02:16:21.953Z - success: protocol editor-framework registered
-2020-01-17T02:16:21.953Z - success: protocol app registered
-2020-01-17T02:16:21.953Z - success: protocol theme registered
-2020-01-17T02:16:21.953Z - success: protocol packages registered
-2020-01-17T02:16:21.953Z - success: protocol unpack registerred
-2020-01-17T02:16:21.953Z - success: protocol disable-commonjs registerred
-2020-01-17T02:16:22.181Z - normal: connected!
-2020-01-17T02:16:22.183Z - normal: Check project F:\ztf\project\lotteryVideo_git
-2020-01-17T02:16:22.185Z - normal: Initializing Cocos2d
-2020-01-17T02:16:22.404Z - normal: Initializing Asset Database
-2020-01-17T02:16:22.451Z - success: protocol uuid registerred
-2020-01-17T02:16:22.451Z - success: protocol db registerred
-2020-01-17T02:16:22.452Z - success: protocol thumbnail registerred
-2020-01-17T02:16:22.452Z - normal: Loading editor/builtin packages
-2020-01-17T02:16:22.469Z - success: anysdk loaded
-2020-01-17T02:16:22.580Z - success: assets loaded
-2020-01-17T02:16:22.582Z - success: builder loaded
-2020-01-17T02:16:22.584Z - success: cocos-analytics loaded
-2020-01-17T02:16:22.587Z - success: console loaded
-2020-01-17T02:16:22.623Z - success: fb-instant-games loaded
-2020-01-17T02:16:22.626Z - success: hierarchy loaded
-2020-01-17T02:16:22.628Z - success: inspector loaded
-2020-01-17T02:16:22.629Z - success: keystore loaded
-2020-01-17T02:16:22.632Z - success: node-library loaded
-2020-01-17T02:16:22.633Z - success: package-asset loaded
-2020-01-17T02:16:22.635Z - success: preferences loaded
-2020-01-17T02:16:22.636Z - success: project-exporter loaded
-2020-01-17T02:16:22.651Z - success: project-importer loaded
-2020-01-17T02:16:22.653Z - success: project-settings loaded
-2020-01-17T02:16:22.656Z - success: ui-kit loaded
-2020-01-17T02:16:22.658Z - success: ui-grid loaded
-2020-01-17T02:16:22.661Z - success: scene loaded
-2020-01-17T02:16:22.661Z - success: sprite-editor loaded
-2020-01-17T02:16:22.665Z - success: store loaded
-2020-01-17T02:16:22.668Z - success: timeline loaded
-2020-01-17T02:16:22.669Z - normal: Loading builtin packages
-2020-01-17T02:16:22.672Z - success: asset-db-debugger loaded
-2020-01-17T02:16:22.674Z - success: code-editor loaded
-2020-01-17T02:16:22.674Z - success: color-picker loaded
-2020-01-17T02:16:22.677Z - success: package-manager loaded
-2020-01-17T02:16:22.679Z - success: qqplay-adapter loaded
-2020-01-17T02:16:22.683Z - success: sdkbox loaded
-2020-01-17T02:16:22.687Z - success: tester loaded
-2020-01-17T02:16:22.689Z - success: ui-kit-preview-extra loaded
-2020-01-17T02:16:22.691Z - success: ui-kit-preview loaded
-2020-01-17T02:16:22.692Z - success: ui-tree loaded
-2020-01-17T02:16:22.693Z - success: weapp-adapter loaded
-2020-01-17T02:16:23.735Z - normal: Initializing project F:\ztf\project\lotteryVideo_git
-2020-01-17T02:16:23.750Z - normal: Loading packages
-2020-01-17T02:16:23.756Z - success: script loaded
-2020-01-17T02:16:23.756Z - normal: Watching packages
-2020-01-17T02:16:24.206Z - normal: Run Application
-2020-01-17T02:16:24.886Z - failed: [db-task][init] uuid collision, the uuid for F:\ztf\project\lotteryVideo_git\assets\Scripts\UI\videoCom\videoSocketController1.js is already in used by F:\ztf\project\lotteryVideo_git\assets\Scripts\UI\videoCom\videoSocketController.js. Assigning a new uuid.
-2020-01-17T02:16:48.738Z - success: preview server running at http://localhost:7456
-2020-01-17T02:16:54.851Z - warn: The id already added in the tree: 4b380d4b-c4c6-462b-a334-90cf13abb2c0
-2020-01-17T02:16:54.896Z - normal: 1.9.3
-2020-01-17T02:17:04.627Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "F:\\ztf\\project\\lotteryVideo_git\\build",
-  "debug": false,
-  "dest": "F:\\ztf\\project\\lotteryVideo_git\\build\\web-mobile",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.LotteryVideo",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "1d149b8f-6376-44d8-814f-6c6a5bb72d9e",
-    "f0c1a3fd-ac23-48e6-b88c-f314c152d449"
-  ],
-  "sourceMaps": true,
-  "startScene": "1d149b8f-6376-44d8-814f-6c6a5bb72d9e",
-  "template": "link",
-  "title": "LotteryVideo",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "landscape",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "5d654a03-953f-4a",
-  "zipCompressJs": true,
-  "project": "F:\\ztf\\project\\lotteryVideo_git",
-  "projectName": "LotteryVideo",
-  "debugBuildWorker": false
-}
-2020-01-17T02:17:04.629Z - normal: Building F:\ztf\project\lotteryVideo_git
-2020-01-17T02:17:04.629Z - normal: Destination F:\ztf\project\lotteryVideo_git\build\web-mobile
-2020-01-17T02:17:04.913Z - normal: Delete F:\ztf\project\lotteryVideo_git\build\web-mobile\**\*
-2020-01-17T02:17:08.091Z - normal: Compiled project javascript file successfully
-2020-01-17T02:17:08.092Z - error: Build Failed: Compile error: Cannot require 'H264Sprite' from 'F:\ztf\project\lotteryVideo_git\assets\VideoSimple\js'. Module not found.
-    at Readable.<anonymous> (C:\CocosCreator\resources\app.asar\editor\page\compile-worker.js:1:1514)
-    at emitOne (events.js:96:13)
-    at Readable.emit (events.js:191:7)
-    at Labeled.<anonymous> (C:\CocosCreator\resources\app.asar\node_modules\read-only-stream\index.js:28:44)
-    at emitOne (events.js:96:13)
-    at Labeled.emit (events.js:191:7)
-    at Labeled.<anonymous> (C:\CocosCreator\resources\app.asar\node_modules\stream-splicer\index.js:130:18)
-    at emitOne (events.js:96:13)
-    at Labeled.emit (events.js:191:7)
-    at Deps.<anonymous> (C:\CocosCreator\resources\app.asar\node_modules\stream-splicer\index.js:130:18)
-    at Async.series.r (C:\CocosCreator\resources\app.asar\editor\core\builder.js:1:3101)
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:726:13
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:52:16
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:264:21
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:44:16
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:723:17
-    at C:\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
-    at Gulp.doneCallback (C:\CocosCreator\resources\app.asar\editor\core\gulp-build.js:1:21071)
-    at Gulp.Orchestrator.stop (C:\CocosCreator\resources\app.asar\node_modules\orchestrator\index.js:150:9)
-2020-01-17T02:17:55.497Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "F:\\ztf\\project\\lotteryVideo_git\\build",
-  "debug": false,
-  "dest": "F:\\ztf\\project\\lotteryVideo_git\\build\\web-mobile",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.LotteryVideo",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "1d149b8f-6376-44d8-814f-6c6a5bb72d9e",
-    "f0c1a3fd-ac23-48e6-b88c-f314c152d449"
-  ],
-  "sourceMaps": true,
-  "startScene": "1d149b8f-6376-44d8-814f-6c6a5bb72d9e",
-  "template": "link",
-  "title": "LotteryVideo",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "landscape",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "5d654a03-953f-4a",
-  "zipCompressJs": true,
-  "project": "F:\\ztf\\project\\lotteryVideo_git",
-  "projectName": "LotteryVideo",
-  "debugBuildWorker": false
-}
-2020-01-17T02:17:55.500Z - normal: Building F:\ztf\project\lotteryVideo_git
-2020-01-17T02:17:55.500Z - normal: Destination F:\ztf\project\lotteryVideo_git\build\web-mobile
-2020-01-17T02:17:55.501Z - normal: Delete F:\ztf\project\lotteryVideo_git\build\web-mobile\**\*
-2020-01-17T02:18:01.205Z - normal: Compiled project javascript file successfully
-2020-01-17T02:18:01.205Z - normal: Start building assets
-2020-01-17T02:18:01.205Z - normal: Start spawn build-worker
-2020-01-17T02:18:01.818Z - normal: Finish spawn build-worker
-2020-01-17T02:18:01.818Z - normal: Start init build-worker
-2020-01-17T02:18:03.793Z - normal: 1.9.3
-2020-01-17T02:18:03.942Z - normal: Finish init build-worker
-2020-01-17T02:18:03.942Z - normal: Start build-assets in worker
-2020-01-17T02:18:04.216Z - warn: Script attached to "Canvas" in scene "main.fire" is missing or invalid. Detailed information:
-Node path: "Canvas"
-Asset url: "db://assets/VideoSimple/scene/main.fire"
-Script UUID: "d79bbab6-d682-47c3-9ded-cd527dab568b"
-Class ID: "d79bbq21oJHw53tzVJ9q1aL"
-
-2020-01-17T02:18:05.607Z - normal: Finish build-assets in worker
-2020-01-17T02:18:05.612Z - normal: Finish building assets
-2020-01-17T02:18:05.771Z - normal: Start building raw assets
-2020-01-17T02:18:05.772Z - normal: Start building plugin scripts
-2020-01-17T02:18:08.746Z - normal: Finish building plugin scripts
-2020-01-17T02:18:09.122Z - normal: Finish building raw assets
-2020-01-17T02:18:09.129Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
-2020-01-17T02:18:09.136Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
-2020-01-17T02:18:09.160Z - normal: Built to "F:\ztf\project\lotteryVideo_git\build\web-mobile" successfully
-2020-01-17T02:20:58.441Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "F:\\ztf\\project\\lotteryVideo_git\\build",
-  "debug": false,
-  "dest": "F:\\ztf\\project\\lotteryVideo_git\\build\\web-mobile",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.LotteryVideo",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "renderMode": "0",
-  "scenes": [
-    "1d149b8f-6376-44d8-814f-6c6a5bb72d9e",
-    "f0c1a3fd-ac23-48e6-b88c-f314c152d449"
-  ],
-  "sourceMaps": true,
-  "startScene": "1d149b8f-6376-44d8-814f-6c6a5bb72d9e",
-  "template": "link",
-  "title": "LotteryVideo",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "landscape",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "5d654a03-953f-4a",
-  "zipCompressJs": true,
-  "project": "F:\\ztf\\project\\lotteryVideo_git",
-  "projectName": "LotteryVideo",
-  "debugBuildWorker": false
-}
-2020-01-17T02:20:58.444Z - normal: Building F:\ztf\project\lotteryVideo_git
-2020-01-17T02:20:58.444Z - normal: Destination F:\ztf\project\lotteryVideo_git\build\web-mobile
-2020-01-17T02:20:58.445Z - normal: Delete F:\ztf\project\lotteryVideo_git\build\web-mobile\**\*
-2020-01-17T02:21:06.249Z - normal: Compiled project javascript file successfully
-2020-01-17T02:21:06.249Z - normal: Start building assets
-2020-01-17T02:21:06.249Z - normal: Start spawn build-worker
-2020-01-17T02:21:07.187Z - normal: Finish spawn build-worker
-2020-01-17T02:21:07.187Z - normal: Start init build-worker
-2020-01-17T02:21:09.743Z - normal: 1.9.3
-2020-01-17T02:21:09.926Z - normal: Finish init build-worker
-2020-01-17T02:21:09.926Z - normal: Start build-assets in worker
-2020-01-17T02:21:10.265Z - warn: Script attached to "Canvas" in scene "main.fire" is missing or invalid. Detailed information:
-Node path: "Canvas"
-Asset url: "db://assets/VideoSimple/scene/main.fire"
-Script UUID: "d79bbab6-d682-47c3-9ded-cd527dab568b"
-Class ID: "d79bbq21oJHw53tzVJ9q1aL"
-
-2020-01-17T02:21:12.140Z - normal: Finish build-assets in worker
-2020-01-17T02:21:12.147Z - normal: Finish building assets
-2020-01-17T02:21:12.340Z - normal: Start building raw assets
-2020-01-17T02:21:12.341Z - normal: Start building plugin scripts
-2020-01-17T02:21:15.610Z - normal: Finish building plugin scripts
-2020-01-17T02:21:16.102Z - normal: Finish building raw assets
-2020-01-17T02:21:16.109Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
-2020-01-17T02:21:16.112Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
-2020-01-17T02:21:16.340Z - normal: Built to "F:\ztf\project\lotteryVideo_git\build\web-mobile" successfully
+2020-01-17T02:57:22.874Z - normal: Load ~/.CocosCreator/settings.json
+2020-01-17T02:57:22.877Z - normal: checking language setting...
+2020-01-17T02:57:22.877Z - normal: Language: zh
+2020-01-17T02:57:24.610Z - success: protocol editor-framework registered
+2020-01-17T02:57:24.610Z - success: protocol app registered
+2020-01-17T02:57:24.610Z - success: protocol theme registered
+2020-01-17T02:57:24.610Z - success: protocol packages registered
+2020-01-17T02:57:24.610Z - success: protocol unpack registerred
+2020-01-17T02:57:24.610Z - success: protocol disable-commonjs registerred
+2020-01-17T02:57:24.857Z - normal: connected!
+2020-01-17T02:57:24.863Z - normal: Check project F:\ztf\project\lotteryVideo_git
+2020-01-17T02:57:24.876Z - normal: Initializing Cocos2d
+2020-01-17T02:57:25.099Z - normal: Initializing Asset Database
+2020-01-17T02:57:25.133Z - success: protocol uuid registerred
+2020-01-17T02:57:25.133Z - success: protocol db registerred
+2020-01-17T02:57:25.133Z - success: protocol thumbnail registerred
+2020-01-17T02:57:25.134Z - normal: Loading editor/builtin packages
+2020-01-17T02:57:25.151Z - success: anysdk loaded
+2020-01-17T02:57:25.264Z - success: assets loaded
+2020-01-17T02:57:25.266Z - success: builder loaded
+2020-01-17T02:57:25.269Z - success: cocos-analytics loaded
+2020-01-17T02:57:25.271Z - success: console loaded
+2020-01-17T02:57:25.307Z - success: fb-instant-games loaded
+2020-01-17T02:57:25.310Z - success: hierarchy loaded
+2020-01-17T02:57:25.311Z - success: inspector loaded
+2020-01-17T02:57:25.312Z - success: keystore loaded
+2020-01-17T02:57:25.314Z - success: node-library loaded
+2020-01-17T02:57:25.316Z - success: package-asset loaded
+2020-01-17T02:57:25.318Z - success: preferences loaded
+2020-01-17T02:57:25.319Z - success: project-exporter loaded
+2020-01-17T02:57:25.334Z - success: project-importer loaded
+2020-01-17T02:57:25.336Z - success: project-settings loaded
+2020-01-17T02:57:25.338Z - success: ui-kit loaded
+2020-01-17T02:57:25.340Z - success: ui-grid loaded
+2020-01-17T02:57:25.343Z - success: scene loaded
+2020-01-17T02:57:25.345Z - success: sprite-editor loaded
+2020-01-17T02:57:25.348Z - success: store loaded
+2020-01-17T02:57:25.351Z - success: timeline loaded
+2020-01-17T02:57:25.351Z - normal: Loading builtin packages
+2020-01-17T02:57:25.355Z - success: asset-db-debugger loaded
+2020-01-17T02:57:25.356Z - success: code-editor loaded
+2020-01-17T02:57:25.357Z - success: color-picker loaded
+2020-01-17T02:57:25.360Z - success: package-manager loaded
+2020-01-17T02:57:25.361Z - success: qqplay-adapter loaded
+2020-01-17T02:57:25.365Z - success: sdkbox loaded
+2020-01-17T02:57:25.368Z - success: tester loaded
+2020-01-17T02:57:25.370Z - success: ui-kit-preview-extra loaded
+2020-01-17T02:57:25.372Z - success: ui-kit-preview loaded
+2020-01-17T02:57:25.373Z - success: ui-tree loaded
+2020-01-17T02:57:25.374Z - success: weapp-adapter loaded
+2020-01-17T02:57:26.423Z - normal: Initializing project F:\ztf\project\lotteryVideo_git
+2020-01-17T02:57:26.426Z - normal: Loading packages
+2020-01-17T02:57:26.432Z - success: script loaded
+2020-01-17T02:57:26.433Z - normal: Watching packages
+2020-01-17T02:57:26.873Z - normal: Run Application
+2020-01-17T02:57:28.194Z - success: preview server running at http://localhost:7456
+2020-01-17T02:57:33.641Z - normal: 1.9.3
