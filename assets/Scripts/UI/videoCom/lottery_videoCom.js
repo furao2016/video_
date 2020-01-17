@@ -37,7 +37,7 @@ export default class lottery_videoCom extends cc.Component {
             console.log('canvas下无法播放');
             return;
         }
-        this.isplay = true;
+        this.isPlay = true;
         //获取播放sprite
         !this.targetSprite && (this.targetSprite = this.node.getComponent(cc.Sprite));
         !this.targetSprite && (this.targetSprite = this.node.addComponent(cc.Sprite));
