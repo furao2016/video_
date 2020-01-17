@@ -5,7 +5,7 @@ import lottery_lotteryData from "../../Data/lottery_lotteryData";
 import { setInterval, clearInterval } from "timers";
 import lottery_videoCom from "../videoCom/lottery_videoCom";
 import { lottery_EventDefine } from "../../Data/lottery_EventDefine";
-import lottery_MsgStation from "./Data/lottery_MsgStation";
+import lottery_MsgStation from "../../Data/lottery_MsgStation";
 const { ccclass, property } = cc._decorator;
 //考虑再拆分成小类,当前写法下每一个阶段一个函数，每个函数中有大量的修改界面的代码
 //只有按照正确的顺序执行 才能正常的显示

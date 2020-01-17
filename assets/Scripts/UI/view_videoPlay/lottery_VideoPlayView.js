@@ -1,6 +1,6 @@
 import lottery_MsgStation, { simulationAward } from "../../Data/lottery_MsgStation";
 import lottery_videoCom from "../videoCom/lottery_videoCom"
-import lottery_lotteryData from './Data/lottery_lotteryData'
+import lottery_lotteryData from '../../Data/lottery_lotteryData'
 import { lottery_EventDefine } from "../../Data/lottery_EventDefine";
 cc.Class({
     extends: require("lottery_viewBaseComponent"),

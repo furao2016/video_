@@ -73,8 +73,8 @@ export default class lottery_videoCom extends cc.Component {
         if (!this.targetSprite.spriteFrame) this.targetSprite.spriteFrame = this.targetSpriteFrame;
         this.VideoShader._currentBuffer = data;
         this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
-        this.targetSprite.node.width = this.node.parent.width;
-        this.targetSprite.node.height = this.node.parent.width * pixelsHeight / pixelsWidth;
+        // this.targetSprite.node.width = this.node.parent.width;
+        // this.targetSprite.node.height = this.node.parent.width * pixelsHeight / pixelsWidth;
     }
 
     gameHideClose() {
