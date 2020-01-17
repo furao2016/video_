@@ -26,7 +26,7 @@ cc.Class({
                 node.runAction(repfor)
             }
         }
-        this.videoUrlChange();
+        lottery_MsgStation.getInstance().getVideoUrl();
     },
     OnShow() { },
     onEnable() {

@@ -133,7 +133,6 @@ export default class lottery_MsgStation extends SingletonBase {
     //建立长连接成功
     socketConnect(data) {
         console.log('建立长链接');
-        this.getVideoUrl();
         lottery_loginViewCtr.getInstance().Close();
         lottery_VideoPlayCtr.getInstance().Open();
         Helper.getInstance().showLoading(false);
