@@ -23,6 +23,12 @@ export default class lottery_lotteryData extends SingletonBase {
     //开奖结果
     awardResult = [1, 2, 3];
 
+    network = {
+        'httpServer': "",
+        'socketIP': "",
+        'socketPort': ""
+    }
+
 
     static _onNewObject() {
         let one = new lottery_lotteryData();

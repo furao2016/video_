@@ -23,11 +23,10 @@ cc.Class({
                 cc.error(err)
                 return
             }
-            let instance = lottery_MsgStation.getInstance();
-            let json = lottery_lotteryData.getInstance().isLocal ? res.local : res.work;
-            instance.httpServer = json.HttpServer
-            instance.socketIP = json.SocketIP
-            instance.socketPort = json.SocketPort
+            let lotteryData = lottery_lotteryData.getInstance();
+            lotteryData.isLocal = res.isLocal;
+            lotteryData.simulated = res.simulated;
+            lotteryData.network = res.isLocal ? res.local : res.work;
         })
         lottery_animDataMgr.getInstance().init(this.setLoadingProgress.bind(this), () => {
             lottery_loginViewCtr.getInstance().Open();

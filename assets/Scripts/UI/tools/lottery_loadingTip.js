@@ -5,7 +5,7 @@ const { ccclass, property } = cc._decorator;
 @ccclass
 export default class lottery_loadingTip extends cc.Component {
     @property(cc.Integer)//播放最长时间
-    playLongTime = 5000;
+    playLongTime = 2500;
     @property(cc.Node)
     actionNode = null;
     //定时器ID

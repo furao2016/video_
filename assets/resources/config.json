@@ -1,4 +1,6 @@
 {
-    "local":{"HttpServer":"http://192.168.0.143:7050/","SocketIP":"192.168.0.198","SocketPort":"7070"},
-   "work":{"HttpServer":"http://47.52.34.18:7050/","SocketIP":"172.16.14.15","SocketPort":"7070"}
+    "simulated":false,
+    "isLocal":true,
+    "local":{"httpServer":"http://192.168.0.143:7050/","socketIP":"192.168.0.198","socketPort":"7070"},
+    "work":{"httpServer":"http://47.52.34.18:7050/","socketIP":"172.16.14.15","socketPort":"7070"}
 }

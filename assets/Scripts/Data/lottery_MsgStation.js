@@ -14,10 +14,7 @@ import lottery_lotteryData from "./lottery_lotteryData";
  * 消息中转
  */
 export default class lottery_MsgStation extends SingletonBase {
-    httpServer = "";
-    socketIP = "";
-    socketPort = "";
-    loging = false; //登陆中
+    lotteryData = lottery_lotteryData.getInstance();
 
     static _onNewObject() {
         let one = new lottery_MsgStation();
@@ -50,7 +47,7 @@ export default class lottery_MsgStation extends SingletonBase {
     */
     onSendEnterLogin(account, password) {
         Helper.getInstance().showLoading();
-        NetManager.getInstance().HttpPost(this.httpServer + 'dealer/login/video/check', { "userName": account, "password": password }, (error, msg) => {
+        NetManager.getInstance().HttpPost(this.lotteryData.network.httpServer + 'dealer/login/video/check', { "userName": account, "password": password }, (error, msg) => {
             Helper.getInstance().showLoading(false);
             if (error) {
                 Helper.getInstance().showTips('网络错误');
@@ -77,8 +74,8 @@ export default class lottery_MsgStation extends SingletonBase {
      */
     onSendLotteryChoice(lotteryCode) {
         Helper.getInstance().showLoading();
-        lottery_lotteryData.getInstance().lotteryCode = lotteryCode;
-        SocketManager.getInstance().Connect(this.socketIP, this.socketPort, lottery_lotteryData.getInstance().userId);//与服务器建立长连接
+        this.lotteryData.lotteryCode = lotteryCode;
+        SocketManager.getInstance().Connect(this.lotteryData.network.socketIP, this.lotteryData.network.socketPort, this.lotteryData.userId);//与服务器建立长连接
     }
 
     /**
