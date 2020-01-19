@@ -35,12 +35,6 @@ cc.Class({
         var _this = this;
 
         this.moduleName = "videoSysPre";
-        this.exitBtn.off(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
-        this.videoPlayBtn.off(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
-        cc.systemEvent.off(_lottery_EventDefine.lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
-        this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
-        this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
-        cc.systemEvent.on(_lottery_EventDefine.lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
 
         var _loop = function _loop(node) {
             if (node) {
@@ -79,12 +73,20 @@ cc.Class({
             }
         }
 
-        this.videoUrlChange();
+        _lottery_MsgStation2.default.getInstance().getVideoUrl();
     },
     OnShow: function OnShow() {},
-    OnHide: function OnHide() {
-        console.log('111');
+    onEnable: function onEnable() {
+        this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
+        this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
+        cc.systemEvent.on(_lottery_EventDefine.lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
     },
+    onDisable: function onDisable() {
+        this.exitBtn.off(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
+        this.videoPlayBtn.off(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);
+        cc.systemEvent.off(_lottery_EventDefine.lottery_EventDefine.URL_CHANGE, this.videoUrlChange, this);
+    },
+    OnHide: function OnHide() {},
     OnDispose: function OnDispose() {
         console.log('2222');
     },
@@ -121,7 +123,7 @@ cc.Class({
 
     //小窗口全屏播放
     screenBtnDown: function screenBtnDown(event, data) {
-        if (!this.videoCanvas[data].loadOver) return;
+        if (!this.videoCanvas[data].isPlay) return;
         this.videoCanvas[data].changeTargetSprite(this.bigCanvas);
         this.inputEvents.active = true;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.escEvent, this);

@@ -224,7 +224,6 @@ var lottery_MsgStation = function (_SingletonBase) {
         key: "socketConnect",
         value: function socketConnect(data) {
             console.log('建立长链接');
-            this.getVideoUrl();
             _lottery_loginViewCtr2.default.getInstance().Close();
             _lottery_VideoPlayCtr2.default.getInstance().Open();
             _lottery_helper2.default.getInstance().showLoading(false);
