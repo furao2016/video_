@@ -45,13 +45,13 @@ export default class lottery_lotteryData extends SingletonBase {
     _videoUrl = {
         master:
         {
-            HD: "rtmp://test.xshny.com:1935/lobby/L01",
-            SD: "rtmp://test.xshny.com:1935/lobby/L01_ff"
+            HD: "ws://stattws.9hrb.vip/lobbyB/L01",
+            SD: "ws://stattws.9hrb.vip/lobbyS/L01"
         },
         vice:
         {
-            HD: "rtmp://test.xshny.com:1935/lobby/L01-1",
-            SD: "rtmp://test.xshny.com:1935/lobby/L01-1_ff"
+            HD: "ws://stattws.9hrb.vip/lobbyB/L01-1",
+            SD: "ws://stattws.9hrb.vip/lobbyS/L01-1"
         }
     }
 

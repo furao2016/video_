@@ -50,6 +50,8 @@ export default class lottery_videoFlow extends cc.Component {
             one.node.on('completed', this.animFinshCallBack.bind(this));
             one.node.active = false;
         }
+        for (let one of this.balls)
+            one.node.active = false;
         let arr = document.getElementsByClassName('cocosVideo');
         for (let one of arr) {
             one.muted = true;
@@ -175,17 +177,18 @@ export default class lottery_videoFlow extends cc.Component {
         this.balls[2].play('ball_3');
         this.startLottery.play('startLottery_qishu');
         this.stageFinsh = () => {
-            for (let one of this.balls)
-                one.node.active = false;
             this.videoArr[2].stop();
             this.videoArr[2].node.active = false;
-            this.startLottery.node.active = false;
         }
     }
     /**
      * 播放 ebet3d logo
      */
     fiveStage(data) {
+        this.startLottery.play('startLottery_3');
+        this.balls[0].play('ball_stop_1');
+        this.balls[1].play('ball_stop_2');
+        this.balls[2].play('ball_stop_3');
         this.videoArr[3].node.active = true;
         this.videoArr[3].play();
         this.stageFinsh = () => {
@@ -205,6 +208,9 @@ export default class lottery_videoFlow extends cc.Component {
         anim.play();
         this.stageFinsh = () => {
             anim.stop();
+            for (let one of this.balls)
+                one.node.active = false;
+            this.startLottery.node.active = false;
             this.qiShuArr[2].active = false;
             this.videoArr[4].stop();
             this.videoArr[4].node.active = false;

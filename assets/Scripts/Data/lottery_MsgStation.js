@@ -201,8 +201,8 @@ export function simulationAward() {
         setTimeout(() => {
             lottery_MsgStation.getInstance().lotteryOpeningOrClosed(0);
             setTimeout(() => {
-                lottery_MsgStation.getInstance().setJianQi({ expect: 11, nestExpect: 12 })
+                lottery_MsgStation.getInstance().setJianQi({ expect: 1000000001, nestExpect: 1000000002 })
             }, 10000);
         }, 10000);
-    }, 5000);
+    }, 1000);
 }
