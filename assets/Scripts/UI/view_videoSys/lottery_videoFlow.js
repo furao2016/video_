@@ -41,6 +41,10 @@ export default class lottery_videoFlow extends cc.Component {
     /**上一阶段的结束后执行的操作*/
     stageFinsh;
 
+    onLoad() {
+        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.master.HD);
+    }
+    
     start() {
         for (let one of this.videoArr) {
             one.node.on('completed', this.animFinshCallBack.bind(this));
@@ -52,7 +56,6 @@ export default class lottery_videoFlow extends cc.Component {
             one.style.zIndex = '-1';
         }
         this.videoStream.node.opacity = 0;
-        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.master.HD);
         cc.systemEvent.on(lottery_EventDefine.VIDEOFLOW.RESTART, this.startPlay, this);
     }
 
