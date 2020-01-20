@@ -42,9 +42,9 @@ export default class lottery_videoFlow extends cc.Component {
     stageFinsh;
 
     onLoad() {
-        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.master.HD);
+        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.vice.HD);
     }
-    
+
     start() {
         for (let one of this.videoArr) {
             one.node.on('completed', this.animFinshCallBack.bind(this));
