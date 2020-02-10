@@ -3,7 +3,7 @@
   "_name": "ball_move - 002",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 2,
+  "_duration": 1,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -19,15 +19,15 @@
         {
           "frame": 0,
           "value": [
-            1145,
-            -431
+            543,
+            656
           ]
         },
         {
-          "frame": 2,
+          "frame": 1,
           "value": [
-            780,
-            -431
+            543,
+            425
           ]
         }
       ]

@@ -141,7 +141,7 @@ var lottery_loadingTip = (_dec = property(cc.Integer), _dec2 = property(cc.Node)
 }(cc.Component), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "playLongTime", [_dec], {
     enumerable: true,
     initializer: function initializer() {
-        return 5000;
+        return 2500;
     }
 }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "actionNode", [_dec2], {
     enumerable: true,

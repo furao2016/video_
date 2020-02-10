@@ -84,7 +84,7 @@ var lottery_MsgStation = function (_SingletonBase) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_MsgStation.__proto__ || Object.getPrototypeOf(lottery_MsgStation)).call.apply(_ref, [this].concat(args))), _this), _this.httpServer = "", _this.socketIP = "", _this.socketPort = "", _this.loging = false, _temp), _possibleConstructorReturn(_this, _ret);
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_MsgStation.__proto__ || Object.getPrototypeOf(lottery_MsgStation)).call.apply(_ref, [this].concat(args))), _this), _this.lotteryData = _lottery_lotteryData2.default.getInstance(), _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(lottery_MsgStation, [{
@@ -121,7 +121,7 @@ var lottery_MsgStation = function (_SingletonBase) {
         key: "onSendEnterLogin",
         value: function onSendEnterLogin(account, password) {
             _lottery_helper2.default.getInstance().showLoading();
-            _lottery_NetManager2.default.getInstance().HttpPost(this.httpServer + 'dealer/login/video/check', { "userName": account, "password": password }, function (error, msg) {
+            _lottery_NetManager2.default.getInstance().HttpPost(this.lotteryData.network.httpServer + 'dealer/login/video/check', { "userName": account, "password": password }, function (error, msg) {
                 _lottery_helper2.default.getInstance().showLoading(false);
                 if (error) {
                     _lottery_helper2.default.getInstance().showTips('网络错误');
@@ -151,8 +151,8 @@ var lottery_MsgStation = function (_SingletonBase) {
         key: "onSendLotteryChoice",
         value: function onSendLotteryChoice(lotteryCode) {
             _lottery_helper2.default.getInstance().showLoading();
-            _lottery_lotteryData2.default.getInstance().lotteryCode = lotteryCode;
-            _lottery_SocketManager2.default.getInstance().Connect(this.socketIP, this.socketPort, _lottery_lotteryData2.default.getInstance().userId); //与服务器建立长连接
+            this.lotteryData.lotteryCode = lotteryCode;
+            _lottery_SocketManager2.default.getInstance().Connect(this.lotteryData.network.socketIP, this.lotteryData.network.socketPort, this.lotteryData.userId); //与服务器建立长连接
         }
 
         /**
@@ -312,8 +312,6 @@ var lottery_MsgStation = function (_SingletonBase) {
         }
     }], [{
         key: "_onNewObject",
-        //登陆中
-
         value: function _onNewObject() {
             var one = new lottery_MsgStation();
             one.noticeInit();
@@ -333,10 +331,10 @@ function simulationAward() {
         setTimeout(function () {
             lottery_MsgStation.getInstance().lotteryOpeningOrClosed(0);
             setTimeout(function () {
-                lottery_MsgStation.getInstance().setJianQi({ expect: 11, nestExpect: 12 });
+                lottery_MsgStation.getInstance().setJianQi({ expect: 1000000001, nestExpect: 1000000002 });
             }, 10000);
         }, 10000);
-    }, 5000);
+    }, 1000);
 }
 
 cc._RF.pop();

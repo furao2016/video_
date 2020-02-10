@@ -4,17 +4,9 @@ cc._RF.push(module, 'c60d75qnF9Mf410p2lmP1d/', 'GameStart');
 
 "use strict";
 
-var _lottery_MsgStation = require("./Data/lottery_MsgStation");
-
-var _lottery_MsgStation2 = _interopRequireDefault(_lottery_MsgStation);
-
 var _lottery_animDataMgr = require("./Data/lottery_animDataMgr");
 
 var _lottery_animDataMgr2 = _interopRequireDefault(_lottery_animDataMgr);
-
-var _lottery_VideoPlayCtr = require("./UI/view_videoPlay/lottery_VideoPlayCtr");
-
-var _lottery_VideoPlayCtr2 = _interopRequireDefault(_lottery_VideoPlayCtr);
 
 var _lottery_loginViewCtr = require("./UI/view_login/lottery_loginViewCtr");
 
@@ -23,6 +15,10 @@ var _lottery_loginViewCtr2 = _interopRequireDefault(_lottery_loginViewCtr);
 var _lottery_lotteryData = require("./Data/lottery_lotteryData");
 
 var _lottery_lotteryData2 = _interopRequireDefault(_lottery_lotteryData);
+
+var _lottery_VideoSysCtr = require("./UI/view_videoSys/lottery_VideoSysCtr");
+
+var _lottery_VideoSysCtr2 = _interopRequireDefault(_lottery_VideoSysCtr);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48,15 +44,14 @@ cc.Class({
                 cc.error(err);
                 return;
             }
-            var instance = _lottery_MsgStation2.default.getInstance();
-            var json = _lottery_lotteryData2.default.getInstance().isLocal ? res.local : res.work;
-            instance.httpServer = json.HttpServer;
-            instance.socketIP = json.SocketIP;
-            instance.socketPort = json.SocketPort;
+            var lotteryData = _lottery_lotteryData2.default.getInstance();
+            lotteryData.simulated = res.simulated;
+            lotteryData.network = res[res.envType];
         });
         _lottery_animDataMgr2.default.getInstance().init(this.setLoadingProgress.bind(this), function () {
-            _lottery_loginViewCtr2.default.getInstance().Open();
+            // lottery_loginViewCtr.getInstance().Open();
             _this.loadingNode.active = false;
+            _lottery_VideoSysCtr2.default.getInstance().Open();
         });
     },
 

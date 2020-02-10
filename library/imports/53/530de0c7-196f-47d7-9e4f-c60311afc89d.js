@@ -113,11 +113,11 @@ var SocketManager = function (_SingletonBase) {
                         _lottery_TimeMgr2.default.getInstance().closeTimer(this.reConnectTimerID);
                         this.reConnectTimerID = 0;
                     }
-                    //this.HeartOpen();//开启心跳包
+                    this.HeartOpen(); //开启心跳包
                     break;
                 case SocketEnum.error:
                 case SocketEnum.close:
-                    //this.HeartClose();//关闭心跳包
+                    this.HeartClose(); //关闭心跳包
                     this.socketEventDic[_lottery_SockMsgDefine2.default.LongConnect.Disconnect] && this.socketEventDic[_lottery_SockMsgDefine2.default.LongConnect.Disconnect]();
                     this.ReConnect(); //重连socket
                     break;

@@ -1,7 +1,7 @@
 {
-    "simulated":false,
+    "simulated":true,
     "envType":"pre",
     "test":{"httpServer":"http://192.168.0.143:7050/","socketIP":"192.168.0.198","socketPort":"7070"},
-    "pre":{"httpServer":"http://47.52.61.28:7050/","socketIP":"47.52.61.28","socketPort":"7070"},
+    "pre":{"httpServer":"http://dev-cp-gw.yunduan123.cn:7050","socketIP":"http://dev-cp-dealer.yunduan123.cn","socketPort":"7070"},
     "pro":{"httpServer":"http://47.52.61.28:7050/","socketIP":"47.52.61.28","socketPort":"7070"}
 }

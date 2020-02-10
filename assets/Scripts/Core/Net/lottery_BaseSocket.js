@@ -24,7 +24,6 @@ export default class simplewebsocket {
     connect() {
         try {
             this._is_opened = false
-            //var url = "ws://" + this._host + ":" + this._port + "/websocket/" + this._attachParam;
             var url = "ws://" + this._host + ":" + this._port + "/socket/video/" + this._attachParam;
             this._wb_client = new WebSocket(url);
             this._wb_client.onopen = this.onOpen.bind(this)

@@ -130,6 +130,11 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
 
 
     _createClass(lottery_videoFlow, [{
+        key: "onLoad",
+        value: function onLoad() {
+            this.videoStream.setUrl(_lottery_lotteryData2.default.getInstance().videoUrl.vice.HD);
+        }
+    }, {
         key: "start",
         value: function start() {
             var _iteratorNormalCompletion = true;
@@ -158,17 +163,15 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
                 }
             }
 
-            var arr = document.getElementsByClassName('cocosVideo');
             var _iteratorNormalCompletion2 = true;
             var _didIteratorError2 = false;
             var _iteratorError2 = undefined;
 
             try {
-                for (var _iterator2 = arr[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                for (var _iterator2 = this.balls[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
                     var _one = _step2.value;
 
-                    _one.muted = true;
-                    _one.style.zIndex = '-1';
+                    _one.node.active = false;
                 }
             } catch (err) {
                 _didIteratorError2 = true;
@@ -185,8 +188,34 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
                 }
             }
 
+            var arr = document.getElementsByClassName('cocosVideo');
+            var _iteratorNormalCompletion3 = true;
+            var _didIteratorError3 = false;
+            var _iteratorError3 = undefined;
+
+            try {
+                for (var _iterator3 = arr[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+                    var _one2 = _step3.value;
+
+                    _one2.muted = true;
+                    _one2.style.zIndex = '-1';
+                }
+            } catch (err) {
+                _didIteratorError3 = true;
+                _iteratorError3 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion3 && _iterator3.return) {
+                        _iterator3.return();
+                    }
+                } finally {
+                    if (_didIteratorError3) {
+                        throw _iteratorError3;
+                    }
+                }
+            }
+
             this.videoStream.node.opacity = 0;
-            this.videoStream.setUrl(_lottery_lotteryData2.default.getInstance().videoUrl.master.HD);
             cc.systemEvent.on(_lottery_EventDefine.lottery_EventDefine.VIDEOFLOW.RESTART, this.startPlay, this);
         }
 
@@ -209,6 +238,31 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
         key: "stopPlay",
         value: function stopPlay() {
             this.videoStream.gameHideClose();
+            var _iteratorNormalCompletion4 = true;
+            var _didIteratorError4 = false;
+            var _iteratorError4 = undefined;
+
+            try {
+                for (var _iterator4 = this.videoArr[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+                    var one = _step4.value;
+
+                    one.stop();
+                    one.node.active = false;
+                }
+            } catch (err) {
+                _didIteratorError4 = true;
+                _iteratorError4 = err;
+            } finally {
+                try {
+                    if (!_iteratorNormalCompletion4 && _iterator4.return) {
+                        _iterator4.return();
+                    }
+                } finally {
+                    if (_didIteratorError4) {
+                        throw _iteratorError4;
+                    }
+                }
+            }
         }
         /*--------------------------------------------播放阶段设置--------------------------------------------- */
         //每一阶段结束回调,这里的判断条件是单段视频播放完毕，然而存在循环播放的情况，这种写法则会重复调用
@@ -337,34 +391,8 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             this.balls[2].play('ball_3');
             this.startLottery.play('startLottery_qishu');
             this.stageFinsh = function () {
-                var _iteratorNormalCompletion3 = true;
-                var _didIteratorError3 = false;
-                var _iteratorError3 = undefined;
-
-                try {
-                    for (var _iterator3 = _this5.balls[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                        var one = _step3.value;
-
-                        one.node.active = false;
-                    }
-                } catch (err) {
-                    _didIteratorError3 = true;
-                    _iteratorError3 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion3 && _iterator3.return) {
-                            _iterator3.return();
-                        }
-                    } finally {
-                        if (_didIteratorError3) {
-                            throw _iteratorError3;
-                        }
-                    }
-                }
-
                 _this5.videoArr[2].stop();
                 _this5.videoArr[2].node.active = false;
-                _this5.startLottery.node.active = false;
             };
         }
         /**
@@ -376,6 +404,10 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
         value: function fiveStage(data) {
             var _this6 = this;
 
+            this.startLottery.play('startLottery_3');
+            this.balls[0].play('ball_stop_1');
+            this.balls[1].play('ball_stop_2');
+            this.balls[2].play('ball_stop_3');
             this.videoArr[3].node.active = true;
             this.videoArr[3].play();
             this.stageFinsh = function () {
@@ -400,6 +432,32 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             anim.play();
             this.stageFinsh = function () {
                 anim.stop();
+                var _iteratorNormalCompletion5 = true;
+                var _didIteratorError5 = false;
+                var _iteratorError5 = undefined;
+
+                try {
+                    for (var _iterator5 = _this7.balls[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+                        var one = _step5.value;
+
+                        one.node.active = false;
+                    }
+                } catch (err) {
+                    _didIteratorError5 = true;
+                    _iteratorError5 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion5 && _iterator5.return) {
+                            _iterator5.return();
+                        }
+                    } finally {
+                        if (_didIteratorError5) {
+                            throw _iteratorError5;
+                        }
+                    }
+                }
+
+                _this7.startLottery.node.active = false;
                 _this7.qiShuArr[2].active = false;
                 _this7.videoArr[4].stop();
                 _this7.videoArr[4].node.active = false;
@@ -470,54 +528,54 @@ var lottery_videoFlow = (_dec = property([cc.VideoPlayer]), _dec2 = property([cc
             };
 
             if (isBig) {
-                var _iteratorNormalCompletion4 = true;
-                var _didIteratorError4 = false;
-                var _iteratorError4 = undefined;
+                var _iteratorNormalCompletion6 = true;
+                var _didIteratorError6 = false;
+                var _iteratorError6 = undefined;
 
                 try {
-                    for (var _iterator4 = arr[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-                        var name = _step4.value;
+                    for (var _iterator6 = arr[Symbol.iterator](), _step6; !(_iteratorNormalCompletion6 = (_step6 = _iterator6.next()).done); _iteratorNormalCompletion6 = true) {
+                        var name = _step6.value;
 
                         func('wz_sz_' + name);
                     }
                 } catch (err) {
-                    _didIteratorError4 = true;
-                    _iteratorError4 = err;
+                    _didIteratorError6 = true;
+                    _iteratorError6 = err;
                 } finally {
                     try {
-                        if (!_iteratorNormalCompletion4 && _iterator4.return) {
-                            _iterator4.return();
+                        if (!_iteratorNormalCompletion6 && _iterator6.return) {
+                            _iterator6.return();
                         }
                     } finally {
-                        if (_didIteratorError4) {
-                            throw _iteratorError4;
+                        if (_didIteratorError6) {
+                            throw _iteratorError6;
                         }
                     }
                 }
 
                 func('wz_qi');
             } else {
-                var _iteratorNormalCompletion5 = true;
-                var _didIteratorError5 = false;
-                var _iteratorError5 = undefined;
+                var _iteratorNormalCompletion7 = true;
+                var _didIteratorError7 = false;
+                var _iteratorError7 = undefined;
 
                 try {
-                    for (var _iterator5 = arr[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
-                        var _name = _step5.value;
+                    for (var _iterator7 = arr[Symbol.iterator](), _step7; !(_iteratorNormalCompletion7 = (_step7 = _iterator7.next()).done); _iteratorNormalCompletion7 = true) {
+                        var _name = _step7.value;
 
                         func('wz_xsz_' + _name);
                     }
                 } catch (err) {
-                    _didIteratorError5 = true;
-                    _iteratorError5 = err;
+                    _didIteratorError7 = true;
+                    _iteratorError7 = err;
                 } finally {
                     try {
-                        if (!_iteratorNormalCompletion5 && _iterator5.return) {
-                            _iterator5.return();
+                        if (!_iteratorNormalCompletion7 && _iterator7.return) {
+                            _iterator7.return();
                         }
                     } finally {
-                        if (_didIteratorError5) {
-                            throw _iteratorError5;
+                        if (_didIteratorError7) {
+                            throw _iteratorError7;
                         }
                     }
                 }

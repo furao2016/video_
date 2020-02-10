@@ -69,11 +69,11 @@ export default class SocketManager extends SingletonBase {
                     lottery_TimeMgr.getInstance().closeTimer(this.reConnectTimerID);
                     this.reConnectTimerID = 0;
                 }
-                //this.HeartOpen();//开启心跳包
+                this.HeartOpen();//开启心跳包
                 break;
             case SocketEnum.error:
             case SocketEnum.close:
-                //this.HeartClose();//关闭心跳包
+                this.HeartClose();//关闭心跳包
                 this.socketEventDic[SockMsgDefine.LongConnect.Disconnect] && this.socketEventDic[SockMsgDefine.LongConnect.Disconnect]();
                 this.ReConnect();//重连socket
                 break;

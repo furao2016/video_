@@ -27,7 +27,7 @@ cc.Class({
             lotteryData.network = res[res.envType];
         })
         lottery_animDataMgr.getInstance().init(this.setLoadingProgress.bind(this), () => {
-            //  lottery_loginViewCtr.getInstance().Open();
+           // lottery_loginViewCtr.getInstance().Open();
             this.loadingNode.active = false;
             lottery_VideoSysCtr.getInstance().Open();
         });

@@ -39,14 +39,18 @@ var lottery_lotteryData = function (_SingletonBase) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_lotteryData.__proto__ || Object.getPrototypeOf(lottery_lotteryData)).call.apply(_ref, [this].concat(args))), _this), _this.simulated = false, _this.isLocal = true, _this.userId = null, _this.userName = null, _this.roleList = null, _this.lotteryCode = null, _this.expect = 1115, _this.nestExpect = 1116, _this.awardTime = 0, _this.awardResult = [1, 2, 3], _this._videoUrl = {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = lottery_lotteryData.__proto__ || Object.getPrototypeOf(lottery_lotteryData)).call.apply(_ref, [this].concat(args))), _this), _this.simulated = false, _this.isLocal = true, _this.userId = null, _this.userName = null, _this.roleList = null, _this.lotteryCode = null, _this.expect = 1115, _this.nestExpect = 1116, _this.awardTime = 0, _this.awardResult = [1, 2, 3], _this.network = {
+            'httpServer': "",
+            'socketIP': "",
+            'socketPort': ""
+        }, _this._videoUrl = {
             master: {
-                HD: "rtmp://test.xshny.com:1935/lobby/L01",
-                SD: "rtmp://test.xshny.com:1935/lobby/L01_ff"
+                HD: "ws://stattws.9hrb.vip/lobbyB/L01",
+                SD: "ws://stattws.9hrb.vip/lobbyS/L01"
             },
             vice: {
-                HD: "rtmp://test.xshny.com:1935/lobby/L01-1",
-                SD: "rtmp://test.xshny.com:1935/lobby/L01-1_ff"
+                HD: "ws://stattws.9hrb.vip/lobbyB/L01-1",
+                SD: "ws://stattws.9hrb.vip/lobbyS/L01-1"
             }
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
