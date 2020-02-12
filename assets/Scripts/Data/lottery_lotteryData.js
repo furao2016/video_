@@ -24,6 +24,8 @@ export default class lottery_lotteryData extends SingletonBase {
     awardResult = [1, 2, 3];
     //荷官端是否通过
     isPass = false;
+    //token
+    token = '';
 
     network = {
         'httpServer': "",

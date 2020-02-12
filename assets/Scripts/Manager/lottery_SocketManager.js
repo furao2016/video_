@@ -11,8 +11,10 @@ let socketPort = "7050";
 let socketParam = "";
 export default class SocketManager extends SingletonBase {
     BaseSocketIns
-    heartTime = 25//心跳包间隔时间 单位 秒
+    heartTime = 5//心跳包间隔时间 单位 秒
     heartTimerID = 0//心跳包计时器ID 
+    heartLastTimerID = null;//心跳包最长定时器;
+    onLine = false;
     reConnectTimerID = 0
     isreconnect = false
     curSocketState = SocketEnum.none//当前socket状态
@@ -20,6 +22,7 @@ export default class SocketManager extends SingletonBase {
     loadingShowFunc = null
     loadingHideFunc = null
     reConnectSocketNum = 0  //断线重连次数
+
 
     constructor() {
         super();
@@ -45,14 +48,16 @@ export default class SocketManager extends SingletonBase {
         }
 
         let msgId = data.codeBack;
-        if (msgId != SockMsgDefine.UP.Heart) {//心跳包消息处理
-
+        if (msgId == SockMsgDefine.UP.Heart) {//心跳包消息处理
+            console.log('接收到心跳包');
+            if (this.heartLastTimerID)
+                lottery_TimeMgr.getInstance().resetTImer(this.heartLastTimerID);
         }
         if (data.code == 1) {//正确返回处理
             this.socketEventDic[msgId] && this.socketEventDic[msgId](data.data)
         }
         else if (data.code == 2) {//错误信息返回
-            
+
         }
     }
     /**
@@ -90,7 +95,16 @@ export default class SocketManager extends SingletonBase {
             msg.codeBack = SockMsgDefine.UP.Heart;
             msg.data = {};
             this.Send(JSON.stringify(msg), false);
-        }, this.heartTime, -1, this.heartTime)
+        }, this.heartTime, -1, this.heartTime);
+
+        this.onLine = true;
+        if (this.heartLastTimerID)
+            lottery_TimeMgr.getInstance().closeTimer(this.heartLastTimerID);
+        this.heartLastTimerID = lottery_TimeMgr.getInstance().openTimer(() => {
+            console.log('断开了');
+            this.onLine = false;
+        }, 0, 1, 180);
+
     }
     /**关闭心跳包*/
     HeartClose() {
@@ -106,7 +120,7 @@ export default class SocketManager extends SingletonBase {
         var func = function () {
             this.reConnectSocketNum = this.reConnectSocketNum + 1;
             this.reConnectTimerID = 0;
-            if (this.reConnectSocketNum >= 3) {
+            if (!this.onLine) {
                 this.reConnectSocketNum = 0;
                 lottery_TimeMgr.getInstance().closeTimer(this.reConnectTimerID);
                 this.close();

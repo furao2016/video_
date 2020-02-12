@@ -41,11 +41,9 @@ export default class lottery_videoFlow extends cc.Component {
     /**上一阶段的结束后执行的操作*/
     stageFinsh;
 
-    onLoad() {
-        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.vice.HD);
-    }
 
     start() {
+        this.videoStream.setUrl(lottery_lotteryData.getInstance().videoUrl.vice.HD);
         for (let one of this.videoArr) {
             one.node.on('completed', this.animFinshCallBack.bind(this));
             one.node.active = false;

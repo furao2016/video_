@@ -18,7 +18,7 @@ var MsgDefine = {
     },
 
     UP: {  // 上行
-        Heart: "9999",//心跳包
+        Heart: "9998",//心跳包
         CS_KaiPan: "2010",//开封盘
         CS_OpenLotteryByHand: "2012",   //手动开奖
         CS_UpData: "2011",  //更新界面彩票数据

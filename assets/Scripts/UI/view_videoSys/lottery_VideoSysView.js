@@ -64,13 +64,13 @@ cc.Class({
     },
     /**---------------------------------------------事件----------------------------------------------------- */
     backBtnDown() {
+        console.log("退出事件");
+        this.videoFlow.stopPlay();
         lottery_MsgStation.getInstance().onBackToSys();
     },
     escEvent(event) {
         switch (event.keyCode) {
             case cc.KEY.escape:
-                console.log("退出事件");
-                this.videoFlow.stopPlay();
                 this.backBtnDown();
                 break;
         }

@@ -114,9 +114,19 @@ export default class lottery_MsgStation extends SingletonBase {
      * 回到系统
      */
     onBackToSys() {
-        Helper.getInstance().showLoading(false);
-        lottery_VideoPlayCtr.getInstance().Open();
-        lottery_VideoSysCtr.getInstance().Close();
+        Helper.getInstance().showLoading();
+        let lotteryData = lottery_lotteryData.getInstance();
+        NetManager.getInstance().HttpPost(this.lotteryData.network.httpServer + 'dealer/login/video/loginOut',
+            { "lotteryCode": lotteryData.lotteryCode, "userId": lotteryData.userId, 'token': lotteryData.token }, (error, msg) => {
+                Helper.getInstance().showLoading(false);
+                if (error) {
+                    Helper.getInstance().showTips('网络错误');
+                }
+                lottery_VideoPlayCtr.getInstance().Open();
+                lottery_VideoSysCtr.getInstance().Close();
+                lotteryData.isPass = false;
+            });
+
     }
     /**
     * 退出
@@ -125,7 +135,6 @@ export default class lottery_MsgStation extends SingletonBase {
         SocketManager.getInstance().close();
         lottery_VideoPlayCtr.getInstance().Close();
         lottery_loginViewCtr.getInstance().Open();
-        lottery_lotteryData.getInstance().isPass = false;
 
     }
     /*------------------------------------------socket回调--------------------------------------*/
