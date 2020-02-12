@@ -98,6 +98,7 @@ export default class lottery_MsgStation extends SingletonBase {
      */
     onSendLinkHeGuanSuccess() {
         Helper.getInstance().showLoading(false);
+        lottery_lotteryData.getInstance().isPass = true;
         lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 2 });
     }
     /**
@@ -124,6 +125,7 @@ export default class lottery_MsgStation extends SingletonBase {
         SocketManager.getInstance().close();
         lottery_VideoPlayCtr.getInstance().Close();
         lottery_loginViewCtr.getInstance().Open();
+        lottery_lotteryData.getInstance().isPass = false;
 
     }
     /*------------------------------------------socket回调--------------------------------------*/
@@ -144,6 +146,7 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //接收到开封盘命令
     lotteryOpeningOrClosed(data) {
+        if (!lottery_lotteryData.getInstance().isPass) return;
         console.log(data);
         if (data == 0) {
             videosMsgFatory.ins().changePeriod(-1);
@@ -154,6 +157,7 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //收到奖期之后 马上跳播
     setJianQi(data) {
+        if (!lottery_lotteryData.getInstance().isPass) return;
         lottery_lotteryData.getInstance().expect = data.expect;
         lottery_lotteryData.getInstance().nestExpect = data.nestExpect;
         videosMsgFatory.ins().changePeriod(0);
@@ -163,6 +167,7 @@ export default class lottery_MsgStation extends SingletonBase {
 
     //接收到当前期售彩结束准备开奖,?第一期 马上跳播
     lotteryOpenAward() {
+        if (!lottery_lotteryData.getInstance().isPass) return;
         videosMsgFatory.ins().changePeriod(0);
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
@@ -173,6 +178,7 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //接收到开奖结果
     lotteryResults(data) {
+        if (!lottery_lotteryData.getInstance().isPass) return;
         console.log(data);
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.BALLINFO, data);
     }

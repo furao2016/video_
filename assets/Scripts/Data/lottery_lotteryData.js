@@ -22,6 +22,8 @@ export default class lottery_lotteryData extends SingletonBase {
     awardTime = 0;
     //开奖结果
     awardResult = [1, 2, 3];
+    //荷官端是否通过
+    isPass = false;
 
     network = {
         'httpServer': "",
