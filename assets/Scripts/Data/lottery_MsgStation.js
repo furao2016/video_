@@ -148,10 +148,15 @@ export default class lottery_MsgStation extends SingletonBase {
 
     //链接何荷官端后得回调
     videoMsg(data) {
-        if (data == 1)
+        if (data == 1) {
+            lottery_lotteryData.getInstance().isPass = true;
             lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 2 })
-        else if (data == 0)
+        }
+        else if (data == 0) {
+            lottery_lotteryData.getInstance().isPass = false;
             lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 3 });
+        }
+
     }
     //接收到开封盘命令
     lotteryOpeningOrClosed(data) {
