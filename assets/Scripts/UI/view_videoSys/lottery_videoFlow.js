@@ -71,6 +71,11 @@ export default class lottery_videoFlow extends cc.Component {
      * 结束播放
      */
     stopPlay() {
+        if (this.stageFinsh) {
+            this.stageFinsh();
+            this.stageFinsh = null;
+        }
+        
         this.videoStream.gameHideClose();
         for (let one of this.videoArr) {
             one.stop();
