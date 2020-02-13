@@ -115,8 +115,8 @@ export default class ViewComponentManager extends SingletonBase {
     //关闭面板，预留，后期会增加关闭面板后的一些处理逻辑
     Close(panelname) {
         //关闭当前面板
-        this.ClosePanel(panelname);
-        //this.DeletePanel(panelname);
+        //this.ClosePanel(panelname);
+        this.DeletePanel(panelname);
     }
     CloseAllView() {
         for (const key in this.panelDic) {

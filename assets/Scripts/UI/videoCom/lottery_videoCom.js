@@ -4,7 +4,8 @@ cc.Class({
     properties: {
         //目标链接
         currentUrl: cc.String,
-        targetSprite: cc.Sprite //目标sprite
+        targetSprite: cc.Sprite, //目标sprite
+        winSize: cc.Vec2
     },
 
     ctor() {
@@ -20,20 +21,25 @@ cc.Class({
     },
 
     onLoad() {
-        cc.game.on(cc.game.EVENT_HIDE, this.gameHideClose, this);
-        cc.game.on(cc.game.EVENT_SHOW, this.gameShowReOpen, this);
+
     },
 
 
     onEnable() {
+        cc.game.on(cc.game.EVENT_HIDE, this.gameHideClose, this);
+        cc.game.on(cc.game.EVENT_SHOW, this.gameShowReOpen, this);
         this.gameShowReOpen();
     },
 
     onDisable() {
+        cc.game.off(cc.game.EVENT_HIDE, this.gameHideClose);
+        cc.game.off(cc.game.EVENT_SHOW, this.gameShowReOpen);
         this.gameHideClose();
     },
 
     init() {
+        this.winSize.x = this.winSize.x || this.node.width;
+        this.winSize.y = this.winSize.y || this.node.height;
         if (this.currentUrl == '' || !this.currentUrl) return;
         if (cc._renderType == cc.game.RENDER_TYPE_CANVAS) {
             console.log('canvas下无法播放');
@@ -81,11 +87,14 @@ cc.Class({
         this.VideoShader._currentBuffer = data;
         this.texureImag.initWithData(data, pixelFormat, pixelsWidth, pixelsHeight, contentSize);
         if (!this.renderSize) this.renderSize = { height: pixelsHeight, width: pixelsWidth };
-        if (!this.targetSprite.spriteFrame) {
-            this.targetSpriteFrame.setOriginalSize(this.renderSize);
-            this.targetSpriteFrame.setRect(cc.rect(0, 0, this.renderSize.width, this.renderSize.height));
-            this.targetSprite.spriteFrame = this.targetSpriteFrame;
-        }
+        this.targetSprite.spriteFrame = new cc.SpriteFrame(this.texureImag);
+        this.targetSprite.node.width = this.winSize.x;
+        this.targetSprite.node.height = this.winSize.y;
+        // if (!this.targetSprite.spriteFrame) {
+        //     this.targetSpriteFrame.setOriginalSize(this.renderSize);
+        //     this.targetSpriteFrame.setRect(cc.rect(0, 0, this.renderSize.width, this.renderSize.height));
+        //     this.targetSprite.spriteFrame = this.targetSpriteFrame;
+        // }
     },
 
     gameHideClose() {
@@ -116,7 +125,5 @@ cc.Class({
             this._socketController.close();
             this._socketController = null;
         }
-        cc.game.off(cc.game.EVENT_HIDE, this.gameHideClose);
-        cc.game.off(cc.game.EVENT_SHOW, this.gameShowReOpen);
     }
 })
