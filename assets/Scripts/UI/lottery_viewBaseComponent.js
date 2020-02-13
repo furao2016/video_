@@ -35,7 +35,7 @@ cc.Class({
         if (this.curStatus === ViewStatus.close) return;
         this.curStatus = ViewStatus.close
         GlobalMsg.getInstance().Unregister(this.moduleName, this.node.uuid);
-        ViewComponentManager.getInstance().Close(this.moduleName)
+       // ViewComponentManager.getInstance().Close(this.moduleName)
         this.OnHide()
         this.node.active = false;
     },
