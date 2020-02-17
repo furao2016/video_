@@ -18,6 +18,7 @@ cc.Class({
         /**是否加载完成*/
         this.loadOver = false;
         this.renderSize = null;
+        this.isPlay = false;;
     },
 
     onLoad() {
@@ -90,6 +91,7 @@ cc.Class({
         this.targetSprite.spriteFrame = new cc.SpriteFrame(this.texureImag);
         this.targetSprite.node.width = this.winSize.x;
         this.targetSprite.node.height = this.winSize.y;
+        this.isPlay = true;
         // if (!this.targetSprite.spriteFrame) {
         //     this.targetSpriteFrame.setOriginalSize(this.renderSize);
         //     this.targetSpriteFrame.setRect(cc.rect(0, 0, this.renderSize.width, this.renderSize.height));
@@ -100,6 +102,7 @@ cc.Class({
     gameHideClose() {
         if (this._socketController) {
             this._socketController.close();
+            this.isPlay = false;
         }
     },
 

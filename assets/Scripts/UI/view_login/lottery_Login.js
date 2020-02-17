@@ -88,6 +88,7 @@ class loginCotentBtn extends groupBtn {
     reset() {
         this.delBtnNode.active = false;
         this.editbox.string = '';
+        this.select(false);
     }
     editBoxChange() {
         this.delBtnNode.active = this.editbox.string == "" ? false : true;
