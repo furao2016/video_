@@ -140,6 +140,7 @@ export default class lottery_MsgStation extends SingletonBase {
     /*------------------------------------------socket回调--------------------------------------*/
     //建立长连接成功
     socketConnect(data) {
+        if (lottery_lotteryData.getInstance().pageTag != 0) return;
         console.log('建立长链接');
         lottery_loginViewCtr.getInstance().Close();
         lottery_VideoPlayCtr.getInstance().Open();

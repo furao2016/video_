@@ -5,6 +5,7 @@ import lottery_TimeMgr from 'lottery_TimeMgr'
 let SocketEnum = require("lottery_SocketEnum");
 let ReConnectTimer = 5;//重连间隔时间 单位 秒
 import SockMsgDefine from "lottery_SockMsgDefine";
+import Helper from 'lottery_helper';
 
 let socktIP = "192.168.0.158";
 let socketPort = "7050";
@@ -108,9 +109,11 @@ export default class SocketManager extends SingletonBase {
     }
     /**关闭心跳包*/
     HeartClose() {
-        if (this.heartTimerID !== 0) {
-            lottery_TimeMgr.getInstance().closeTimer(this.heartTimerID);
-        }
+        //我只有在心跳重连部分用了timeMgr 所以直接计时器了
+        // if (this.heartTimerID !== 0) {
+        //     lottery_TimeMgr.getInstance().closeTimer(this.heartTimerID);
+        // }
+        lottery_TimeMgr.getInstance().clearTimer();
     }
     /**重连socket */
     ReConnect() {
@@ -122,7 +125,8 @@ export default class SocketManager extends SingletonBase {
             this.reConnectTimerID = 0;
             if (!this.onLine) {
                 this.reConnectSocketNum = 0;
-                lottery_TimeMgr.getInstance().closeTimer(this.reConnectTimerID);
+                // lottery_TimeMgr.getInstance().closeTimer(this.reConnectTimerID);
+                Helper.getInstance().showTips('', 2);
                 this.close();
                 return
             }

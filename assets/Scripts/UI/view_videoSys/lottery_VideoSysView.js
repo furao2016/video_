@@ -1,6 +1,7 @@
 import lottery_MsgStation from '../../Data/lottery_MsgStation'
 import lottery_videoFlow from './lottery_videoFlow';
 import lottery_VideoSysCtr from './lottery_VideoSysCtr';
+import lottery_lotteryData from '../../Data/lottery_lotteryData';
 cc.Class({
     extends: require("lottery_viewBaseComponent"),
     properties: {
@@ -14,6 +15,7 @@ cc.Class({
         this.moduleName = "videoSysPre";
     },
     OnShow() {
+        lottery_lotteryData.getInstance().pageTag = 2;
         lottery_MsgStation.getInstance().onSendLinkHeGuan();
         lottery_MsgStation.getInstance().simulationAward();
     },

@@ -1,3 +1,4 @@
+import lottery_lotteryData from '../../Data/lottery_lotteryData'
 cc.Class({
     extends: require("lottery_viewBaseComponent"),
     properties: {
@@ -9,6 +10,7 @@ cc.Class({
         this.lotteryTypeJs = cc.find('lotteryTypeSelect', this.node).getComponent('lottery_TypeSelect');
     },
     OnShow() {
+        lottery_lotteryData.getInstance().pageTag = 0;
         this.lotteryTypeJs.hide();
         this.loginJs.onShow();
     },

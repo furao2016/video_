@@ -28,7 +28,9 @@ cc.Class({
         }
         lottery_MsgStation.getInstance().getVideoUrl();
     },
-    OnShow() { },
+    OnShow() {
+        lottery_lotteryData.getInstance().pageTag = 1;
+    },
     onEnable() {
         this.exitBtn.on(cc.Node.EventType.TOUCH_END, this.exitBtnDown, this);
         this.videoPlayBtn.on(cc.Node.EventType.TOUCH_END, this.videoPlayBtnDown, this);

@@ -78,9 +78,20 @@ window['lottery'] = lottery;
   var onCloseCallback = function (event) {
     cc.log("The video WebSocket connection has been closed.");
     console.log(event.currentTarget.url, this._currentUrl)
+    if (event.currentTarget.url == this._currentUrl) {
+      resetConnet.call(this);
+    }
     if (this.onClose)
       this.onClose(event);
   };
+  function resetConnet() {
+    if (this._currentUrl) {
+      this.videoTimeout && clearTimeout(this.videoTimeout);
+      this.videoTimeout = setTimeout(function () {
+        this.reOpen();
+      }.bind(this), 5000);
+    }
+  }
   var onMessageCallback = function (event) {
     var messageData = new Uint8Array(event.data);
     var header = this.WSHeader(messageData);
@@ -133,6 +144,9 @@ window['lottery'] = lottery;
 
   var onErrorCallback = function (event) {
     cc.log("the video connection has an error", event);
+    if (event.currentTarget.url == this._currentUrl) {
+      resetConnet.call(this);
+    }
     if (this.onError)
       this.onError(event);
   };
