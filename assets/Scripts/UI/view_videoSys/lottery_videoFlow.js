@@ -71,11 +71,7 @@ export default class lottery_videoFlow extends cc.Component {
      * 结束播放
      */
     stopPlay() {
-        if (this.stageFinsh) {
-            this.stageFinsh();
-            this.stageFinsh = null;
-        }
-        
+        this.stageFinsh && this.stageFinsh() && (this.stageFinsh = null);
         this.videoStream.gameHideClose();
         for (let one of this.videoArr) {
             one.stop();
@@ -91,7 +87,7 @@ export default class lottery_videoFlow extends cc.Component {
         }
         console.log("某一阶段播放完毕");
         this.unscheduleAllCallbacks();
-        this.stageFinsh && this.stageFinsh();
+        this.stageFinsh && this.stageFinsh() && (this.stageFinsh = null);
         let obj = this.msgList.shift();
         if (obj) { //播放当前
             this[this.msgFuncDefine[obj.type - 1]](obj.data);
@@ -170,6 +166,10 @@ export default class lottery_videoFlow extends cc.Component {
         this.stageFinsh = () => {
             this.littleCom.node.active = false;
             this.videoStream.node.opacity = 0;
+            for (let one of this.balls) {
+                one.node.active = false;
+            }
+            this.startLottery.node.active = false;
             cc.systemEvent.off(lottery_EventDefine.VIDEOFLOW.BALLINFO, this.setOneBallFly, this);
         }
     }
@@ -179,11 +179,19 @@ export default class lottery_videoFlow extends cc.Component {
     fourStage(data) {
         this.videoArr[2].node.active = true;
         this.videoArr[2].play();
+        for (let one of this.balls) {
+            one.node.active = true;
+        }
+        this.startLottery.node.active = true;
         this.balls[0].play('ball_1');
         this.balls[1].play('ball_2');
         this.balls[2].play('ball_3');
         this.startLottery.play('startLottery_qishu');
         this.stageFinsh = () => {
+            for (let one of this.balls) {
+                one.node.active = false;
+            }
+            this.startLottery.node.active = false;
             this.videoArr[2].stop();
             this.videoArr[2].node.active = false;
         }
@@ -192,6 +200,10 @@ export default class lottery_videoFlow extends cc.Component {
      * 播放 ebet3d logo
      */
     fiveStage(data) {
+        for (let one of this.balls) {
+            one.node.active = true;
+        }
+        this.startLottery.node.active = true;
         this.startLottery.play('startLottery_3');
         this.balls[0].play('ball_stop_1');
         this.balls[1].play('ball_stop_2');
@@ -201,6 +213,10 @@ export default class lottery_videoFlow extends cc.Component {
         this.stageFinsh = () => {
             this.videoArr[3].stop();
             this.videoArr[3].node.active = false;
+            for (let one of this.balls) {
+                one.node.active = false;
+            }
+            this.startLottery.node.active = false;
         }
     }
     /**
@@ -212,6 +228,10 @@ export default class lottery_videoFlow extends cc.Component {
         this.videoArr[4].play();
         this.qiShuArr[2].active = true;
         let anim = this.qiShuArr[2].getComponent(cc.Animation);
+        for (let one of this.balls) {
+            one.node.active = true;
+        }
+        this.startLottery.node.active = true;
         anim.play();
         this.stageFinsh = () => {
             anim.stop();

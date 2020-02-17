@@ -63,9 +63,6 @@ cc.Class({
     //全屏播放
     videoPlayBtnDown() {
         lottery_MsgStation.getInstance().onFullPlay();
-        if (lottery_lotteryData.getInstance().simulated) {
-            simulationAward();
-        }
     },
     //地址更改
     videoUrlChange() {

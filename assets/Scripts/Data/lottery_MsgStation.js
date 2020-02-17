@@ -214,17 +214,19 @@ export default class lottery_MsgStation extends SingletonBase {
     loadingOvertime() {
         console.log("加载超时");
     }
-}
-
-export function simulationAward() {
-    let one = 0;
-    setTimeout(() => {
-        lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 4 });
+    /**模拟开奖 */
+    simulationAward() {
+        if (!lottery_lotteryData.getInstance().simulated) return;
+        lottery_lotteryData.getInstance().isPass = true;
+        let one = 0;
         setTimeout(() => {
-            lottery_MsgStation.getInstance().lotteryOpeningOrClosed(0);
+            lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 4 });
             setTimeout(() => {
-                lottery_MsgStation.getInstance().setJianQi({ expect: 1000000001, nestExpect: 1000000002 })
+                lottery_MsgStation.getInstance().lotteryOpeningOrClosed(0);
+                setTimeout(() => {
+                    lottery_MsgStation.getInstance().setJianQi({ expect: 1000000001, nestExpect: 1000000002 })
+                }, 10000);
             }, 10000);
-        }, 10000);
-    }, 1000);
+        }, 1000);
+    }
 }

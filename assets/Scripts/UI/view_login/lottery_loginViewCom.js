@@ -8,7 +8,9 @@ cc.Class({
         this.loginJs = cc.find('lotteryLoginIn', this.node).getComponent('lottery_Login');
         this.lotteryTypeJs = cc.find('lotteryTypeSelect', this.node).getComponent('lottery_TypeSelect');
     },
-    OnShow() { },
+    OnShow() {
+        this.lotteryTypeJs.hide();
+     },
     OnHide() { },
     OnDispose() { },
     _onMessageHandel(data) {

@@ -55,7 +55,9 @@ export default class lotterySelect extends cc.Component {
         this.closeBtn.on(cc.Node.EventType.TOUCH_END, this.closeBtnDown, this);
         this.submitBtn.on(cc.Node.EventType.TOUCH_END, this.submitBtnDown, this);
     }
-
+    hide() {
+        this.node.active = false;;
+    }
     show(listData) {
         this.node.active = true;
         this.lotteryData = [];

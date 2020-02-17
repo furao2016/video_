@@ -15,7 +15,7 @@ cc.Class({
     },
     OnShow() {
         lottery_MsgStation.getInstance().onSendLinkHeGuan();
-
+        lottery_MsgStation.getInstance().simulationAward();
     },
     onEnable() {
         this.backBtn.on(cc.Node.EventType.TOUCH_END, this.backBtnDown, this);
