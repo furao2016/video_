@@ -32,8 +32,8 @@ export default class lotteryLogin extends cc.Component {
         cc.systemEvent.off(lottery_EventDefine.loginView.keyboradNum, this.setContent, this);
     }
     onShow() {
-        this.btnGruop.arr[0].editbox.string = null;
-        this.btnGruop.arr[1].editbox.string = null;
+        this.btnGruop.arr[0].reset();
+        this.btnGruop.arr[1].reset();
     }
     /**
      * 提交按钮
@@ -84,6 +84,10 @@ class loginCotentBtn extends groupBtn {
         this.delBtnNode.on(cc.Node.EventType.TOUCH_END, this.delBtnDown, this);
         this.editbox.node.on('text-changed', this.editBoxChange, this);
         this.editbox.node.on('editing-did-began', this.editBoxBegin, this);
+    }
+    reset() {
+        this.delBtnNode.active = false;
+        this.editbox.string = '';
     }
     editBoxChange() {
         this.delBtnNode.active = this.editbox.string == "" ? false : true;
