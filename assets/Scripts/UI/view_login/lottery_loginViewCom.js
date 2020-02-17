@@ -10,7 +10,8 @@ cc.Class({
     },
     OnShow() {
         this.lotteryTypeJs.hide();
-     },
+        this.loginJs.onShow();
+    },
     OnHide() { },
     OnDispose() { },
     _onMessageHandel(data) {

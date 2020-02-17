@@ -31,7 +31,10 @@ export default class lotteryLogin extends cc.Component {
     onDisable() {
         cc.systemEvent.off(lottery_EventDefine.loginView.keyboradNum, this.setContent, this);
     }
-
+    onShow() {
+        this.btnGruop.arr[0].editbox.string = null;
+        this.btnGruop.arr[1].editbox.string = null;
+    }
     /**
      * 提交按钮
      */
