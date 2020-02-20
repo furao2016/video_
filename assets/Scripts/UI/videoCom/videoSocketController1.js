@@ -89,7 +89,7 @@ window['lottery'] = lottery;
       this.videoTimeout && clearTimeout(this.videoTimeout);
       this.videoTimeout = setTimeout(function () {
         this.reOpen();
-      }.bind(this), 5000);
+      }.bind(this), 3000);
     }
   }
   var onMessageCallback = function (event) {
@@ -435,6 +435,7 @@ window['lottery'] = lottery;
   h264CacheProto.clear = function () {
     this._videoCache.length = 0;
     this._audioCache.length = 0;
+    this._lastBuffer && (this._lastBuffer.length = 0);//添加
     this.receivedKeyframe = false;
     this.lastPlayedTimestamp = 0;
     this._deltaTime = 0;

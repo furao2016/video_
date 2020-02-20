@@ -1561,9 +1561,14 @@
       "__id__": 45
     },
     "_enabled": true,
-    "currentUrl": "",
+    "currentUrl": "ws://ws5.funzoe.com/lobbyS/DMGCP1",
     "targetSprite": {
       "__id__": 46
+    },
+    "winSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
     }
   },
   {
@@ -2711,6 +2716,11 @@
     "currentUrl": "",
     "targetSprite": {
       "__id__": 83
+    },
+    "winSize": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
     }
   },
   {
