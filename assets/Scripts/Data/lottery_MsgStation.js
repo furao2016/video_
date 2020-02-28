@@ -161,8 +161,8 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //接收到开封盘命令
     lotteryOpeningOrClosed(data) {
-        if (!lottery_lotteryData.getInstance().isPass) return;
         console.log('开封盘消息', data);
+        if (!lottery_lotteryData.getInstance().isPass) return;
         if (data == 0) {
             videosMsgFatory.ins().changePeriod(-1);
         } else {
@@ -172,8 +172,8 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //收到奖期之后 马上跳播
     setJianQi(data) {
-        if (!lottery_lotteryData.getInstance().isPass) return;
         console.log('奖期信息', data);
+        if (!lottery_lotteryData.getInstance().isPass) return;
         lottery_lotteryData.getInstance().expect = data.expect;
         lottery_lotteryData.getInstance().nestExpect = data.nestExpect;
         videosMsgFatory.ins().changePeriod(0);
@@ -183,8 +183,8 @@ export default class lottery_MsgStation extends SingletonBase {
 
     //接收到当前期售彩结束准备开奖,?第一期 马上跳播
     lotteryOpenAward() {
-        if (!lottery_lotteryData.getInstance().isPass) return;
         console.log('第一期跳播');
+        if (!lottery_lotteryData.getInstance().isPass) return;
         videosMsgFatory.ins().changePeriod(0);
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.RESTART);
     }
@@ -195,8 +195,8 @@ export default class lottery_MsgStation extends SingletonBase {
     }
     //接收到开奖结果
     lotteryResults(data) {
-        if (!lottery_lotteryData.getInstance().isPass) return;
         console.log('开奖结果', data);
+        if (!lottery_lotteryData.getInstance().isPass) return;
         cc.systemEvent.emit(lottery_EventDefine.VIDEOFLOW.BALLINFO, data);
     }
     /**接收到视频链接更改*/
