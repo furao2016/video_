@@ -94,14 +94,6 @@ export default class lottery_MsgStation extends SingletonBase {
     }
 
     /**
-     * 荷官端链接成功准备播放视频
-     */
-    onSendLinkHeGuanSuccess() {
-        Helper.getInstance().showLoading(false);
-        lottery_lotteryData.getInstance().isPass = true;
-        lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 2 });
-    }
-    /**
      * 切换到全屏播放
      */
     onFullPlay() {
@@ -125,6 +117,7 @@ export default class lottery_MsgStation extends SingletonBase {
                 lottery_VideoPlayCtr.getInstance().Open();
                 lottery_VideoSysCtr.getInstance().Close();
                 lotteryData.isPass = false;
+                console.log("设置为荷官端不同意");
             });
 
     }
@@ -154,6 +147,7 @@ export default class lottery_MsgStation extends SingletonBase {
             lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 2 })
         }
         else if (data == 0) {
+            console.log("荷官端不同意");
             lottery_lotteryData.getInstance().isPass = false;
             lottery_VideoSysCtr.getInstance().OnMessageHandle({ type: 3 });
         }
