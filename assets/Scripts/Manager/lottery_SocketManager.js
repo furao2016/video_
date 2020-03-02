@@ -6,13 +6,14 @@ let SocketEnum = require("lottery_SocketEnum");
 let ReConnectTimer = 1;//重连间隔时间 单位 秒
 import SockMsgDefine from "lottery_SockMsgDefine";
 import Helper from 'lottery_helper';
+import lottery_lotteryData from "../Data/lottery_lotteryData";
 
 let socktIP = "192.168.0.158";
 let socketPort = "7050";
 let socketParam = "";
 export default class SocketManager extends SingletonBase {
     BaseSocketIns
-    heartTime = 5//心跳包间隔时间 单位 秒
+    heartTime = 25//心跳包间隔时间 单位 秒
     heartTimerID = 0//心跳包计时器ID 
     heartLastTimerID = null;//心跳包最长定时器;
     onLine = false;
@@ -22,7 +23,6 @@ export default class SocketManager extends SingletonBase {
     socketEventDic = {}
     loadingShowFunc = null
     loadingHideFunc = null
-    reConnectSocketNum = 0  //断线重连次数
 
 
     constructor() {
@@ -69,7 +69,6 @@ export default class SocketManager extends SingletonBase {
         switch (state) {
             case SocketEnum.success:    //连接成功
                 this.loadingHideFunc && this.loadingHideFunc()
-                this.reConnectSocketNum = 0;    //重连次数
                 this.isreconnect = false;
                 if (this.reConnectTimerID !== 0) {
                     lottery_TimeMgr.getInstance().closeTimer(this.reConnectTimerID);
@@ -94,7 +93,7 @@ export default class SocketManager extends SingletonBase {
         this.heartTimerID = lottery_TimeMgr.getInstance().openTimer(() => {
             let msg = {};
             msg.codeBack = SockMsgDefine.UP.Heart;
-            msg.data = {};
+            msg.data = { lotteryCode: lottery_lotteryData.getInstance().lotteryCode };
             this.Send(JSON.stringify(msg), false);
         }, this.heartTime, -1, this.heartTime);
 
@@ -104,7 +103,7 @@ export default class SocketManager extends SingletonBase {
         this.heartLastTimerID = lottery_TimeMgr.getInstance().openTimer(() => {
             console.log('断开了');
             this.onLine = false;
-        }, 0, 1, 180);
+        }, 0, 1, 240);
 
     }
     /**关闭心跳包*/
@@ -120,10 +119,8 @@ export default class SocketManager extends SingletonBase {
         if (this.curSocketState == SocketEnum.success)
             this.BaseSocketIns.close();
         var func = function () {
-            this.reConnectSocketNum = this.reConnectSocketNum + 1;
             this.reConnectTimerID = 0;
             if (!this.onLine) {
-                this.reConnectSocketNum = 0;
                 lottery_TimeMgr.getInstance().closeTimer(this.reConnectTimerID);
                 Helper.getInstance().showTips('', 2);
                 this.close();
